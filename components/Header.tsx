@@ -13,12 +13,13 @@ export default function Header() {
   const [header, setHeader] = useState<boolean>(false)
   const pathname: string = usePathname()
 
-  useEffect(() => {
-    const scrollYPos = window.addEventListener('scroll', () => {
-      window.scrollY > 50 ? setHeader(true) : setHeader(false)
-    })
+  const scrollHandler = () => {
+    window.scrollY > 50 ? setHeader(true) : setHeader(false)
+  }
 
-    return () => window.removeEventListener('scroll', scrollYPos);
+  useEffect(() => {
+    window.addEventListener('scroll', scrollHandler)
+    return () => window.removeEventListener('scroll', scrollHandler);
   });
 
   return (

@@ -27,3 +27,9 @@ interface SkillData {
   title: string;
   data: (Skill | Tool)[];
 }
+
+interface ServicesData {
+  icon: ReactNode
+  title: string
+  description: string
+}

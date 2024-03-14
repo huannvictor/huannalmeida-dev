@@ -1,5 +1,8 @@
 import {
+  Blocks,
   Calendar,
+  GanttChartSquare,
+  Gem,
   Home,
   MailIcon,
   PhoneCall,
@@ -101,4 +104,22 @@ export const skillData: SkillData[] = [
       { imgPath: '/about/notion.svg' },
     ]
   }
+]
+
+export const servicesData: ServicesData[] = [
+  {
+    icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
+    title: 'Web Design',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum soluta, totam laboriosam libero alias et!'
+  },
+  {
+    icon: <Blocks size={72} strokeWidth={0.8} />,
+    title: 'Web Development',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum soluta, totam laboriosam libero alias et!'
+  },
+  {
+    icon: <Gem size={72} strokeWidth={0.8} />,
+    title: 'App Development',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum soluta, totam laboriosam libero alias et!'
+  },
 ]

@@ -60,22 +60,22 @@ export const qualificationData: QualificationData[] = [
     data: [
       {
         company: 'Skill Labs',
-        qualification: 'Tech Lead Front-End',
+        role: 'Tech Lead Front-End',
         years: 'jan 2023 - present'
       },
       {
         company: 'Skill Labs',
-        qualification: 'Junior Front-End Developer',
+        role: 'Junior Front-End Developer',
         years: 'Aug 2023 - jan 2023'
       },
       {
         company: 'Construir Publisher',
-        qualification: 'Commercial Assistant',
+        role: 'Commercial Assistant',
         years: 'May 2018 - present'
       },
       {
         company: 'Organize Soft',
-        qualification: 'Junior Front-End Developer',
+        role: 'Junior Front-End Developer',
         years: 'Dez 2022 - Feb 2023'
       },
     ]

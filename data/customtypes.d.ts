@@ -6,13 +6,8 @@ interface Qualification {
 
 interface Experience {
   company: string;
-  qualification: string;
+  role: string;
   years: string;
-}
-
-interface QualificationData {
-  title: string;
-  data: (Qualification | Experience)[];
 }
 
 interface Skill {
@@ -21,6 +16,11 @@ interface Skill {
 
 interface Tool {
   imgPath: string;
+}
+
+interface QualificationData {
+  title: string;
+  data: (Qualification | Experience)[];
 }
 
 interface SkillData {

@@ -123,3 +123,71 @@ export const servicesData: ServicesData[] = [
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum soluta, totam laboriosam libero alias et!'
   },
 ]
+
+export const projectData: ProjectData[] = [
+  {
+    image: '/work/3.png',
+    category: 'react js',
+    name: 'Nexa Website',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    link: '/',
+    github: '/'
+  },
+  {
+    image: '/work/4.png',
+    category: 'react js',
+    name: 'Solstice Website',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    link: '/',
+    github: '/'
+  },
+  {
+    image: '/work/2.png',
+    category: 'next js',
+    name: 'Lumina Website',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    link: '/',
+    github: '/'
+  },
+  {
+    image: '/work/1.png',
+    category: 'next js',
+    name: 'Evolve Website',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    link: '/',
+    github: '/'
+  },
+  {
+    image: '/work/3.png',
+    category: 'fullstack',
+    name: 'Ignite Website',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    link: '/',
+    github: '/'
+  },
+  {
+    image: '/work/4.png',
+    category: 'backend',
+    name: 'Serenity Website',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    link: '/',
+    github: '/'
+  },
+  {
+    image: '/work/2.png',
+    category: 'fullstack',
+    name: 'Nova Website',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    link: '/',
+    github: '/'
+  },
+  {
+    image: '/work/1.png',
+    category: 'next js',
+    name: 'Zenith Website',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    link: '/',
+    github: '/'
+  },
+
+]

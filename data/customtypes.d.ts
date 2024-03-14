@@ -33,3 +33,12 @@ interface ServicesData {
   title: string
   description: string
 }
+
+interface ProjectData {
+  image: string
+  category: string
+  name: string
+  description: string
+  link: string
+  github: string
+}

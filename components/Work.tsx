@@ -3,6 +3,7 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Link from "next/link";
@@ -25,12 +26,29 @@ const Work = () => {
           </Link>
         </div>
 
-        <div>
-          <Swiper>
-            {projectData.slice(0.4).map((project, index) => {
+        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
+          <Swiper
+            className="h-full"
+            slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 2 }
+            }}
+            spaceBetween={30}
+            modules={[Pagination]}
+            pagination={{ clickable: true }}
+          >
+            {projectData.slice(0, 4).map((project, index) => {
+              const { image, category, name, description, link, github } = project
               return (
                 <SwiperSlide key={index}>
-                  <ProjectCard />
+                  <ProjectCard
+                    image={image}
+                    category={category}
+                    name={name}
+                    description={description}
+                    link={link}
+                    github={github}
+                  />
                 </SwiperSlide>
               )
             })}

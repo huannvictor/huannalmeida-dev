@@ -45,7 +45,7 @@ const Socials = ({
       {icons.map((icon, index) => {
         return (
           <Link href={icon.path} key={index}>
-            <div className={`$${iconStyles}`}>
+            <div className={`${iconStyles}`}>
               {icon.name}
             </div>
           </Link>

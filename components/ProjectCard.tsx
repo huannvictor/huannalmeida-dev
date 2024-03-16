@@ -40,7 +40,9 @@ const ProjectCard = (project: ProjectData) => {
           {category}
         </Badge>
         <h4 className="h4 mb-1"> {name} </h4>
-        <p className="text-muted-foreground text-xl">{description}</p>
+        <p className="text-muted-foreground text-xl max-h-14 line-clamp-2">
+          {description}
+        </p>
       </div>
     </Card>
   )

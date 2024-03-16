@@ -42,3 +42,10 @@ interface ProjectData {
   link: string
   github: string
 }
+
+interface ReviewsData {
+  avatar: string
+  name: string
+  job: string
+  review: string
+}

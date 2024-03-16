@@ -129,7 +129,7 @@ export const projectData: ProjectData[] = [
     image: '/work/3.png',
     category: 'react js',
     name: 'Nexa Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    description: 'Lorem ipsum dolor sit amet Nisi cupiditate vero tenetur consectetur adipisicing elit. Ab autem vel!',
     link: '/',
     github: '/'
   },
@@ -137,7 +137,7 @@ export const projectData: ProjectData[] = [
     image: '/work/4.png',
     category: 'react js',
     name: 'Solstice Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptates error non rem nemo aliquam officia suscipit. ',
     link: '/',
     github: '/'
   },
@@ -145,7 +145,7 @@ export const projectData: ProjectData[] = [
     image: '/work/2.png',
     category: 'next js',
     name: 'Lumina Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel Tempora explicabo ipsam perspiciatis maxime!',
     link: '/',
     github: '/'
   },
@@ -153,7 +153,7 @@ export const projectData: ProjectData[] = [
     image: '/work/1.png',
     category: 'next js',
     name: 'Evolve Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. officia suscipit. Tempora explicabo ipsam perspiciatis maxime? Ab autem vel!',
     link: '/',
     github: '/'
   },
@@ -161,7 +161,7 @@ export const projectData: ProjectData[] = [
     image: '/work/3.png',
     category: 'fullstack',
     name: 'Ignite Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel!',
     link: '/',
     github: '/'
   },
@@ -169,7 +169,7 @@ export const projectData: ProjectData[] = [
     image: '/work/4.png',
     category: 'backend',
     name: 'Serenity Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel!',
     link: '/',
     github: '/'
   },
@@ -177,7 +177,7 @@ export const projectData: ProjectData[] = [
     image: '/work/2.png',
     category: 'fullstack',
     name: 'Nova Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel!',
     link: '/',
     github: '/'
   },
@@ -185,9 +185,48 @@ export const projectData: ProjectData[] = [
     image: '/work/1.png',
     category: 'next js',
     name: 'Zenith Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel nostrum iste laborum ducimus ipsam quaerat itaque iure ullam reprehenderit, perspiciatis quo corporis nemo molestias odit explicabo assumenda voluptatem!',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel!',
     link: '/',
     github: '/'
   },
 
+]
+
+export const reviewsData: ReviewsData[] = [
+  {
+    avatar: '/reviews/avatar-1.png',
+    name: 'Richard Thompson',
+    job: 'Chef',
+    review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!'
+  },
+  {
+    avatar: '/reviews/avatar-2.png',
+    name: 'Ellen Bellane',
+    job: 'Fashon Design',
+    review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!'
+  },
+  {
+    avatar: '/reviews/avatar-3.png',
+    name: 'José Souza',
+    job: 'Game Dev',
+    review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!'
+  },
+  {
+    avatar: '/reviews/avatar-4.png',
+    name: 'Emily Smith',
+    job: 'Therapist',
+    review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!'
+  },
+  {
+    avatar: '/reviews/avatar-5.png',
+    name: 'Oliver Taylor',
+    job: 'Engineer',
+    review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!'
+  },
+  {
+    avatar: '/reviews/avatar-6.png',
+    name: 'Mason Wilson',
+    job: 'Video Editor',
+    review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!'
+  },
 ]

@@ -167,7 +167,7 @@ export const projectData: ProjectData[] = [
   },
   {
     image: '/work/4.png',
-    category: 'backend',
+    category: 'fullstack',
     name: 'Serenity Website',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel!',
     link: '/',

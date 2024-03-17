@@ -26,7 +26,7 @@ const Projects = () => {
           My Projects
         </h2>
 
-        <Tabs defaultValue={category}>
+        <Tabs defaultValue={category} className=" mb-24 xl:mb-48">
           <TabsList
             className="size-full grid md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none"
           >
@@ -44,8 +44,7 @@ const Projects = () => {
             })}
           </TabsList>
 
-          <div>
-            projects
+          <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
             {filteredProjects.map((project, index) => {
               return (
                 <TabsContent value={category} key={index}>

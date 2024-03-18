@@ -4,6 +4,8 @@ import {
   GanttChartSquare,
   Gem,
   Home,
+  Layout,
+  Lightbulb,
   MailIcon,
   PhoneCall,
   User2
@@ -64,12 +66,12 @@ export const qualificationData: QualificationData[] = [
       {
         company: 'Skill Labs',
         role: 'Tech Lead Front-End',
-        years: 'jan 2023 - present'
+        years: 'Aug 2023 - present'
       },
       {
         company: 'Skill Labs',
         role: 'Junior Front-End Developer',
-        years: 'Aug 2023 - jan 2023'
+        years: 'Jan 2023 - Aug 2023'
       },
       {
         company: 'Construir Publisher',
@@ -102,25 +104,26 @@ export const skillData: SkillData[] = [
       { imgPath: '/about/vscode.svg' },
       { imgPath: '/about/figma.svg' },
       { imgPath: '/about/notion.svg' },
+      { imgPath: '/about/illustrator.svg' },
     ]
   }
 ]
 
 export const servicesData: ServicesData[] = [
   {
-    icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: 'Web Design',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum soluta, totam laboriosam libero alias et!'
+    icon: <Layout size={72} strokeWidth={0.8} />,
+    title: 'Frontend Development',
+    description: 'Crafting captivating user interfaces with clean and efficient code.'
   },
   {
-    icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: 'Web Development',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum soluta, totam laboriosam libero alias et!'
+    icon: <Lightbulb size={72} strokeWidth={0.8} />,
+    title: 'Transforming Ideas into Interactive Designs',
+    description: 'Bringing your vision to life with interactive and dynamic frontend solutions.'
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: 'App Development',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum soluta, totam laboriosam libero alias et!'
+    title: 'Innovative Frontend Solutions',
+    description: 'Creating seamless and user-centric designs that resonate with your audience.'
   },
 ]
 

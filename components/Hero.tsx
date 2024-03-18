@@ -4,7 +4,8 @@ import {
   RiArrowDownSLine,
   RiBriefcase4Fill,
   RiTeamFill,
-  RiTodoFill
+  RiPaletteFill,
+  RiLightbulbFlashFill
 } from 'react-icons/ri'
 import Badge from "./Badge"
 import DevImg from "./DevImg"
@@ -22,7 +23,9 @@ const Hero = () => {
             </div>
             <h1 className="h1 mb-4">Hello, my name is Huann Almeida</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolore voluptatum, accusantium molestiae porro sapiente.
+              Enthusiast of React and frontend, I'm on the lookout for exciting challenges to craft amazing experiences.
+              <br />
+              <span className="text-primary">Let's build something awesome together?</span>
             </p>
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href='/contact'>
@@ -47,7 +50,7 @@ const Hero = () => {
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark size-[500px] bg-no-repeat absolute -top-1 -right-2" />
 
             <Badge
-              containerStyles="absolute top-[24%] -left-[5rem]"
+              containerStyles="absolute top-[24%] -left-[7rem]"
               icon={<RiBriefcase4Fill />}
               endCountNum={3}
               badgeText="Years Of Experience"
@@ -55,18 +58,18 @@ const Hero = () => {
 
             <Badge
               containerStyles="absolute top-[80%] -left-[1rem]"
-              icon={<RiTodoFill />}
-              endCountNum={6}
+              icon={<RiPaletteFill />}
+              endCountNum={3}
               endCountText="K"
-              badgeText="Finished Projects"
+              badgeText="Interactive Designs"
             />
 
             <Badge
               containerStyles="absolute top-[55%] -right-8"
-              icon={<RiTeamFill />}
-              endCountNum={9}
+              icon={<RiLightbulbFlashFill />}
+              endCountNum={2}
               endCountText="K"
-              badgeText="Happy Clients"
+              badgeText="Creative Solutions"
             />
 
             <DevImg

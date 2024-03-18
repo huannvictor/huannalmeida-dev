@@ -56,10 +56,10 @@ const About = () => {
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-4">
-                      Unmatched Service Quality for over 10 Years
+                      Consistent Quality in Development
                     </h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos ipsum impedit corrupti dolorum? Blanditiis?
+                      Discover more about me, my journey, and interests. Dive into the person behind the code - a blend of passions, experiences, and skills.
                     </p>
 
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">

@@ -20,12 +20,14 @@ const ProjectCard = (project: ProjectData) => {
           />
           <div className="flex gap-x-4">
             <Link
+              target="_blank"
               href={project.link}
               className="bg-secondary size-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
             >
               <RiLink size={24} className="text-white" />
             </Link>
             <Link
+              target="_blank"
               href={project.github}
               className="bg-secondary size-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
             >

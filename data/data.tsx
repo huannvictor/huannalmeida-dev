@@ -91,11 +91,12 @@ export const skillData: SkillData[] = [
   {
     title: 'skills',
     data: [
-      { name: 'HTML, CSS' },
-      { name: 'Front-end Development' },
-      { name: 'Digital Design' },
       { name: 'Javascript, Typescript, Python, C#' },
+      { name: 'TailwindCss, Shadcn-ui' },
+      { name: 'Front-end Development' },
       { name: 'Back-end Development' },
+      { name: 'Mobile Development' },
+      { name: 'Digital Design' },
     ]
   },
   {
@@ -129,12 +130,12 @@ export const servicesData: ServicesData[] = [
 
 export const projectData: ProjectData[] = [
   {
-    image: '/work/3.png',
-    category: 'react js',
-    name: 'Nexa Website',
-    description: 'Lorem ipsum dolor sit amet Nisi cupiditate vero tenetur consectetur adipisicing elit. Ab autem vel!',
-    link: '/',
-    github: '/'
+    image: '/work/cookapp.png',
+    category: 'react native',
+    name: 'Cook App',
+    description: "Built CookApp using React Native, following Rocketseat's tutorial.It's a recipe app where users select ingredients and get personalized recipe options",
+    link: 'https://www.figma.com/file/op20QBiNSq1HaFue5minyl/Cook-App?type=design&node-id=0%3A1&mode=design&t=O1HJRbDhFFX98o8C-1',
+    github: 'https://github.com/huannvictor/cook-app'
   },
   {
     image: '/work/4.png',

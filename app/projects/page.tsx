@@ -26,9 +26,9 @@ const Projects = () => {
           My Projects
         </h2>
 
-        <Tabs defaultValue={category} className=" mb-24 xl:mb-48">
+        <Tabs defaultValue={category} className="mb-24 xl:mb-48">
           <TabsList
-            className="size-full grid md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none"
+            className={`size-full grid md:grid-cols-5 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none`}
           >
             {categories.map((category, index) => {
               return (

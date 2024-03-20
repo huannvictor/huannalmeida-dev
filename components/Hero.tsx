@@ -1,4 +1,4 @@
-import { Download, Send } from "lucide-react"
+import { Download, FileDownIcon, Send } from "lucide-react"
 import Link from "next/link"
 import {
   RiArrowDownSLine,
@@ -11,6 +11,7 @@ import Badge from "./Badge"
 import DevImg from "./DevImg"
 import Socials from "./Socials"
 import { Button } from "./ui/button"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog"
 
 const Hero = () => {
   return (
@@ -34,15 +35,37 @@ const Hero = () => {
                 </Button>
               </Link>
 
-              <Link
-                href="https://docs.google.com/document/d/1WY9-TLYG5XER3I-AYsonRoU-TQnBIhiAubrMfBMh1aU/edit?usp=sharing"
-                target="_blank"
-              >
-                <Button variant='secondary' className="gap-x-2">
-                  Download CV
-                  <Download size={18} />
-                </Button>
-              </Link>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant='secondary' className="gap-x-2">
+                    Download CV
+                    <Download size={18} />
+                  </Button>
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle>Download my CV</DialogTitle>
+                    <DialogDescription>
+                      Chose the language you prefer.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="flex items-center gap-x-2">
+                    <Link target="_blank" href="/files/CV_HuannAlmeida_EN.pdf">
+                      <Button variant='link' className="flex items-center gap-x-2">
+                        English Version
+                        <FileDownIcon />
+                      </Button>
+                    </Link>
+                    <Link target="_blank" href="/files/CV_HuannAlmeida_PT.pdf">
+                      <Button variant="link" className="flex items-center gap-x-2">
+                        Versão em Português
+                        <FileDownIcon />
+                      </Button>
+                    </Link>
+                  </div>
+                </DialogContent>
+              </Dialog>
+
             </div>
 
             <Socials

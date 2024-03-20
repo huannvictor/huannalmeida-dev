@@ -138,20 +138,20 @@ export const projectData: ProjectData[] = [
     github: 'https://github.com/huannvictor/cook-app'
   },
   {
-    image: '/work/4.png',
-    category: 'react js',
-    name: 'Solstice Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptates error non rem nemo aliquam officia suscipit. ',
+    image: '/work/discordclone.png',
+    category: 'next js',
+    name: 'Discord Clone',
+    description: 'In this 11 hour course I learned how to create an end-to-end fullstack and real-time discord clone, all with servers, channels, video calls, audio calls, editing and deleting messages as well as member roles.',
     link: '/',
-    github: '/'
+    github: 'https://github.com/huannvictor/discord-clone'
   },
   {
-    image: '/work/2.png',
-    category: 'next js',
-    name: 'Lumina Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem vel Tempora explicabo ipsam perspiciatis maxime!',
-    link: '/',
-    github: '/'
+    image: '/work/candycrush.png',
+    category: 'react js',
+    name: 'Candy Crush React',
+    description: 'In a brisk tutorial, I mastered crafting a Candy Crush web clone, delving into programming logic and essential React.js concepts along the way.',
+    link: 'https://candy-crush-react-byhuann.vercel.app/',
+    github: 'https://github.com/huannvictor/candy-crush-react'
   },
   {
     image: '/work/1.png',

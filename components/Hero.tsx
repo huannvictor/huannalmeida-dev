@@ -15,7 +15,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 xl:h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-12 xl:py-24 xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
@@ -107,7 +107,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex absolute left-2/4 bottom-40 xl:bottom-12 animate-bounce">
+        <div className="hidden lg:flex absolute left-2/4 animate-bounce">
           <RiArrowDownSLine
             className="text-3xl text-primary"
           />

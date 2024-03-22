@@ -16,23 +16,23 @@ interface SocialsProps {
 
 const icons = [
   {
-    path: '/',
+    path: 'https://www.linkedin.com/in/huannalmeida/',
     name: <RiLinkedinFill />
   },
   {
-    path: '/',
+    path: 'https://github.com/huannvictor',
     name: <RiGithubFill />
   },
   {
-    path: '/',
+    path: 'https://www.instagram.com/huannvictor/',
     name: <RiInstagramFill />
   },
   {
-    path: '/',
+    path: 'https://wa.me/5583999802317',
     name: <RiWhatsappFill />
   },
   {
-    path: '/',
+    path: 'mailto:huannvictor@gmail.com',
     name: <RiMailFill />
   }
 ]

@@ -161,6 +161,14 @@ export const projectData: ProjectData[] = [
     link: 'https://www.postman.com/docking-module-participant-28243338/workspace/huannvictor/collection/24904242-b41c2ded-9fd3-4e26-85f3-a23a9e2a8f5d?action=share&creator=24904242',
     github: 'https://github.com/huannvictor/short-links'
   },
+  {
+    image: '/work/nlwExpertsNotes.png',
+    category: 'react js',
+    name: 'Expert Notes',
+    description: 'ExExpert Notes is an innovative React web application developed during the NLW online event utilizing Vite. Seamlessly integrating audio recording functionality, the app efficiently transcribes spoken words into text, offering users the flexibility to opt for manual input if preferred. Boasting a sleek and modern design, Expert Notes is aesthetically enhanced with Tailwind CSS, ensuring a visually appealing and intuitive user experience.',
+    link: 'https://nlw-expert-notes-drab.vercel.app/',
+    github: 'https://github.com/huannvictor/nlwExpert-Notes'
+  },
 ]
 
 export const reviewsData: ReviewsData[] = [

@@ -12,7 +12,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Huann Almeida",
-  description: "Explore my frontend development portfolio, showcasing innovative projects and creative solutions. Discover how my passion for design and technical skills can elevate your online presence.",
+  description: "Here my frontend development portfolio, showcasing innovative projects and creative solutions. Discover how my passion for design and technical skills can elevate your online presence.",
 };
 
 export default function RootLayout({

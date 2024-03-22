@@ -3,7 +3,6 @@ import Link from "next/link"
 import {
   RiArrowDownSLine,
   RiBriefcase4Fill,
-  RiTeamFill,
   RiPaletteFill,
   RiLightbulbFlashFill
 } from 'react-icons/ri'
@@ -15,7 +14,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="mb-12 xl:mb-36 xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
@@ -42,14 +41,14 @@ const Hero = () => {
                     <Download size={18} />
                   </Button>
                 </DialogTrigger>
-                <DialogContent>
+                <DialogContent className="w-full flex flex-col">
                   <DialogHeader>
                     <DialogTitle>Download my CV</DialogTitle>
                     <DialogDescription>
                       Chose the language you prefer.
                     </DialogDescription>
                   </DialogHeader>
-                  <div className="flex items-center gap-x-2">
+                  <div className="flex flex-col justify-center md:flex-row items-center gap-x-2">
                     <Link target="_blank" href="/files/CV_HuannAlmeida_EN.pdf">
                       <Button variant='link' className="flex items-center gap-x-2">
                         English Version

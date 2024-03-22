@@ -15,7 +15,7 @@ const About = () => {
   }
 
   return (
-    <section className="xl:h-[1050px] pb-12 xl:py-24">
+    <section className="xl:h-[1050px] mb-12 xl:mb-36">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About me
@@ -66,11 +66,11 @@ const About = () => {
                       {infoData.map((item, index) => {
                         return (
                           <div
-                            className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                            className="flex justify-start items-center gap-x-4 mx-auto md:mx-24 xl:mx-0"
                             key={index}
                           >
                             <div className="text-primary">{item.icon}</div>
-                            <div>{item.text}</div>
+                            <div className="text-sm md:text-base">{item.text}</div>
                           </div>
                         )
                       })}
@@ -81,7 +81,10 @@ const About = () => {
                         Language Skill
                       </div>
                       <div className="border-b border-border" />
-                      <div>Brazilian Portuguese (native) • English (advanced)</div>
+                      <div className="text-sm md:text-base">
+                        <p>Brazilian Portuguese (native)</p>
+                        <p>English (advanced)</p>
+                      </div>
                     </div>
                   </div>
                 </TabsContent>
@@ -97,7 +100,7 @@ const About = () => {
                       <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <Briefcase />
-                          <h4 className="capitalize font-medium">
+                          <h4 className="h4 capitalize font-medium">
                             {getData(qualificationData, 'experience').title}
                           </h4>
                         </div>
@@ -113,9 +116,9 @@ const About = () => {
                                   <div className="size-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500" />
                                 </div>
                                 <div>
-                                  <div className="font-semibold text-xl leading-none mb-2">{company}</div>
-                                  <div className="text-lg leading-none text-muted-foreground mb-4">{role}</div>
-                                  <div className="text-base font-medium">{years}</div>
+                                  <div className="font-semibold text-lg md:text-xl leading-none mb-2">{company}</div>
+                                  <div className="text-base md:text-lg leading-none text-muted-foreground mb-4">{role}</div>
+                                  <div className="text-sm md:text-base font-medium">{years}</div>
                                 </div>
                               </div>
                             )
@@ -143,9 +146,9 @@ const About = () => {
                                   <div className="size-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500" />
                                 </div>
                                 <div>
-                                  <div className="font-semibold text-xl leading-none mb-2">{university}</div>
-                                  <div className="text-lg leading-none text-muted-foreground mb-4">{qualification}</div>
-                                  <div className="text-base font-medium">{years}</div>
+                                  <div className="font-semibold text-lg md:text-xl leading-none mb-2">{university}</div>
+                                  <div className="text-base md:text-lg leading-none text-muted-foreground mb-4">{qualification}</div>
+                                  <div className="text-sm md:text-base font-medium">{years}</div>
                                 </div>
                               </div>
                             )
@@ -167,10 +170,10 @@ const About = () => {
                           const { name } = item
                           return (
                             <div
-                              className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
+                              className="w-full md:w-2/4 text-left md:text-center xl:text-left mx-auto xl:mx-0"
                               key={index}
                             >
-                              <div className="font-medium">
+                              <div className="text-base md:text-lg font-medium">
                                 {name}
                               </div>
                             </div>

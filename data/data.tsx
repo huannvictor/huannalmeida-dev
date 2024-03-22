@@ -55,7 +55,7 @@ export const qualificationData: QualificationData[] = [
       },
       {
         university: 'UNIESP',
-        qualification: 'Bachelor Of Business Administration',
+        qualification: 'Business Administration',
         years: '2010 - 2018'
       },
     ]
@@ -91,7 +91,7 @@ export const skillData: SkillData[] = [
   {
     title: 'skills',
     data: [
-      { name: 'Javascript, Typescript, Python, C#' },
+      { name: 'Javascript, Typescript, Python' },
       { name: 'TailwindCss, Shadcn-ui' },
       { name: 'Front-end Development' },
       { name: 'Back-end Development' },
@@ -118,7 +118,7 @@ export const servicesData: ServicesData[] = [
   },
   {
     icon: <Lightbulb size={72} strokeWidth={0.8} />,
-    title: 'Transforming Ideas into Interactive Designs',
+    title: 'Transforming Ideas',
     description: 'Bringing your vision to life with interactive and dynamic frontend solutions.'
   },
   {

@@ -14,9 +14,9 @@ import { projectData } from "@/data/data"
 
 const Work = () => {
   return (
-    <section className="relative mb-12 xl:mb-48">
-      <div className="container mx-auto">
-        <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
+    <section className="relative mb-12 lg:mb-48">
+      <div className="w-full mx-auto px-8 lg:max-w-[90vw] lg:grid lg:grid-cols-3 lg:gap-8 lg:justify-items-center">
+        <div className="max-w-[400px] mx-auto lg:mx-0 text-center lg:text-left mb-12 lg:h-[400px] flex flex-col justify-center items-center lg:items-start">
           <h2 className="section-title mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
             From dynamic websites to interactive applications, each project showcases my passion for frontend development and my commitment to excellence in design and functionality.
@@ -27,7 +27,7 @@ const Work = () => {
           </Link>
         </div>
 
-        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
+        <div className="max-w-[600px] lg:col-span-2">
           <Swiper
             className="h-[480px]"
             slidesPerView={1}

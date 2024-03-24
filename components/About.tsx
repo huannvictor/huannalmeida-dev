@@ -15,58 +15,58 @@ const About = () => {
   }
 
   return (
-    <section className="xl:h-[1050px] mb-12 xl:mb-36">
-      <div className="container mx-auto">
-        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+    <section className="mb-12 lg:mb-36">
+      <div className="w-full mx-auto px-8 lg:max-w-[90vw]">
+        <h2 className="section-title mb-8 lg:mb-16 text-center mx-auto">
           About me
         </h2>
 
-        <div className="flex flex-col xl:flex-row">
-          <div className="hidden xl:flex flex-1 relative">
+        <div className="flex flex-col lg:flex-row">
+          <div className="hidden lg:flex flex-1 relative">
             <DevImg
-              containerStyles="bg-about_shape_light dark:bg-about_shape_dark size-[505px] bg-no-repeat relative"
+              containerStyles="bg-about_shape_light dark:bg-about_shape_dark size-[408px] bg-no-repeat relative"
               imgSrc="/about/developer.png"
             />
           </div>
 
           <div className="flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px]">
+              <TabsList className="w-full grid lg:grid-cols-3 lg:max-w-[520px]">
                 <TabsTrigger
-                  className="w-[162px] xl:w-auto"
+                  className="w-[162px] lg:w-auto"
                   value="personal"
                 >
                   Personal Info
                 </TabsTrigger>
                 <TabsTrigger
-                  className="w-[162px] xl:w-auto"
+                  className="w-[162px] lg:w-auto"
                   value="qualifications"
                 >
                   Qualifications
                 </TabsTrigger>
                 <TabsTrigger
-                  className="w-[162px] xl:w-auto"
+                  className="w-[162px] lg:w-auto"
                   value="skills"
                 >
                   Skills
                 </TabsTrigger>
               </TabsList>
 
-              <div className="text-lg mt-12 xl:mt-8">
+              <div className="text-lg mt-12 lg:mt-8">
                 <TabsContent value="personal">
-                  <div className="text-center xl:text-left">
+                  <div className="text-center lg:text-left">
                     <h3 className="h3 mb-4">
                       Consistent Quality in Development
                     </h3>
-                    <p className="subtitle max-w-xl mx-auto xl:mx-0">
+                    <p className="subtitle max-w-xl mx-auto lg:mx-0">
                       Discover more about me, my journey, and interests. Dive into the person behind the code - a blend of passions, experiences, and skills.
                     </p>
 
-                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                    <div className="grid lg:grid-cols-2 gap-4 mb-12">
                       {infoData.map((item, index) => {
                         return (
                           <div
-                            className="flex justify-start items-center gap-x-4 mx-auto md:mx-24 xl:mx-0"
+                            className="flex justify-start items-center gap-x-4 mx-auto md:mx-24 lg:mx-0"
                             key={index}
                           >
                             <div className="text-primary">{item.icon}</div>
@@ -90,7 +90,7 @@ const About = () => {
                 </TabsContent>
                 <TabsContent value="qualifications">
                   <div>
-                    <h3 className="h3 mb-8 text-center xl:text-left">
+                    <h3 className="h3 mb-8 text-center lg:text-left">
                       My Awesome Journey
                     </h3>
 
@@ -159,7 +159,7 @@ const About = () => {
                   </div>
                 </TabsContent>
                 <TabsContent value="skills">
-                  <div className="text-center xl:text-left">
+                  <div className="text-center lg:text-left">
                     <h3 className="h3 mb-8">What I Use Everyday</h3>
                     <div className="mb-16">
                       <h4 className="text-xl font-semibold mb-2">Skills</h4>
@@ -170,7 +170,7 @@ const About = () => {
                           const { name } = item
                           return (
                             <div
-                              className="w-full md:w-2/4 text-left md:text-center xl:text-left mx-auto xl:mx-0"
+                              className="w-full md:w-2/4 text-left md:text-center lg:text-left mx-auto lg:mx-0"
                               key={index}
                             >
                               <div className="text-base md:text-lg font-medium">
@@ -183,11 +183,11 @@ const About = () => {
                     </div>
 
                     <div>
-                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
+                      <h4 className="text-xl font-semibold mb-2 lg:text-left">
                         Tools
                       </h4>
                       <div className="border-b border-border mb-4" />
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                      <div className="flex gap-x-8 justify-center lg:justify-start">
                         {getData(skillData, 'tools').data.map((item, index) => {
                           // @ts-ignore
                           const { imgPath } = item

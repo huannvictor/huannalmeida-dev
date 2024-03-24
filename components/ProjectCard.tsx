@@ -5,9 +5,8 @@ import { Badge } from "./ui/badge"
 import { Card, CardHeader } from "./ui/card"
 
 const ProjectCard = (project: ProjectData) => {
-  const { } = project
   return (
-    <Card className="group overflow-hidden relative">
+    <Card className="group overflow-hidden relative border-2">
       <CardHeader className="p-0">
         <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
           <Image
@@ -42,7 +41,7 @@ const ProjectCard = (project: ProjectData) => {
           {project.category}
         </Badge>
         <h4 className="h4 mb-1"> {project.name} </h4>
-        <p className="text-muted-foreground text-xl max-h-14 line-clamp-2">
+        <p className="text-muted-foreground text-base lg:text-lg font-light max-h-14 line-clamp-2">
           {project.description}
         </p>
       </div>

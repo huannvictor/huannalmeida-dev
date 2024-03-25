@@ -41,7 +41,7 @@ const Hero = () => {
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto lg:mx-0 mb-12">
               <Link href='/contact'>
                 <Button className="gap-x-2">
-                  Contact-me <Send size={18} />
+                  Contact Me <Send size={18} />
                 </Button>
               </Link>
 
@@ -95,7 +95,7 @@ const Hero = () => {
             />
 
             <Badge
-              containerStyles="absolute top-[80%] -left-[1rem]"
+              containerStyles="absolute top-[18rem] -left-[1rem]"
               icon={<RiPaletteFill />}
               endCountNum={3}
               endCountText="K"
@@ -103,7 +103,7 @@ const Hero = () => {
             />
 
             <Badge
-              containerStyles="absolute top-[45%] -right-[2rem]"
+              containerStyles="absolute top-[9rem] -right-[3rem]"
               icon={<RiGitBranchFill />}
               endCountNum={repos}
               badgeText="Repos With Projects"

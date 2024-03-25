@@ -8,6 +8,7 @@ import { Logo } from "./Logo";
 import { MobileNav } from "./MobileNav";
 import { Nav } from "./Nav";
 import ThemeToggler from "./ThemeToggler";
+import LangToggler from "./LangToggler";
 
 export default function Header() {
   const [header, setHeader] = useState<boolean>(false)
@@ -39,6 +40,7 @@ export default function Header() {
               underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
             />
             <ThemeToggler />
+            <LangToggler />
 
             <div className="lg:hidden">
               <MobileNav />

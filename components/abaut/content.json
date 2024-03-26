@@ -1,0 +1,13 @@
+{
+  "TabsTriggers": [
+    { "title": "Personal Info", "trigger": "personal" },
+    { "title": "Qualifications", "trigger": "qualifications" },
+    { "title": "Skills", "trigger": "skills" }
+  ],
+  "TabsContent": [
+    {
+      "contentTitle": "Consistent Quality in Development",
+      "": ""
+    }
+  ]
+}

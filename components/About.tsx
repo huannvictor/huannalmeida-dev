@@ -8,7 +8,7 @@ import Image from "next/image";
 const About = () => {
   const getData = (
     arr: (QualificationData | SkillData)[],
-    title: string,
+    title: string
   ): QualificationData | SkillData => {
     const newArr = arr.find((item) => item.title === title);
     if (newArr == undefined) {
@@ -56,9 +56,7 @@ const About = () => {
                       Consistent Quality in Development
                     </h3>
                     <p className="subtitle max-w-xl mx-auto lg:mx-0">
-                      Discover more about me, my journey, and interests. Dive
-                      into the person behind the code - a blend of passions,
-                      experiences, and skills.
+                      Discover more about me, my journey, and interests. Dive into the person behind the code - a blend of passions, experiences, and skills.
                     </p>
 
                     <div className="grid lg:grid-cols-2 gap-4 mb-12">
@@ -127,7 +125,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            },
+                            }
                           )}
                         </div>
                       </div>
@@ -165,7 +163,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            },
+                            }
                           )}
                         </div>
                       </div>
@@ -193,7 +191,7 @@ const About = () => {
                                 </div>
                               </div>
                             );
-                          },
+                          }
                         )}
                       </div>
                     </div>

@@ -22,8 +22,8 @@ export default function HeroImage() {
   })
 
   return (
-    <div className="hidden lg:flex lg:ml-32 relative">
-      <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark size-[400px] bg-no-repeat absolute -top-1 -right-2" />
+    <div className="relative hidden lg:ml-32 lg:flex">
+      <div className="absolute -right-2 -top-1 size-[400px] bg-hero_shape2_light bg-no-repeat dark:bg-hero_shape2_dark" />
 
       <Badge
         containerStyles="absolute top-[24%] -left-[7rem]"

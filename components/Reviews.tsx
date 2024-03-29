@@ -14,7 +14,7 @@ const Reviews = () => {
   return (
     <section className="mb-12 xl:mb-32">
       <div className="container mx-auto">
-        <h2 className="section-title mb-12 text-center mx-auto">Reviews</h2>
+        <h2 className="section-title mx-auto mb-12 text-center">Reviews</h2>
 
         <Swiper
           slidesPerView={1}
@@ -30,8 +30,8 @@ const Reviews = () => {
           {reviewsData.map((person, index) => {
             return (
               <SwiperSlide key={index}>
-                <Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px]">
-                  <CardHeader className="p-0 mb-10">
+                <Card className="min-h-[300px] bg-tertiary p-8 dark:bg-secondary/40">
+                  <CardHeader className="mb-10 p-0">
                     <div className="flex items-center gap-x-4">
                       <Image
                         src={person.avatar}
@@ -47,7 +47,7 @@ const Reviews = () => {
                     </div>
                   </CardHeader>
 
-                  <CardDescription className="text-lg to-muted-foreground line-clamp-4">
+                  <CardDescription className="line-clamp-4 to-muted-foreground text-lg">
                     {person.review}
                   </CardDescription>
                 </Card>

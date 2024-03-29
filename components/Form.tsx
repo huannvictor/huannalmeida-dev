@@ -14,7 +14,7 @@ const Form = () => {
           type="name"
           id="name"
           placeholder="Name"
-          className="px-8 h-14 rounded-full text-base"
+          className="h-14 rounded-full px-8 text-base"
         />
         <User className="absolute right-6" size={20} />
       </div>
@@ -23,7 +23,7 @@ const Form = () => {
           type="email"
           id="email"
           placeholder="Email"
-          className="px-8 h-14 rounded-full text-base"
+          className="h-14 rounded-full px-8 text-base"
         />
         <MailIcon className="absolute right-6" size={20} />
       </div>
@@ -31,13 +31,13 @@ const Form = () => {
         <Textarea
           id="message"
           placeholder="Your message"
-          className="px-8 h-44 rounded-3xl text-base"
+          className="h-44 rounded-3xl px-8 text-base"
         />
         <MessageSquareHeart className="absolute right-6 top-4" size={20} />
       </div>
 
-      <Button className="flex items-center gap-x-1 max-w-[166px]">
-        Let's Talk
+      <Button className="flex max-w-[166px] items-center gap-x-1">
+        Let`&apos;`s Talk
         <ArrowUpRight size={20} />
       </Button>
     </form>

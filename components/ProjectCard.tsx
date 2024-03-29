@@ -6,9 +6,9 @@ import { Card, CardHeader } from './ui/card'
 
 const ProjectCard = (project: ProjectData) => {
   return (
-    <Card className="group overflow-hidden relative border-2">
+    <Card className="group relative overflow-hidden border-2">
       <CardHeader className="p-0">
-        <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
+        <div className="relative flex h-[300px] w-full items-center justify-center overflow-hidden bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:bg-[110%] xl:bg-no-repeat xl:dark:bg-work_project_bg_dark">
           <Image
             className="absolute bottom-0 shadow-2xl"
             src={project.image}
@@ -21,14 +21,14 @@ const ProjectCard = (project: ProjectData) => {
             <Link
               target="_blank"
               href={project.link}
-              className="bg-secondary size-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
+              className="flex size-[54px] scale-0 items-center justify-center rounded-full bg-secondary opacity-0 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100"
             >
               <RiLink size={24} className="text-white" />
             </Link>
             <Link
               target="_blank"
               href={project.github}
-              className="bg-secondary size-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
+              className="flex size-[54px] scale-0 items-center justify-center rounded-full bg-secondary opacity-0 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100"
             >
               <RiGithubLine size={24} className="text-white" />
             </Link>
@@ -37,11 +37,11 @@ const ProjectCard = (project: ProjectData) => {
       </CardHeader>
 
       <div className="h-full px-8 py-6">
-        <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
+        <Badge className="absolute left-5 top-4 mb-2 text-sm font-medium uppercase">
           {project.category}
         </Badge>
         <h4 className="h4 mb-1"> {project.name} </h4>
-        <p className="text-muted-foreground text-base lg:text-lg font-light max-h-14 line-clamp-2">
+        <p className="line-clamp-2 max-h-14 text-base font-light text-muted-foreground lg:text-lg">
           {project.description}
         </p>
       </div>

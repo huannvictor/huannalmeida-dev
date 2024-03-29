@@ -2,5 +2,11 @@
   "extends": [
     "@rocketseat/eslint-config/next", 
     "next/core-web-vitals"
-  ]
+  ],
+  "rules": {
+    "max-len": [
+      { "softBreak": true }
+    ],
+    "object-curly-spacing": "error"
+  }
 }

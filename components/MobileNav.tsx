@@ -13,7 +13,7 @@ export const MobileNav = () => {
       </SheetTrigger>
 
       <SheetContent>
-        <div className="flex flex-col items-center justify-between h-full py-8">
+        <div className="flex h-full flex-col items-center justify-between py-8">
           <div className="flex flex-col items-center gap-y-32">
             <Logo />
             <Nav

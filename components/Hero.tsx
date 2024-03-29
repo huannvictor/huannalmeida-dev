@@ -32,15 +32,15 @@ const Hero = () => {
   })
 
   return (
-    <section className="mb-12 lg:mb-36 lg:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
-      <div className="w-full mx-auto px-8 lg:max-w-[90vw]">
+    <section className="mb-12 bg-hero bg-cover bg-bottom bg-no-repeat dark:bg-none lg:mb-36 lg:pt-28">
+      <div className="mx-auto w-full px-8 lg:max-w-[90vw]">
         <div className="flex justify-between gap-x-8">
-          <div className="flex max-w-[480px] flex-col justify-center mx-auto lg:mx-0 text-center lg:text-left">
-            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
+          <div className="mx-auto flex max-w-[480px] flex-col justify-center text-center lg:mx-0 lg:text-left">
+            <div className="mb-4 text-sm font-semibold uppercase tracking-[4px] text-primary">
               Web Developer
             </div>
             <h1 className="h1 mb-4">Hello, my name is Huann Almeida</h1>
-            <p className="subtitle max-w-[490px] mx-auto lg:mx-0">
+            <p className="subtitle mx-auto max-w-[490px] lg:mx-0">
               Enthusiast of React and frontend, I`&apos;`m on the lookout for
               exciting challenges to craft amazing experiences.
               <br />
@@ -48,7 +48,7 @@ const Hero = () => {
                 Let`&apos;`s build something awesome together?
               </span>
             </p>
-            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto lg:mx-0 mb-12">
+            <div className="mx-auto mb-12 flex flex-col gap-x-3 gap-y-3 md:flex-row lg:mx-0">
               <Link href="/contact">
                 <Button className="gap-x-2">
                   Contact Me <Send size={18} />
@@ -62,14 +62,14 @@ const Hero = () => {
                     <Download size={18} />
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="w-full flex flex-col">
+                <DialogContent className="flex w-full flex-col">
                   <DialogHeader>
                     <DialogTitle>Download my CV</DialogTitle>
                     <DialogDescription>
                       Chose the language you prefer.
                     </DialogDescription>
                   </DialogHeader>
-                  <div className="flex flex-col justify-center md:flex-row items-center gap-x-2">
+                  <div className="flex flex-col items-center justify-center gap-x-2 md:flex-row">
                     <Link target="_blank" href="/files/CV_HuannAlmeida_EN.pdf">
                       <Button
                         variant="link"
@@ -99,8 +99,8 @@ const Hero = () => {
             />
           </div>
 
-          <div className="hidden lg:flex lg:ml-32 relative">
-            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark size-[400px] bg-no-repeat absolute -top-1 -right-2" />
+          <div className="relative hidden lg:ml-32 lg:flex">
+            <div className="absolute -right-2 -top-1 size-[400px] bg-hero_shape2_light bg-no-repeat dark:bg-hero_shape2_dark" />
 
             <Badge
               containerStyles="absolute top-[24%] -left-[7rem]"
@@ -131,7 +131,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden lg:flex absolute left-2/4 animate-bounce">
+        <div className="absolute left-2/4 hidden animate-bounce lg:flex">
           <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>

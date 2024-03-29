@@ -16,7 +16,7 @@ import { content } from './content'
 
 export default function HeroButtons() {
   return (
-    <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto lg:mx-0 mb-12">
+    <div className="mx-auto mb-12 flex flex-col gap-x-3 gap-y-3 md:flex-row lg:mx-0">
       <Link href="/contact">
         <Button className="gap-x-2">
           {content.en.heroBtn.contact}
@@ -31,14 +31,14 @@ export default function HeroButtons() {
             <Download size={18} />
           </Button>
         </DialogTrigger>
-        <DialogContent className="w-full flex flex-col">
+        <DialogContent className="flex w-full flex-col">
           <DialogHeader>
             <DialogTitle>{content.en.heroBtn.dialogTitle}</DialogTitle>
             <DialogDescription>
               {content.en.heroBtn.dialogDescription}
             </DialogDescription>
           </DialogHeader>
-          <div className="flex flex-col justify-center md:flex-row items-center gap-x-2">
+          <div className="flex flex-col items-center justify-center gap-x-2 md:flex-row">
             <Link target="_blank" href="/files/CV_HuannAlmeida_EN.pdf">
               <Button variant="link" className="flex items-center gap-x-2">
                 English Version

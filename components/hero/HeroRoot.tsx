@@ -4,13 +4,13 @@ export default function HeroRoot({ children }: HeroRootProps) {
   return (
     <section
       className={
-        'mb-12 lg:mb-36 lg:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none'
+        'mb-12 bg-hero bg-cover bg-bottom bg-no-repeat dark:bg-none lg:mb-36 lg:pt-28'
       }
     >
-      <div className="w-full mx-auto px-8 lg:max-w-[90vw]">
+      <div className="mx-auto w-full px-8 lg:max-w-[90vw]">
         <div className="flex justify-between gap-x-8">{children}</div>
 
-        <div className="hidden lg:flex absolute left-2/4 animate-bounce">
+        <div className="absolute left-2/4 hidden animate-bounce lg:flex">
           <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>

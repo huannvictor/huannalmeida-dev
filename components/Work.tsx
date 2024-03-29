@@ -15,8 +15,8 @@ import { projectData } from '@/data/data'
 const Work = () => {
   return (
     <section className="relative mb-12 lg:mb-48">
-      <div className="w-full mx-auto px-8 lg:max-w-[90vw] lg:grid lg:grid-cols-3 lg:gap-8 lg:justify-items-center">
-        <div className="max-w-[400px] mx-auto lg:mx-0 text-center lg:text-left mb-12 lg:h-[400px] flex flex-col justify-center items-center lg:items-start">
+      <div className="mx-auto w-full px-8 lg:grid lg:max-w-[90vw] lg:grid-cols-3 lg:justify-items-center lg:gap-8">
+        <div className="mx-auto mb-12 flex max-w-[400px] flex-col items-center justify-center text-center lg:mx-0 lg:h-[400px] lg:items-start lg:text-left">
           <h2 className="section-title mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
             From dynamic websites to interactive applications, each project

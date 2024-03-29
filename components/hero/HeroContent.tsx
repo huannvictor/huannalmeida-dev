@@ -5,12 +5,12 @@ import { content } from './content'
 
 export default function HeroContent() {
   return (
-    <div className="flex max-w-[480px] flex-col justify-center mx-auto lg:mx-0 text-center lg:text-left">
-      <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
+    <div className="mx-auto flex max-w-[480px] flex-col justify-center text-center lg:mx-0 lg:text-left">
+      <div className="mb-4 text-sm font-semibold uppercase tracking-[4px] text-primary">
         {content.en.heroTitle}
       </div>
       <h1 className="h1 mb-4">Hello, my name is Huann Almeida</h1>
-      <p className="subtitle max-w-[490px] mx-auto lg:mx-0">
+      <p className="subtitle mx-auto max-w-[490px] lg:mx-0">
         {content.en.heroPersonalPresentation.text}
         <br />
         <span className="text-primary">

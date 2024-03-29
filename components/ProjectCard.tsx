@@ -1,8 +1,8 @@
-import Image from "next/image"
-import Link from "next/link"
-import { RiGithubLine, RiLink } from "react-icons/ri"
-import { Badge } from "./ui/badge"
-import { Card, CardHeader } from "./ui/card"
+import Image from 'next/image'
+import Link from 'next/link'
+import { RiGithubLine, RiLink } from 'react-icons/ri'
+import { Badge } from './ui/badge'
+import { Card, CardHeader } from './ui/card'
 
 const ProjectCard = (project: ProjectData) => {
   return (

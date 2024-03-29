@@ -1,22 +1,13 @@
-'use client';
+'use client'
 
-import { ReactNode } from "react";
+import CountUp from 'react-countup'
 
-import CountUp from 'react-countup';
-
-interface BadgeProps {
-  containerStyles: string
-  icon: ReactNode
-  endCountNum: number
-  endCountText?: string
-  badgeText: string
-}
 const Badge = ({
   containerStyles,
   icon,
   endCountNum,
   endCountText,
-  badgeText
+  badgeText,
 }: BadgeProps) => {
   return (
     <div className={`badge ${containerStyles}`}>
@@ -24,11 +15,7 @@ const Badge = ({
 
       <div className="flex items-center gap-x-2">
         <div className="text-4xl leading-none font-bold text-primary">
-          <CountUp
-            end={endCountNum}
-            delay={1}
-            duration={4}
-          />
+          <CountUp end={endCountNum} delay={1} duration={4} />
           {endCountText}
         </div>
         <div className="min-w-[70px] leading-none text-[15px] font-medium text-black">

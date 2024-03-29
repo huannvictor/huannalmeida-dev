@@ -1,9 +1,9 @@
 'use client'
 
-import ProjectCard from "@/components/ProjectCard"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { projectData } from "@/data/data"
-import { useState } from "react"
+import ProjectCard from '@/components/ProjectCard'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { projectData } from '@/data/data'
+import { useState } from 'react'
 
 const uniqueCategories = [
   'all projects',
@@ -14,9 +14,7 @@ const Projects = () => {
   const [category, setCategory] = useState('all projects')
 
   const filteredProjects = projectData.filter((project) => {
-    return category === 'all projects'
-      ? project
-      : project.category === category
+    return category === 'all projects' ? project : project.category === category
   })
 
   return (
@@ -27,9 +25,7 @@ const Projects = () => {
         </h2>
 
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-          <TabsList
-            className="size-fit grid md:flex lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none"
-          >
+          <TabsList className="size-fit grid md:flex lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
             {categories.map((category, index) => {
               return (
                 <TabsTrigger

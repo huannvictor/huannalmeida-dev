@@ -1,9 +1,9 @@
-import HeroSection from "@/components/screens/HeroSection";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import Reviews from "@/components/Reviews";
-import Work from "@/components/Work";
-import Cta from "@/components/Cta";
+import HeroSection from '@/components/screens/HeroSection'
+import About from '@/components/About'
+import Services from '@/components/Services'
+import Work from '@/components/Work'
+import Cta from '@/components/Cta'
+// import Reviews from '@/components/Reviews'
 
 export default function Home() {
   return (
@@ -15,5 +15,5 @@ export default function Home() {
       {/* <Reviews /> */}
       <Cta />
     </main>
-  );
+  )
 }

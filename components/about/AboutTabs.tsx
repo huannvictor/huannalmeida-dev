@@ -1,21 +1,21 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs'
+import { Briefcase, GraduationCap } from 'lucide-react'
 
-import { infoData, qualificationData, skillData } from "@/data/data";
+import { infoData, qualificationData, skillData } from '@/data/data'
 
 export default function AboutTabs() {
   const getData = (
     arr: (QualificationData | SkillData)[],
     title: string,
   ): QualificationData | SkillData => {
-    const newArr = arr.find((item) => item.title === title);
-    if (newArr == undefined) {
-      throw new Error("Data is undefined");
+    const newArr = arr.find((item) => item.title === title)
+    if (newArr === undefined) {
+      throw new Error('Data is undefined')
     }
-    return newArr;
-  };
+    return newArr
+  }
 
   return (
     <div className="flex-1">
@@ -52,7 +52,7 @@ export default function AboutTabs() {
                       <div className="text-primary">{item.icon}</div>
                       <div className="text-sm md:text-base">{item.text}</div>
                     </div>
-                  );
+                  )
                 })}
               </div>
 
@@ -78,15 +78,15 @@ export default function AboutTabs() {
                   <div className="flex gap-x-4 items-center text-[22px] text-primary">
                     <Briefcase />
                     <h4 className="h4 capitalize font-medium">
-                      {getData(qualificationData, "experience").title}
+                      {getData(qualificationData, 'experience').title}
                     </h4>
                   </div>
 
                   <div className="flex flex-col gap-y-8">
-                    {getData(qualificationData, "experience").data.map(
+                    {getData(qualificationData, 'experience').data.map(
                       (item, index) => {
-                        // @ts-ignore
-                        const { company, role, years } = item;
+                        // @ts-expect-error destructuring data
+                        const { company, role, years } = item
 
                         return (
                           <div className="flex gap-x-8 group" key={index}>
@@ -105,7 +105,7 @@ export default function AboutTabs() {
                               </div>
                             </div>
                           </div>
-                        );
+                        )
                       },
                     )}
                   </div>
@@ -116,15 +116,15 @@ export default function AboutTabs() {
                   <div className="flex gap-x-4 items-center text-[22px] text-primary">
                     <GraduationCap size={28} />
                     <h4 className="capitalize font-medium">
-                      {getData(qualificationData, "education").title}
+                      {getData(qualificationData, 'education').title}
                     </h4>
                   </div>
 
                   <div className="flex flex-col gap-y-8">
-                    {getData(qualificationData, "education").data.map(
+                    {getData(qualificationData, 'education').data.map(
                       (item, index) => {
-                        // @ts-ignore
-                        const { university, qualification, years } = item;
+                        // @ts-expect-error destructuring data
+                        const { university, qualification, years } = item
 
                         return (
                           <div className="flex gap-x-8 group" key={index}>
@@ -143,7 +143,7 @@ export default function AboutTabs() {
                               </div>
                             </div>
                           </div>
-                        );
+                        )
                       },
                     )}
                   </div>
@@ -158,9 +158,9 @@ export default function AboutTabs() {
                 <h4 className="text-xl font-semibold mb-2">Skills</h4>
                 <div className="border-b border-border mb-4" />
                 <div>
-                  {getData(skillData, "skills").data.map((item, index) => {
-                    // @ts-ignore
-                    const { name } = item;
+                  {getData(skillData, 'skills').data.map((item, index) => {
+                    // @ts-expect-error destructuring data
+                    const { name } = item
                     return (
                       <div
                         className="w-full md:w-2/4 text-left md:text-center lg:text-left mx-auto lg:mx-0"
@@ -170,7 +170,7 @@ export default function AboutTabs() {
                           {name}
                         </div>
                       </div>
-                    );
+                    )
                   })}
                 </div>
               </div>
@@ -181,9 +181,9 @@ export default function AboutTabs() {
                 </h4>
                 <div className="border-b border-border mb-4" />
                 <div className="flex gap-x-8 justify-center lg:justify-start">
-                  {getData(skillData, "tools").data.map((item, index) => {
-                    // @ts-ignore
-                    const { imgPath } = item;
+                  {getData(skillData, 'tools').data.map((item, index) => {
+                    // @ts-expect-error destructuring data
+                    const { imgPath } = item
                     return (
                       <div key={index}>
                         <Image
@@ -194,7 +194,7 @@ export default function AboutTabs() {
                           priority
                         />
                       </div>
-                    );
+                    )
                   })}
                 </div>
               </div>
@@ -203,5 +203,5 @@ export default function AboutTabs() {
         </div>
       </Tabs>
     </div>
-  );
+  )
 }

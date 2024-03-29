@@ -1,39 +1,38 @@
-export const content =
-{
+export const content = {
   en: {
-    heroTitle: "Web Developer",
-    heroGreeting: "Hello, my name is Huann Almeida",
+    heroTitle: 'Web Developer',
+    heroGreeting: 'Hello, my name is Huann Almeida',
     heroPersonalPresentation: {
       text: "Enthusiast of React and frontend, I'm on the lookout for exciting challenges to craft amazing experiences.",
-      invitation: "Let's build something awesome together?"
+      invitation: "Let's build something awesome together?",
     },
     heroBtn: {
-      contact: "Contact Me",
-      dialogTitle: "Download my CV",
-      dialogDescription: "Chose the language you prefer.",
+      contact: 'Contact Me',
+      dialogTitle: 'Download my CV',
+      dialogDescription: 'Chose the language you prefer.',
     },
     heroBadges: {
-      experience: "Years Of Experience",
-      interactiveDesigns: "Interactive Designs",
-      repos: "Repos With Projects"
-    }
+      experience: 'Years Of Experience',
+      interactiveDesigns: 'Interactive Designs',
+      repos: 'Repos With Projects',
+    },
   },
   pt: {
-    heroTitle: "Desenvolvedor Web",
-    heroGreeting: "Olá, me chamo Huann Almeida",
+    heroTitle: 'Desenvolvedor Web',
+    heroGreeting: 'Olá, me chamo Huann Almeida',
     heroPersonalPresentation: {
-      text: "Entusiasta de React e frontend, estou sempre em busca de desafios empolgantes para criar experiências incríveis.",
-      invitation: "Vamos construir algo incrível juntos?"
+      text: 'Entusiasta de React e frontend, estou sempre em busca de desafios empolgantes para criar experiências incríveis.',
+      invitation: 'Vamos construir algo incrível juntos?',
     },
     heroBtn: {
-      contact: "Meu contato",
-      dialogTitle: "Download meu CV",
-      dialogDescription: "Escolha o idioma que preferir.",
+      contact: 'Meu contato',
+      dialogTitle: 'Download meu CV',
+      dialogDescription: 'Escolha o idioma que preferir.',
     },
     heroBadges: {
-      experience: "Anos de Experiência",
-      interactiveDesigns: "Designs Interativos",
-      repos: "Repos Com Projetos"
-    }
-  }
+      experience: 'Anos de Experiência',
+      interactiveDesigns: 'Designs Interativos',
+      repos: 'Repos Com Projetos',
+    },
+  },
 }

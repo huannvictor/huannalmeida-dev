@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 const useScrollProgress = () => {
   const [completion, setCompletion] = useState<number>(0)
@@ -16,7 +16,6 @@ const useScrollProgress = () => {
     window.addEventListener('scroll', updateScrollCompletion)
 
     return () => window.removeEventListener('scroll', updateScrollCompletion)
-
   }, [])
 
   return completion

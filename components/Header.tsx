@@ -1,14 +1,14 @@
-'use client';
+'use client'
 
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
 // COMPONENTS
-import { Logo } from "./Logo";
-import { MobileNav } from "./MobileNav";
-import { Nav } from "./Nav";
-import ThemeToggler from "./ThemeToggler";
-import LangToggler from "./LangToggler";
+import { Logo } from './Logo'
+import { MobileNav } from './MobileNav'
+import { Nav } from './Nav'
+import ThemeToggler from './ThemeToggler'
+import LangToggler from './LangToggler'
 
 export default function Header() {
   const [header, setHeader] = useState<boolean>(false)
@@ -20,15 +20,17 @@ export default function Header() {
 
   useEffect(() => {
     window.addEventListener('scroll', scrollHandler)
-    return () => window.removeEventListener('scroll', scrollHandler);
-  });
+    return () => window.removeEventListener('scroll', scrollHandler)
+  })
 
   return (
     <header
-      className={`${header
-        ? 'py-4 bg-white shadow-lg dark:bg-accent'
-        : 'py-6 dark:bg-transparent'
-        } sticky top-0 z-30 transition-all ${pathname === '/' && 'bg-[#fef9f5]'}`}>
+      className={`${
+        header
+          ? 'py-4 bg-white shadow-lg dark:bg-accent'
+          : 'py-6 dark:bg-transparent'
+      } sticky top-0 z-30 transition-all ${pathname === '/' && 'bg-[#fef9f5]'}`}
+    >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Logo />
@@ -46,7 +48,6 @@ export default function Header() {
               <MobileNav />
             </div>
           </div>
-
         </div>
       </div>
     </header>

@@ -1,21 +1,21 @@
-import { Briefcase, GraduationCap } from "lucide-react";
-import DevImg from "./DevImg";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Briefcase, GraduationCap } from 'lucide-react'
+import DevImg from './DevImg'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
 
-import { infoData, qualificationData, skillData } from "@/data/data";
-import Image from "next/image";
+import { infoData, qualificationData, skillData } from '@/data/data'
+import Image from 'next/image'
 
 const About = () => {
   const getData = (
     arr: (QualificationData | SkillData)[],
-    title: string
+    title: string,
   ): QualificationData | SkillData => {
-    const newArr = arr.find((item) => item.title === title);
-    if (newArr == undefined) {
-      throw new Error("Data is undefined");
+    const newArr = arr.find((item) => item.title === title)
+    if (newArr === undefined) {
+      throw new Error('Data is undefined')
     }
-    return newArr;
-  };
+    return newArr
+  }
 
   return (
     <section className="mb-12 lg:mb-36">
@@ -56,7 +56,9 @@ const About = () => {
                       Consistent Quality in Development
                     </h3>
                     <p className="subtitle max-w-xl mx-auto lg:mx-0">
-                      Discover more about me, my journey, and interests. Dive into the person behind the code - a blend of passions, experiences, and skills.
+                      Discover more about me, my journey, and interests. Dive
+                      into the person behind the code - a blend of passions,
+                      experiences, and skills.
                     </p>
 
                     <div className="grid lg:grid-cols-2 gap-4 mb-12">
@@ -71,7 +73,7 @@ const About = () => {
                               {item.text}
                             </div>
                           </div>
-                        );
+                        )
                       })}
                     </div>
 
@@ -97,15 +99,15 @@ const About = () => {
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <Briefcase />
                           <h4 className="h4 capitalize font-medium">
-                            {getData(qualificationData, "experience").title}
+                            {getData(qualificationData, 'experience').title}
                           </h4>
                         </div>
 
                         <div className="flex flex-col gap-y-8">
-                          {getData(qualificationData, "experience").data.map(
+                          {getData(qualificationData, 'experience').data.map(
                             (item, index) => {
-                              // @ts-ignore
-                              const { company, role, years } = item;
+                              // @ts-expect-error destructuring data
+                              const { company, role, years } = item
 
                               return (
                                 <div className="flex gap-x-8 group" key={index}>
@@ -124,8 +126,8 @@ const About = () => {
                                     </div>
                                   </div>
                                 </div>
-                              );
-                            }
+                              )
+                            },
                           )}
                         </div>
                       </div>
@@ -135,15 +137,15 @@ const About = () => {
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <GraduationCap size={28} />
                           <h4 className="capitalize font-medium">
-                            {getData(qualificationData, "education").title}
+                            {getData(qualificationData, 'education').title}
                           </h4>
                         </div>
 
                         <div className="flex flex-col gap-y-8">
-                          {getData(qualificationData, "education").data.map(
+                          {getData(qualificationData, 'education').data.map(
                             (item, index) => {
-                              // @ts-ignore
-                              const { university, qualification, years } = item;
+                              // @ts-expect-error destructuring data
+                              const { university, qualification, years } = item
 
                               return (
                                 <div className="flex gap-x-8 group" key={index}>
@@ -162,8 +164,8 @@ const About = () => {
                                     </div>
                                   </div>
                                 </div>
-                              );
-                            }
+                              )
+                            },
                           )}
                         </div>
                       </div>
@@ -177,10 +179,10 @@ const About = () => {
                       <h4 className="text-xl font-semibold mb-2">Skills</h4>
                       <div className="border-b border-border mb-4" />
                       <div>
-                        {getData(skillData, "skills").data.map(
+                        {getData(skillData, 'skills').data.map(
                           (item, index) => {
-                            // @ts-ignore
-                            const { name } = item;
+                            // @ts-expect-error destructuring data
+                            const { name } = item
                             return (
                               <div
                                 className="w-full md:w-2/4 text-left md:text-center lg:text-left mx-auto lg:mx-0"
@@ -190,8 +192,8 @@ const About = () => {
                                   {name}
                                 </div>
                               </div>
-                            );
-                          }
+                            )
+                          },
                         )}
                       </div>
                     </div>
@@ -202,9 +204,9 @@ const About = () => {
                       </h4>
                       <div className="border-b border-border mb-4" />
                       <div className="flex gap-x-8 justify-center lg:justify-start">
-                        {getData(skillData, "tools").data.map((item, index) => {
-                          // @ts-ignore
-                          const { imgPath } = item;
+                        {getData(skillData, 'tools').data.map((item, index) => {
+                          // @ts-expect-error destructuring data
+                          const { imgPath } = item
                           return (
                             <div key={index}>
                               <Image
@@ -215,7 +217,7 @@ const About = () => {
                                 priority
                               />
                             </div>
-                          );
+                          )
                         })}
                       </div>
                     </div>
@@ -227,7 +229,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

@@ -1,25 +1,24 @@
-'use client';
+'use client'
 
 import {
   RiBriefcase4Fill,
   RiPaletteFill,
-  RiGitBranchFill
+  RiGitBranchFill,
 } from 'react-icons/ri'
 
-import Badge from "../Badge"
-import DevImg from "../DevImg"
+import Badge from '../Badge'
+import DevImg from '../DevImg'
 
-import { useEffect, useState } from "react";
-import { content } from "./content";
+import { useEffect, useState } from 'react'
+import { content } from './content'
 
 export default function HeroImage() {
-
   const [repos, setRepos] = useState(0)
 
   useEffect(() => {
     fetch('https://api.github.com/users/huannvictor')
-      .then(response => response.json())
-      .then(data => setRepos(Number(data.public_repos)))
+      .then((response) => response.json())
+      .then((data) => setRepos(Number(data.public_repos)))
   })
 
   return (

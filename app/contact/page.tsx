@@ -1,6 +1,6 @@
-import { HomeIcon, MailIcon, PhoneCallIcon } from "lucide-react"
+import { HomeIcon, MailIcon, PhoneCallIcon } from 'lucide-react'
 
-import Form from "@/components/Form"
+import Form from '@/components/Form'
 
 const Contact = () => {
   return (
@@ -12,9 +12,11 @@ const Contact = () => {
               <span className="w-[30px] h-[2px] bg-primary" />
               Say Hello 👋
             </div>
-            <h1 className="h1 max-w-md mb-8">Let's Work Together.</h1>
+            <h1 className="h1 max-w-md mb-8">Let`&apos;`s Work Together.</h1>
             <p className="subtitle max-w-[400px]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis magni repellendus in vitae veniam at error voluptas vel, suscipit cum libero illo labore neque.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Reiciendis magni repellendus in vitae veniam at error voluptas
+              vel, suscipit cum libero illo labore neque.
             </p>
           </div>
 

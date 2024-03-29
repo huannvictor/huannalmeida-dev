@@ -1,5 +1,11 @@
-import { servicesData } from "@/data/data"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
+import { servicesData } from '@/data/data'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from './ui/card'
 
 const Services = () => {
   return (
@@ -22,7 +28,9 @@ const Services = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <CardTitle className="mb-4 text-xl md:text-2xl">{item.title}</CardTitle>
+                  <CardTitle className="mb-4 text-xl md:text-2xl">
+                    {item.title}
+                  </CardTitle>
                   <CardDescription className="text-base md:text-lg">
                     {item.description}
                   </CardDescription>

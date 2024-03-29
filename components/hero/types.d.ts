@@ -3,5 +3,5 @@ interface HeroProps {
 }
 
 interface HeroRootProps {
-  children: ReactNode,
+  children: ReactNode
 }

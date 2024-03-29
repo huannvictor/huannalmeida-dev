@@ -1,22 +1,20 @@
-'use client';
+'use client'
 
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css'
+import 'swiper/css/pagination'
 
-import { Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
-import { reviewsData } from "@/data/data";
-import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import Image from "next/image";
+import { reviewsData } from '@/data/data'
+import { Card, CardDescription, CardHeader, CardTitle } from './ui/card'
+import Image from 'next/image'
 
 const Reviews = () => {
   return (
     <section className="mb-12 xl:mb-32">
       <div className="container mx-auto">
-        <h2 className="section-title mb-12 text-center mx-auto">
-          Reviews
-        </h2>
+        <h2 className="section-title mb-12 text-center mx-auto">Reviews</h2>
 
         <Swiper
           slidesPerView={1}

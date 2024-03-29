@@ -1,11 +1,11 @@
-'use client';
+'use client'
 
-import { FC, ReactNode } from "react";
+import { FC, ReactNode } from 'react'
 
-import { Variants, motion } from 'framer-motion';
+import { Variants, motion } from 'framer-motion'
 
 // HOOKS
-import useScrollProgress from "@/hooks/useScrollProgress";
+import useScrollProgress from '@/hooks/useScrollProgress'
 
 interface TemplateProps {
   children: ReactNode
@@ -14,7 +14,7 @@ interface TemplateProps {
 // VARIANTS
 const variants: Variants = {
   hidden: { opacity: 0 },
-  enter: { opacity: 1 }
+  enter: { opacity: 1 },
 }
 
 const Template: FC<TemplateProps> = ({ children }) => {
@@ -24,8 +24,8 @@ const Template: FC<TemplateProps> = ({ children }) => {
     <>
       <motion.main
         variants={variants}
-        initial='hidden'
-        animate='enter'
+        initial="hidden"
+        animate="enter"
         transition={{ type: 'linear', delay: 0.2, duration: 0.4 }}
       >
         {children}

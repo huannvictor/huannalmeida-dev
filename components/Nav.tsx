@@ -1,6 +1,6 @@
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const links = [
   { path: '/', name: 'home' },
@@ -17,7 +17,7 @@ interface NavProps {
 export const Nav = ({
   containerStyles,
   linkStyles,
-  underlineStyles
+  underlineStyles,
 }: NavProps) => {
   const path = usePathname()
 

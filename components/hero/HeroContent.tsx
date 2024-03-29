@@ -1,7 +1,7 @@
-import Socials from "../Socials";
-import HeroButtons from "./HeroButtons";
+import Socials from '../Socials'
+import HeroButtons from './HeroButtons'
 
-import { content } from "./content";
+import { content } from './content'
 
 export default function HeroContent() {
   return (
@@ -13,7 +13,9 @@ export default function HeroContent() {
       <p className="subtitle max-w-[490px] mx-auto lg:mx-0">
         {content.en.heroPersonalPresentation.text}
         <br />
-        <span className="text-primary">{content.en.heroPersonalPresentation.invitation}</span>
+        <span className="text-primary">
+          {content.en.heroPersonalPresentation.invitation}
+        </span>
       </p>
 
       <HeroButtons />

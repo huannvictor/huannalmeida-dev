@@ -1,27 +1,34 @@
-'use client';
+'use client'
 
-import { Download, FileDownIcon, Send } from "lucide-react"
-import Link from "next/link"
+import { Download, FileDownIcon, Send } from 'lucide-react'
+import Link from 'next/link'
 import {
   RiArrowDownSLine,
   RiBriefcase4Fill,
   RiPaletteFill,
-  RiGitBranchFill
+  RiGitBranchFill,
 } from 'react-icons/ri'
-import Badge from "./Badge"
-import DevImg from "./DevImg"
-import Socials from "./Socials"
-import { Button } from "./ui/button"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog"
-import { useEffect, useState } from "react";
+import Badge from './Badge'
+import DevImg from './DevImg'
+import Socials from './Socials'
+import { Button } from './ui/button'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from './ui/dialog'
+import { useEffect, useState } from 'react'
 
 const Hero = () => {
   const [repos, setRepos] = useState(0)
 
   useEffect(() => {
     fetch('https://api.github.com/users/huannvictor')
-      .then(response => response.json())
-      .then(data => setRepos(Number(data.public_repos)))
+      .then((response) => response.json())
+      .then((data) => setRepos(Number(data.public_repos)))
   })
 
   return (
@@ -34,12 +41,15 @@ const Hero = () => {
             </div>
             <h1 className="h1 mb-4">Hello, my name is Huann Almeida</h1>
             <p className="subtitle max-w-[490px] mx-auto lg:mx-0">
-              Enthusiast of React and frontend, I'm on the lookout for exciting challenges to craft amazing experiences.
+              Enthusiast of React and frontend, I`&apos;`m on the lookout for
+              exciting challenges to craft amazing experiences.
               <br />
-              <span className="text-primary">Let's build something awesome together?</span>
+              <span className="text-primary">
+                Let`&apos;`s build something awesome together?
+              </span>
             </p>
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto lg:mx-0 mb-12">
-              <Link href='/contact'>
+              <Link href="/contact">
                 <Button className="gap-x-2">
                   Contact Me <Send size={18} />
                 </Button>
@@ -47,7 +57,7 @@ const Hero = () => {
 
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant='secondary' className="gap-x-2">
+                  <Button variant="secondary" className="gap-x-2">
                     Download CV
                     <Download size={18} />
                   </Button>
@@ -61,13 +71,19 @@ const Hero = () => {
                   </DialogHeader>
                   <div className="flex flex-col justify-center md:flex-row items-center gap-x-2">
                     <Link target="_blank" href="/files/CV_HuannAlmeida_EN.pdf">
-                      <Button variant='link' className="flex items-center gap-x-2">
+                      <Button
+                        variant="link"
+                        className="flex items-center gap-x-2"
+                      >
                         English Version
                         <FileDownIcon />
                       </Button>
                     </Link>
                     <Link target="_blank" href="/files/CV_HuannAlmeida_PT.pdf">
-                      <Button variant="link" className="flex items-center gap-x-2">
+                      <Button
+                        variant="link"
+                        className="flex items-center gap-x-2"
+                      >
                         Versão em Português
                         <FileDownIcon />
                       </Button>
@@ -75,7 +91,6 @@ const Hero = () => {
                   </div>
                 </DialogContent>
               </Dialog>
-
             </div>
 
             <Socials
@@ -117,9 +132,7 @@ const Hero = () => {
         </div>
 
         <div className="hidden lg:flex absolute left-2/4 animate-bounce">
-          <RiArrowDownSLine
-            className="text-3xl text-primary"
-          />
+          <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>
     </section>

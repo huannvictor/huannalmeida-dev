@@ -37,7 +37,7 @@ const Form = () => {
       </div>
 
       <Button className="flex max-w-[166px] items-center gap-x-1">
-        Let`&apos;`s Talk
+        Let&apos;s Talk
         <ArrowUpRight size={20} />
       </Button>
     </form>

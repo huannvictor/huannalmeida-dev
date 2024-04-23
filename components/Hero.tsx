@@ -41,11 +41,11 @@ const Hero = () => {
             </div>
             <h1 className="h1 mb-4">Hello, my name is Huann Almeida</h1>
             <p className="subtitle mx-auto max-w-[490px] lg:mx-0">
-              Enthusiast of React and frontend, I`&apos;`m on the lookout for
+              Enthusiast of React and frontend, I&apos;m on the lookout for
               exciting challenges to craft amazing experiences.
               <br />
               <span className="text-primary">
-                Let`&apos;`s build something awesome together?
+                Let&apos;s build something awesome together?
               </span>
             </p>
             <div className="mx-auto mb-12 flex flex-col gap-x-3 gap-y-3 md:flex-row lg:mx-0">

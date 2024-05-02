@@ -4,9 +4,7 @@
     "next/core-web-vitals"
   ],
   "rules": {
-    "max-len": [
-      1, "warn", { "softBreak": true }
-    ],
+    "max-len": 0,
     "object-curly-spacing": "error"
   }
 }

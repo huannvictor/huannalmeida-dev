@@ -1,0 +1,38 @@
+{
+  "Hero": {
+    "heroTitle": "Web Developer",
+    "heroGreeting": "Hello, my name is Huann Almeida",
+    "heroPersonalPresentation": {
+      "text": "Enthusiast of React and frontend, I'm on the lookout for exciting challenges to craft amazing experiences.",
+      "invitation": "Let's build something awesome together?"
+    },
+    "heroBtn": {
+      "contact": "Contact Me",
+      "dialogTitle": "Download my CV",
+      "dialogDescription": "Chose the language you prefer."
+    },
+    "heroBadges": {
+      "experience": "Years Of Experience",
+      "interactiveDesigns": "Interactive Designs",
+      "repos": "Project Repos"
+    }
+  },
+  "About": {
+    "sectionTitle": "About Me",
+    "personal": { "title": "Personal Info", "value": "personal" },
+    "qualifications": { "title": "Qualifications", "value": "qualifications" },
+    "skills": { "title": "Skills", "value": "skills" },
+    "tabsPersonal": {
+      "title": "Consistent Quality in Development",
+      "content": "Discover more about me, my journey, and interests. Dive into the person behind the code - a blend of passions, experiences, and skills."
+    },
+    "tabsQualifications": { "title": "My Awesome Journey" },
+    "tabsSkills": {
+      "title": "What I Use Everyday",
+      "subtitle": {
+        "skills": "Skills",
+        "tools": "Tools"
+      }
+    }
+  }
+}

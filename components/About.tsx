@@ -1,11 +1,15 @@
+import Image from 'next/image'
+
 import { Briefcase, GraduationCap } from 'lucide-react'
-import DevImg from './DevImg'
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
 
 import { infoData, qualificationData, skillData } from '@/data/data'
-import Image from 'next/image'
+import DevImg from './DevImg'
 
-const About = () => {
+import { useTranslations } from 'next-intl'
+
+export default function About() {
   const getData = (
     arr: (QualificationData | SkillData)[],
     title: string,
@@ -17,13 +21,15 @@ const About = () => {
     return newArr
   }
 
+  const t = useTranslations('About')
+
   return (
     <section className="mb-12 lg:mb-36">
       <div className="mx-auto w-full px-8 lg:max-w-[90vw]">
         <h2 className="section-title mx-auto mb-8 text-center lg:mb-16">
-          About me
+          {t('sectionTitle')}
         </h2>
-
+        
         <div className="flex flex-col lg:flex-row">
           <div className="relative hidden flex-1 lg:flex">
             <DevImg
@@ -35,17 +41,14 @@ const About = () => {
           <div className="flex-1">
             <Tabs defaultValue="personal">
               <TabsList className="grid w-full lg:max-w-[520px] lg:grid-cols-3">
-                <TabsTrigger className="w-[162px] lg:w-auto" value="personal">
-                  Personal Info
+                <TabsTrigger className="w-[162px] lg:w-auto" value={t('personal.value')} >
+                  {t('personal.title')}
                 </TabsTrigger>
-                <TabsTrigger
-                  className="w-[162px] lg:w-auto"
-                  value="qualifications"
-                >
-                  Qualifications
+                <TabsTrigger className="w-[162px] lg:w-auto" value={t('qualifications.value')} >
+                  {t('qualifications.title')}
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] lg:w-auto" value="skills">
-                  Skills
+                <TabsTrigger className="w-[162px] lg:w-auto" value={t('skills.value')} >
+                  {t('skills.title')}
                 </TabsTrigger>
               </TabsList>
 
@@ -53,12 +56,10 @@ const About = () => {
                 <TabsContent value="personal">
                   <div className="text-center lg:text-left">
                     <h3 className="h3 mb-4">
-                      Consistent Quality in Development
+                      {t('tabsPersonal.title')}
                     </h3>
                     <p className="subtitle mx-auto max-w-xl lg:mx-0">
-                      Discover more about me, my journey, and interests. Dive
-                      into the person behind the code - a blend of passions,
-                      experiences, and skills.
+                      {t('tabsPersonal.content')}
                     </p>
 
                     <div className="mb-12 grid gap-4 lg:grid-cols-2">
@@ -231,5 +232,3 @@ const About = () => {
     </section>
   )
 }
-
-export default About

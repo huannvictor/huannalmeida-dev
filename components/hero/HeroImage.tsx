@@ -1,5 +1,8 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
+import { useEffect, useState } from 'react'
+
 import {
   RiBriefcase4Fill,
   RiPaletteFill,
@@ -8,9 +11,6 @@ import {
 
 import Badge from '../Badge'
 import DevImg from '../DevImg'
-
-import { useEffect, useState } from 'react'
-import { content } from './content'
 
 export default function HeroImage() {
   const [repos, setRepos] = useState(0)
@@ -21,6 +21,8 @@ export default function HeroImage() {
       .then((data) => setRepos(Number(data.public_repos)))
   })
 
+  const t = useTranslations('Hero')
+
   return (
     <div className="relative hidden lg:ml-32 lg:flex">
       <div className="absolute -right-2 -top-1 size-[400px] bg-hero_shape2_light bg-no-repeat dark:bg-hero_shape2_dark" />
@@ -29,7 +31,7 @@ export default function HeroImage() {
         containerStyles="absolute top-[24%] -left-[7rem]"
         icon={<RiBriefcase4Fill />}
         endCountNum={3}
-        badgeText={content.en.heroBadges.experience}
+        badgeText={t('heroBadges.experience')}
       />
 
       <Badge
@@ -37,14 +39,14 @@ export default function HeroImage() {
         icon={<RiPaletteFill />}
         endCountNum={3}
         endCountText="K"
-        badgeText={content.en.heroBadges.interactiveDesigns}
+        badgeText={t('heroBadges.interactiveDesigns')}
       />
 
       <Badge
         containerStyles="absolute top-[9rem] -right-[3rem]"
         icon={<RiGitBranchFill />}
         endCountNum={repos}
-        badgeText={content.en.heroBadges.repos}
+        badgeText={t('heroBadges.repos')}
       />
 
       <DevImg

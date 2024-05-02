@@ -37,6 +37,11 @@ export const qualificationData: QualificationData[] = [
     title: 'education',
     data: [
       {
+        university: 'Wyden',
+        qualification: 'Systems Analysis and Development',
+        years: '2024 - 2027',
+      },
+      {
         university: 'EBAC ',
         qualification: 'Javascript Fullstack Developer',
         years: '2023',

@@ -6,9 +6,6 @@
   "plugins": ["simple-import-sort"],
   "rules": {
     "simple-import-sort/imports": "error",
-    "max-len": [
-      { "softBreak": true }
-    ],
     "object-curly-spacing": "error"
   }
 }

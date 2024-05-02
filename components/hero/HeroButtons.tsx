@@ -11,17 +11,14 @@ import {
 import { Button } from '../ui/button'
 
 import { Send, Download, FileDownIcon } from 'lucide-react'
-
-import {useTranslations} from 'next-intl'
+import { content } from './content'
 
 export default function HeroButtons() {
-  const t = useTranslations('Hero')
-
   return (
     <div className="mx-auto mb-12 flex flex-col gap-x-3 gap-y-3 md:flex-row lg:mx-0">
       <Link href="/contact">
         <Button className="gap-x-2">
-          {t('heroBtn.contact')}
+          {content.en.heroBtn.contact}
           <Send size={18} />
         </Button>
       </Link>
@@ -35,9 +32,9 @@ export default function HeroButtons() {
         </DialogTrigger>
         <DialogContent className="flex w-full flex-col">
           <DialogHeader>
-            <DialogTitle>{t('heroBtn.dialogTitle')}</DialogTitle>
+            <DialogTitle>{content.en.heroBtn.dialogTitle}</DialogTitle>
             <DialogDescription>
-              {t('heroBtn.dialogDescription')}
+              {content.en.heroBtn.dialogDescription}
             </DialogDescription>
           </DialogHeader>
           <div className="flex flex-col items-center justify-center gap-x-2 md:flex-row">

@@ -10,6 +10,7 @@ const uniqueCategories = [
   ...new Set(projectData.map((item) => item.category)),
 ]
 const Projects = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [categories, setCategories] = useState(uniqueCategories)
   const [category, setCategory] = useState('all projects')
 
@@ -20,16 +21,16 @@ const Projects = () => {
   return (
     <section className="min-h-screen pt-12">
       <div className="container mx-auto">
-        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+        <h2 className="section-title mx-auto mb-8 text-center xl:mb-16">
           My Projects
         </h2>
 
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-          <TabsList className="size-fit grid md:flex lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
+          <TabsList className="mx-auto mb-12 grid size-fit dark:border-none md:flex md:border lg:max-w-[640px]">
             {categories.map((category, index) => {
               return (
                 <TabsTrigger
-                  className="capitalize w-[162px] md:w-auto"
+                  className="w-[162px] capitalize md:w-auto"
                   key={index}
                   value={category}
                   onClick={() => setCategory(category)}
@@ -40,7 +41,7 @@ const Projects = () => {
             })}
           </TabsList>
 
-          <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 gap-4 text-lg lg:grid-cols-3 xl:mt-8">
             {filteredProjects.map((project, index) => {
               return (
                 <TabsContent value={category} key={index}>

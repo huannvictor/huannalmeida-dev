@@ -6,8 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
 
 import { infoData, qualificationData, skillData } from '@/data/data'
 import DevImg from './DevImg'
-
-import { useTranslations } from 'next-intl'
+import { content } from './about/content'
 
 export default function About() {
   const getData = (
@@ -21,15 +20,13 @@ export default function About() {
     return newArr
   }
 
-  const t = useTranslations('About')
-
   return (
     <section className="mb-12 lg:mb-36">
       <div className="mx-auto w-full px-8 lg:max-w-[90vw]">
         <h2 className="section-title mx-auto mb-8 text-center lg:mb-16">
-          {t('sectionTitle')}
+          {content.en.sectionTitle}
         </h2>
-        
+
         <div className="flex flex-col lg:flex-row">
           <div className="relative hidden flex-1 lg:flex">
             <DevImg
@@ -41,25 +38,26 @@ export default function About() {
           <div className="flex-1">
             <Tabs defaultValue="personal">
               <TabsList className="grid w-full lg:max-w-[520px] lg:grid-cols-3">
-                <TabsTrigger className="w-[162px] lg:w-auto" value={t('personal.value')} >
-                  {t('personal.title')}
+                <TabsTrigger className="w-[162px] lg:w-auto" value="personal">
+                  Personal Info
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] lg:w-auto" value={t('qualifications.value')} >
-                  {t('qualifications.title')}
+                <TabsTrigger
+                  className="w-[162px] lg:w-auto"
+                  value="qualifications"
+                >
+                  Qualifications
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] lg:w-auto" value={t('skills.value')} >
-                  {t('skills.title')}
+                <TabsTrigger className="w-[162px] lg:w-auto" value="skills">
+                  Skills
                 </TabsTrigger>
               </TabsList>
 
               <div className="mt-12 text-lg lg:mt-8">
                 <TabsContent value="personal">
                   <div className="text-center lg:text-left">
-                    <h3 className="h3 mb-4">
-                      {t('tabsPersonal.title')}
-                    </h3>
+                    <h3 className="h3 mb-4">{content.en.tabsPersonal.title}</h3>
                     <p className="subtitle mx-auto max-w-xl lg:mx-0">
-                      {t('tabsPersonal.content')}
+                      {content.en.tabsPersonal.content}
                     </p>
 
                     <div className="mb-12 grid gap-4 lg:grid-cols-2">

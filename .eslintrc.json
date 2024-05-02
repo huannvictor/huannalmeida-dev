@@ -5,7 +5,7 @@
   ],
   "rules": {
     "max-len": [
-      { "softBreak": true }
+      1, "warn", { "softBreak": true }
     ],
     "object-curly-spacing": "error"
   }

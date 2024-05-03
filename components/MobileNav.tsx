@@ -1,8 +1,8 @@
-import { AlignJustify } from 'lucide-react'
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
+import {AlignJustify} from 'lucide-react'
+import {Sheet, SheetContent, SheetTrigger} from './ui/sheet'
 
-import { Logo } from './Logo'
-import { Nav } from './Nav'
+import {Logo} from './Logo'
+import {Nav} from './Nav'
 import Socials from './Socials'
 
 export const MobileNav = () => {

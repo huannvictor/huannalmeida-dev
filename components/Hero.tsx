@@ -1,6 +1,6 @@
 'use client'
 
-import { Download, FileDownIcon, Send } from 'lucide-react'
+import {Download, FileDownIcon, Send} from 'lucide-react'
 import Link from 'next/link'
 import {
   RiArrowDownSLine,
@@ -11,7 +11,7 @@ import {
 import Badge from './Badge'
 import DevImg from './DevImg'
 import Socials from './Socials'
-import { Button } from './ui/button'
+import {Button} from './ui/button'
 import {
   Dialog,
   DialogContent,
@@ -20,7 +20,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from './ui/dialog'
-import { useEffect, useState } from 'react'
+import {useEffect, useState} from 'react'
 
 const Hero = () => {
   const [repos, setRepos] = useState(0)

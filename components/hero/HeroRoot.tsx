@@ -1,6 +1,6 @@
-import { RiArrowDownSLine } from 'react-icons/ri'
+import {RiArrowDownSLine} from 'react-icons/ri'
 
-export default function HeroRoot({ children }: HeroRootProps) {
+export default function HeroRoot({children}: HeroRootProps) {
   return (
     <section
       className={

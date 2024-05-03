@@ -1,14 +1,14 @@
-import type { Metadata } from 'next'
-import { Outfit } from 'next/font/google'
+import type {Metadata} from 'next'
+import {Outfit} from 'next/font/google'
 import './globals.css'
 
 // COMPONENTS
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 // THEME PROVIDER
-import { ThemeProvider } from '@/components/ThemeProvider'
+import {ThemeProvider} from '@/components/ThemeProvider'
 
-const outfit = Outfit({ subsets: ['latin'] })
+const outfit = Outfit({subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: 'Huann Almeida',

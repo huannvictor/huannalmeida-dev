@@ -1,4 +1,4 @@
-import { HomeIcon, MailIcon, PhoneCallIcon } from 'lucide-react'
+import {HomeIcon, MailIcon, PhoneCallIcon} from 'lucide-react'
 
 import Form from '@/components/Form'
 

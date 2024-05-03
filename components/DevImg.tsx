@@ -5,7 +5,7 @@ interface DevImgProps {
   imgSrc: string
 }
 
-const DevImg = ({ containerStyles, imgSrc }: DevImgProps) => {
+const DevImg = ({containerStyles, imgSrc}: DevImgProps) => {
   return (
     <div className={`${containerStyles}`}>
       <Image src={imgSrc} alt="" fill priority />

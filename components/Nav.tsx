@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion'
+import {motion} from 'framer-motion'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import {usePathname} from 'next/navigation'
 
 const links = [
-  { path: '/', name: 'home' },
-  { path: '/projects', name: 'my projects' },
-  { path: '/contact', name: 'contact' },
+  {path: '/', name: 'home'},
+  {path: '/projects', name: 'my projects'},
+  {path: '/contact', name: 'contact'},
 ]
 
 interface NavProps {
@@ -32,9 +32,9 @@ export const Nav = ({
           >
             {link.path === path && (
               <motion.span
-                initial={{ y: '-100%' }}
-                animate={{ y: 0 }}
-                transition={{ type: 'tween' }}
+                initial={{y: '-100%'}}
+                animate={{y: 0}}
+                transition={{type: 'tween'}}
                 layoutId="underline"
                 className={`${underlineStyles}`}
               />

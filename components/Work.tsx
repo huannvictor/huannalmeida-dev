@@ -3,14 +3,14 @@
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-import { Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import {Pagination} from 'swiper/modules'
+import {Swiper, SwiperSlide} from 'swiper/react'
 
 import Link from 'next/link'
-import { Button } from './ui/button'
+import {Button} from './ui/button'
 import ProjectCard from './ProjectCard'
 
-import { projectData } from '@/data/data'
+import {projectData} from '@/data/data'
 
 const Work = () => {
   return (
@@ -34,14 +34,14 @@ const Work = () => {
             className="h-[480px]"
             slidesPerView={1}
             breakpoints={{
-              640: { slidesPerView: 2 },
+              640: {slidesPerView: 2},
             }}
             spaceBetween={30}
             modules={[Pagination]}
-            pagination={{ clickable: true }}
+            pagination={{clickable: true}}
           >
             {projectData.slice(0, 4).map((project, index) => {
-              const { category, description, github, image, link, name } =
+              const {category, description, github, image, link, name} =
                 project
 
               return (

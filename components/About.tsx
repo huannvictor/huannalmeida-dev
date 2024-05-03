@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
-import { Briefcase, GraduationCap } from 'lucide-react'
+import {Briefcase, GraduationCap} from 'lucide-react'
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
+import {Tabs, TabsContent, TabsList, TabsTrigger} from './ui/tabs'
 
-import { infoData, qualificationData, skillData } from '@/data/data'
+import {infoData, qualificationData, skillData} from '@/data/data'
 import DevImg from './DevImg'
-import { content } from './about/content'
+import {content} from './about/content'
 
 export default function About() {
   const getData = (
@@ -106,7 +106,7 @@ export default function About() {
                           {getData(qualificationData, 'experience').data.map(
                             (item, index) => {
                               // @ts-expect-error destructuring data
-                              const { company, role, years } = item
+                              const {company, role, years} = item
 
                               return (
                                 <div className="group flex gap-x-8" key={index}>
@@ -144,7 +144,7 @@ export default function About() {
                           {getData(qualificationData, 'education').data.map(
                             (item, index) => {
                               // @ts-expect-error destructuring data
-                              const { university, qualification, years } = item
+                              const {university, qualification, years} = item
 
                               return (
                                 <div className="group flex gap-x-8" key={index}>
@@ -181,7 +181,7 @@ export default function About() {
                         {getData(skillData, 'skills').data.map(
                           (item, index) => {
                             // @ts-expect-error destructuring data
-                            const { name } = item
+                            const {name} = item
                             return (
                               <div
                                 className="mx-auto w-full text-left md:w-2/4 md:text-center lg:mx-0 lg:text-left"
@@ -205,7 +205,7 @@ export default function About() {
                       <div className="flex justify-center gap-x-8 lg:justify-start">
                         {getData(skillData, 'tools').data.map((item, index) => {
                           // @ts-expect-error destructuring data
-                          const { imgPath } = item
+                          const {imgPath} = item
                           return (
                             <div key={index}>
                               <Image

@@ -1,4 +1,4 @@
-import { servicesData } from '@/data/data'
+import {servicesData} from '@/data/data'
 import {
   Card,
   CardContent,

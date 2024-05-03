@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs'
-import { Briefcase, GraduationCap } from 'lucide-react'
+import {Tabs, TabsContent, TabsList, TabsTrigger} from '../ui/tabs'
+import {Briefcase, GraduationCap} from 'lucide-react'
 
-import { infoData, qualificationData, skillData } from '@/data/data'
+import {infoData, qualificationData, skillData} from '@/data/data'
 
 export default function AboutTabs() {
   const getData = (
@@ -86,7 +86,7 @@ export default function AboutTabs() {
                     {getData(qualificationData, 'experience').data.map(
                       (item, index) => {
                         // @ts-expect-error destructuring data
-                        const { company, role, years } = item
+                        const {company, role, years} = item
 
                         return (
                           <div className="group flex gap-x-8" key={index}>
@@ -124,7 +124,7 @@ export default function AboutTabs() {
                     {getData(qualificationData, 'education').data.map(
                       (item, index) => {
                         // @ts-expect-error destructuring data
-                        const { university, qualification, years } = item
+                        const {university, qualification, years} = item
 
                         return (
                           <div className="group flex gap-x-8" key={index}>
@@ -160,7 +160,7 @@ export default function AboutTabs() {
                 <div>
                   {getData(skillData, 'skills').data.map((item, index) => {
                     // @ts-expect-error destructuring data
-                    const { name } = item
+                    const {name} = item
                     return (
                       <div
                         className="mx-auto w-full text-left md:w-2/4 md:text-center lg:mx-0 lg:text-left"
@@ -183,7 +183,7 @@ export default function AboutTabs() {
                 <div className="flex justify-center gap-x-8 lg:justify-start">
                   {getData(skillData, 'tools').data.map((item, index) => {
                     // @ts-expect-error destructuring data
-                    const { imgPath } = item
+                    const {imgPath} = item
                     return (
                       <div key={index}>
                         <Image

@@ -2,7 +2,7 @@ interface AboutProps {
   children: React.ReactNode
 }
 
-export default function About({ children }: AboutProps) {
+export default function About({children}: AboutProps) {
   return (
     <section className="mb-12 lg:mb-36">
       <div className="mx-auto w-full px-8 lg:max-w-[90vw]">

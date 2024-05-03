@@ -94,21 +94,21 @@ export const skillData: SkillData[] = [
   {
     title: 'skills',
     data: [
-      { name: 'Javascript, Typescript, Python' },
-      { name: 'TailwindCss, Shadcn-ui' },
-      { name: 'Front-end Development' },
-      { name: 'Back-end Development' },
-      { name: 'Mobile Development' },
-      { name: 'Digital Design' },
+      {name: 'Javascript, Typescript, Python'},
+      {name: 'TailwindCss, Shadcn-ui'},
+      {name: 'Front-end Development'},
+      {name: 'Back-end Development'},
+      {name: 'Mobile Development'},
+      {name: 'Digital Design'},
     ],
   },
   {
     title: 'tools',
     data: [
-      { imgPath: '/about/vscode.svg' },
-      { imgPath: '/about/figma.svg' },
-      { imgPath: '/about/notion.svg' },
-      { imgPath: '/about/illustrator.svg' },
+      {imgPath: '/about/vscode.svg'},
+      {imgPath: '/about/figma.svg'},
+      {imgPath: '/about/notion.svg'},
+      {imgPath: '/about/illustrator.svg'},
     ],
   },
 ]

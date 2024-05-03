@@ -1,12 +1,12 @@
 'use client'
 
-import { useTheme } from 'next-themes'
+import {useTheme} from 'next-themes'
 
-import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
-import { Button } from './ui/button'
+import {MoonIcon, SunIcon} from '@radix-ui/react-icons'
+import {Button} from './ui/button'
 
 export default function ThemeToggler() {
-  const { theme, setTheme } = useTheme()
+  const {theme, setTheme} = useTheme()
 
   return (
     <div>

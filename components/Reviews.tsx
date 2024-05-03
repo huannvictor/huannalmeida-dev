@@ -3,11 +3,11 @@
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-import { Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import {Pagination} from 'swiper/modules'
+import {Swiper, SwiperSlide} from 'swiper/react'
 
-import { reviewsData } from '@/data/data'
-import { Card, CardDescription, CardHeader, CardTitle } from './ui/card'
+import {reviewsData} from '@/data/data'
+import {Card, CardDescription, CardHeader, CardTitle} from './ui/card'
 import Image from 'next/image'
 
 const Reviews = () => {
@@ -19,12 +19,12 @@ const Reviews = () => {
         <Swiper
           slidesPerView={1}
           breakpoints={{
-            640: { slidesPerView: 2 },
-            1400: { slidesPerView: 3 },
+            640: {slidesPerView: 2},
+            1400: {slidesPerView: 3},
           }}
           spaceBetween={30}
           modules={[Pagination]}
-          pagination={{ clickable: true }}
+          pagination={{clickable: true}}
           className="h-[350px]"
         >
           {reviewsData.map((person, index) => {

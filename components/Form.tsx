@@ -1,10 +1,10 @@
 'use client'
 
-import { ArrowUpRight, MailIcon, MessageSquareHeart, User } from 'lucide-react'
+import {ArrowUpRight, MailIcon, MessageSquareHeart, User} from 'lucide-react'
 
-import { Input } from './ui/input'
-import { Textarea } from './ui/textarea'
-import { Button } from './ui/button'
+import {Input} from './ui/input'
+import {Textarea} from './ui/textarea'
+import {Button} from './ui/button'
 
 const Form = () => {
   return (

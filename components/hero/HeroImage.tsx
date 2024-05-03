@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import {useEffect, useState} from 'react'
 
 import {
   RiBriefcase4Fill,
@@ -10,7 +10,7 @@ import {
 
 import Badge from '../Badge'
 import DevImg from '../DevImg'
-import { content } from './content'
+import {content} from './content'
 
 export default function HeroImage() {
   const [repos, setRepos] = useState(0)

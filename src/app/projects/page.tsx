@@ -1,16 +1,15 @@
 'use client'
 
 import ProjectCard from '@/components/ProjectCard'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { projectData } from '@/data/data'
-import { useState } from 'react'
+import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
+import {projectData} from '@/data/data'
+import {useState} from 'react'
 
 const uniqueCategories = [
   'all projects',
   ...new Set(projectData.map((item) => item.category)),
 ]
 const Projects = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [categories, setCategories] = useState(uniqueCategories)
   const [category, setCategory] = useState('all projects')
 

@@ -1,12 +1,12 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import {usePathname} from 'next/navigation'
+import {useEffect, useState} from 'react'
 
 // COMPONENTS
-import { Logo } from './Logo'
-import { MobileNav } from './MobileNav'
-import { Nav } from './Nav'
+import {Logo} from './Logo'
+import {MobileNav} from './MobileNav'
+import {Nav} from './Nav'
 import ThemeToggler from './ThemeToggler'
 import LangToggler from './LangToggler'
 

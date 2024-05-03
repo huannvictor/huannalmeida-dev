@@ -29,7 +29,7 @@ export default function HeroImage() {
         containerStyles="absolute top-[24%] -left-[7rem]"
         icon={<RiBriefcase4Fill />}
         endCountNum={3}
-        badgeText={content.en.heroBadges.experience}
+        badgeText={content.pt.heroBadges.experience}
       />
 
       <Badge
@@ -37,14 +37,14 @@ export default function HeroImage() {
         icon={<RiPaletteFill />}
         endCountNum={3}
         endCountText="K"
-        badgeText={content.en.heroBadges.interactiveDesigns}
+        badgeText={content.pt.heroBadges.interactiveDesigns}
       />
 
       <Badge
         containerStyles="absolute top-[9rem] -right-[3rem]"
         icon={<RiGitBranchFill />}
         endCountNum={repos}
-        badgeText={content.en.heroBadges.repos}
+        badgeText={content.pt.heroBadges.repos}
       />
 
       <DevImg

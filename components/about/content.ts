@@ -20,4 +20,25 @@ export const content = {
       },
     },
   },
+  pt: {
+    sectionTitle: 'Sobre Mim',
+    tabsTriggers: [
+      {title: 'Info Pessoal', value: 'personal'},
+      {title: 'Qualificações', value: 'qualifications'},
+      {title: 'Habilidades', value: 'skills'},
+    ],
+    tabsPersonal: {
+      title: 'Qualidade Consistente no Desenvolvimento',
+      content:
+        'Descubra mais sobre mim, minha jornada e interesses. Mergulhe na pessoa por trás do código – uma mistura de paixões, experiências e habilidades.',
+    },
+    tabsQualifications: {title: 'Minha Jornada'},
+    tabsSkills: {
+      title: 'O que uso diariamente',
+      subtitle: {
+        skills: 'Skills',
+        tools: 'Ferramentas',
+      },
+    },
+  },
 }

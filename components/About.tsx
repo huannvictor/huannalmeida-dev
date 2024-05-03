@@ -4,7 +4,7 @@ import {Briefcase, GraduationCap} from 'lucide-react'
 
 import {Tabs, TabsContent, TabsList, TabsTrigger} from './ui/tabs'
 
-import {infoData, qualificationData, skillData} from '@/data/data'
+import {infoData, qualificationData, skillData} from '../data/data'
 import DevImg from './DevImg'
 import {content} from './about/content'
 
@@ -24,7 +24,7 @@ export default function About() {
     <section className="mb-12 lg:mb-36">
       <div className="mx-auto w-full px-8 lg:max-w-[90vw]">
         <h2 className="section-title mx-auto mb-8 text-center lg:mb-16">
-          {content.en.sectionTitle}
+          {content.pt.sectionTitle}
         </h2>
 
         <div className="flex flex-col lg:flex-row">
@@ -55,9 +55,9 @@ export default function About() {
               <div className="mt-12 text-lg lg:mt-8">
                 <TabsContent value="personal">
                   <div className="text-center lg:text-left">
-                    <h3 className="h3 mb-4">{content.en.tabsPersonal.title}</h3>
+                    <h3 className="h3 mb-4">{content.pt.tabsPersonal.title}</h3>
                     <p className="subtitle mx-auto max-w-xl lg:mx-0">
-                      {content.en.tabsPersonal.content}
+                      {content.pt.tabsPersonal.content}
                     </p>
 
                     <div className="mb-12 grid gap-4 lg:grid-cols-2">
@@ -98,12 +98,12 @@ export default function About() {
                         <div className="flex items-center gap-x-4 text-[22px] text-primary">
                           <Briefcase />
                           <h4 className="h4 font-medium capitalize">
-                            {getData(qualificationData, 'experience').title}
+                            {getData(qualificationData, 'experiência').title}
                           </h4>
                         </div>
 
                         <div className="flex flex-col gap-y-8">
-                          {getData(qualificationData, 'experience').data.map(
+                          {getData(qualificationData, 'experiência').data.map(
                             (item, index) => {
                               // @ts-expect-error destructuring data
                               const {company, role, years} = item
@@ -136,12 +136,12 @@ export default function About() {
                         <div className="flex items-center gap-x-4 text-[22px] text-primary">
                           <GraduationCap size={28} />
                           <h4 className="font-medium capitalize">
-                            {getData(qualificationData, 'education').title}
+                            {getData(qualificationData, 'educação').title}
                           </h4>
                         </div>
 
                         <div className="flex flex-col gap-y-8">
-                          {getData(qualificationData, 'education').data.map(
+                          {getData(qualificationData, 'educação').data.map(
                             (item, index) => {
                               // @ts-expect-error destructuring data
                               const {university, qualification, years} = item
@@ -173,7 +173,7 @@ export default function About() {
                 </TabsContent>
                 <TabsContent value="skills">
                   <div className="text-center lg:text-left">
-                    <h3 className="h3 mb-8">What I Use Everyday</h3>
+                    <h3 className="h3 mb-8">O que uso no dia a dia</h3>
                     <div className="mb-16">
                       <h4 className="mb-2 text-xl font-semibold">Skills</h4>
                       <div className="mb-4 border-b border-border" />
@@ -203,7 +203,7 @@ export default function About() {
                       </h4>
                       <div className="mb-4 border-b border-border" />
                       <div className="flex justify-center gap-x-8 lg:justify-start">
-                        {getData(skillData, 'tools').data.map((item, index) => {
+                        {getData(skillData, 'ferramentas').data.map((item, index) => {
                           // @ts-expect-error destructuring data
                           const {imgPath} = item
                           return (

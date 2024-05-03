@@ -10,7 +10,7 @@ import Link from 'next/link'
 import {Button} from './ui/button'
 import ProjectCard from './ProjectCard'
 
-import {projectData} from '@/data/data'
+import {projectData} from '@/data/data-en'
 
 const Work = () => {
   return (

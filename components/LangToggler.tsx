@@ -3,19 +3,27 @@
 import {LanguagesIcon} from 'lucide-react'
 import {useState} from 'react'
 import {Button} from './ui/button'
+import {HoverCard, HoverCardContent, HoverCardTrigger} from './ui/hover-card'
 
 export default function LangToggler() {
   const [lang, setLang] = useState('en')
 
   return (
-    <div>
-      <Button
-        variant="outline"
-        size="icon"
-        onClick={() => setLang(lang === 'en' ? 'pt' : 'en')}
-      >
-        <LanguagesIcon className="size-5" />
-      </Button>
-    </div>
+    <HoverCard>
+      <div>
+        <HoverCardTrigger asChild>
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={() => setLang(lang === 'en' ? 'pt' : 'en')}
+          >
+            <LanguagesIcon className="size-5" />
+          </Button>
+        </HoverCardTrigger>
+        <HoverCardContent className='w-fit bg-zinc-700/50'>
+          <p className='text-xs text-zinc-400'>em breve...</p>
+        </HoverCardContent>
+      </div>
+    </HoverCard>
   )
 }

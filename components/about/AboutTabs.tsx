@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '../ui/tabs'
 import {Briefcase, GraduationCap} from 'lucide-react'
 
-import {infoData, qualificationData, skillData} from '@/data/data'
+import {infoData, qualificationData, skillData} from '@/data/data-en'
 
 export default function AboutTabs() {
   const getData = (

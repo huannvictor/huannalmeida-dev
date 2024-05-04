@@ -18,7 +18,7 @@ export default function HeroButtons() {
     <div className="mx-auto mb-12 flex flex-col gap-x-3 gap-y-3 md:flex-row lg:mx-0">
       <Link href="/contact">
         <Button className="gap-x-2">
-          {content.en.heroBtn.contact}
+          {content.pt.heroBtn.contact}
           <Send size={18} />
         </Button>
       </Link>
@@ -32,9 +32,9 @@ export default function HeroButtons() {
         </DialogTrigger>
         <DialogContent className="flex w-full flex-col">
           <DialogHeader>
-            <DialogTitle>{content.en.heroBtn.dialogTitle}</DialogTitle>
+            <DialogTitle>{content.pt.heroBtn.dialogTitle}</DialogTitle>
             <DialogDescription>
-              {content.en.heroBtn.dialogDescription}
+              {content.pt.heroBtn.dialogDescription}
             </DialogDescription>
           </DialogHeader>
           <div className="flex flex-col items-center justify-center gap-x-2 md:flex-row">

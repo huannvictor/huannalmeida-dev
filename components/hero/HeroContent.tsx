@@ -6,14 +6,14 @@ export default function HeroContent() {
   return (
     <div className="mx-auto flex max-w-[480px] flex-col justify-center text-center lg:mx-0 lg:text-left">
       <div className="mb-4 text-sm font-semibold uppercase tracking-[4px] text-primary">
-        {content.en.heroTitle}
+        {content.pt.heroTitle}
       </div>
-      <h1 className="h1 mb-4">Hello, my name is Huann Almeida</h1>
+      <h1 className="h1 mb-4">{content.pt.heroGreeting}</h1>
       <p className="subtitle mx-auto max-w-[490px] lg:mx-0">
-        {content.en.heroPersonalPresentation.text}
+        {content.pt.heroPersonalPresentation.text}
         <br />
         <span className="text-primary">
-          {content.en.heroPersonalPresentation.invitation}
+          {content.pt.heroPersonalPresentation.invitation}
         </span>
       </p>
 

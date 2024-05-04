@@ -24,67 +24,67 @@ export const infoData = [
   },
   {
     icon: <Calendar size={20} />,
-    text: 'Nasci em 22 Set, 1990',
+    text: 'Born on 22 Set, 1990',
   },
   {
     icon: <Home size={20} />,
-    text: 'João Pessoa • Paraíba • Brasil',
+    text: 'João Pessoa • Paraíba • Brazil',
   },
 ]
 
 export const qualificationData: QualificationData[] = [
   {
-    title: 'educação',
+    title: 'education',
     data: [
       {
         university: 'Wyden',
-        qualification: 'Análise e Desenvolvimento de Sistemas',
+        qualification: 'Systems Analysis and Development',
         years: '2024 - 2027',
       },
       {
         university: 'EBAC ',
-        qualification: 'Dev Fullstack Javascript',
+        qualification: 'Javascript Fullstack Developer',
         years: '2023',
       },
       {
         university: 'OneBitCode',
-        qualification: 'Dev Fullstack Javascript',
+        qualification: 'Javascript Fullstack Developer',
         years: '2023',
       },
       {
         university: 'Rocketseat',
-        qualification: 'Dev Fullstack Javascript',
+        qualification: 'Javascript Fullstack Developer',
         years: '2022',
       },
       {
         university: 'UNIESP',
-        qualification: 'Administração de Empresas',
+        qualification: 'Business Administration',
         years: '2010 - 2018',
       },
     ],
   },
   {
-    title: 'experiência',
+    title: 'experience',
     data: [
-      {
-        company: 'Editora Construir',
-        role: 'Assistente Commercial',
-        years: 'Mai 2018 - atual',
-      },
       {
         company: 'Skill Labs',
         role: 'Tech Lead Front-End',
-        years: 'Ago 2023 - atual',
+        years: 'Aug 2023 - present',
       },
       {
         company: 'Skill Labs',
-        role: 'Desenvolvedor Front-End Junior',
-        years: 'Jan 2023 - Ago 2023',
+        role: 'Junior Front-End Developer',
+        years: 'Jan 2023 - Aug 2023',
+      },
+      {
+        company: 'Construir Publisher',
+        role: 'Commercial Assistant',
+        years: 'May 2018 - present',
       },
       {
         company: 'Organize Soft',
-        role: 'Desenvolvedor Front-End Junior',
-        years: 'Dez 2022 - Fev 2023',
+        role: 'Junior Front-End Developer',
+        years: 'Dez 2022 - Feb 2023',
       },
     ],
   },
@@ -94,17 +94,16 @@ export const skillData: SkillData[] = [
   {
     title: 'skills',
     data: [
-      {name: 'Linguagens: Javascript, Python, C#'},
-      {name: 'Ecossistema JS: ReactJS, NodeJS, Typescript'},
-      {name: 'Estilização: TailwindCss, Shadcn-ui'},
-      {name: 'Desenvolvimento Front-end'},
-      {name: 'Desenvolvimento Back-end'},
-      {name: 'Desenvolvimento Mobile'},
+      {name: 'Javascript, Typescript, Python'},
+      {name: 'TailwindCss, Shadcn-ui'},
+      {name: 'Front-end Development'},
+      {name: 'Back-end Development'},
+      {name: 'Mobile Development'},
       {name: 'Digital Design'},
     ],
   },
   {
-    title: 'ferramentas',
+    title: 'tools',
     data: [
       {imgPath: '/about/vscode.svg'},
       {imgPath: '/about/figma.svg'},
@@ -117,21 +116,21 @@ export const skillData: SkillData[] = [
 export const servicesData: ServicesData[] = [
   {
     icon: <Layout size={72} strokeWidth={0.8} />,
-    title: 'Desenvolvimento Frontend',
+    title: 'Frontend Development',
     description:
-      'Criação de interfaces de usuário cativantes com código limpo e eficiente.',
+      'Crafting captivating user interfaces with clean and efficient code.',
   },
   {
     icon: <Lightbulb size={72} strokeWidth={0.8} />,
-    title: 'Transformando Ideias',
+    title: 'Transforming Ideas',
     description:
-      'Dando vida à sua visão com soluções de front-end interativas e dinâmicas.',
+      'Bringing your vision to life with interactive and dynamic frontend solutions.',
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: 'Soluções de front-end inovadoras',
+    title: 'Innovative Frontend Solutions',
     description:
-      'Criação de designs integrados e centrados no usuário que ressoam com seu público.',
+      'Creating seamless and user-centric designs that resonate with your audience.',
   },
 ]
 
@@ -141,7 +140,7 @@ export const projectData: ProjectData[] = [
     category: 'react native',
     name: 'Cook App',
     description:
-      "Criei o CookApp usando React Native, seguindo o tutorial do Rocketseat. É um aplicativo de receitas onde os usuários selecionam ingredientes e obtêm opções de receitas personalizadas",
+      "Built CookApp using React Native, following Rocketseat's tutorial.It's a recipe app where users select ingredients and get personalized recipe options",
     link: 'https://www.figma.com/file/op20QBiNSq1HaFue5minyl/Cook-App?type=design&node-id=0%3A1&mode=design&t=O1HJRbDhFFX98o8C-1',
     github: 'https://github.com/huannvictor/cook-app',
   },
@@ -150,7 +149,7 @@ export const projectData: ProjectData[] = [
     category: 'next js',
     name: 'Discord Clone',
     description:
-      'Neste curso de 11 horas aprendi como criar um fullstack ponta a ponta e um clone do Discord em tempo real, tudo com servidores, canais, chamadas de vídeo, chamadas de áudio, edição e exclusão de mensagens, bem como funções de membros.',
+      'In this 11 hour course I learned how to create an end-to-end fullstack and real-time discord clone, all with servers, channels, video calls, audio calls, editing and deleting messages as well as member roles.',
     link: '/',
     github: 'https://github.com/huannvictor/discord-clone',
   },
@@ -159,7 +158,7 @@ export const projectData: ProjectData[] = [
     category: 'react js',
     name: 'Candy Crush React',
     description:
-      'Em um tutorial rápido, dominei a criação de um clone da web do Candy Crush, me aprofundando na lógica de programação e nos conceitos essenciais do React.js ao longo do caminho.',
+      'In a brisk tutorial, I mastered crafting a Candy Crush web clone, delving into programming logic and essential React.js concepts along the way.',
     link: 'https://candy-crush-react-byhuann.vercel.app/',
     github: 'https://github.com/huannvictor/candy-crush-react',
   },
@@ -168,7 +167,7 @@ export const projectData: ProjectData[] = [
     category: 'node js',
     name: 'Short Link',
     description:
-      'Short Link é um projeto Node.js que permite aos usuários encurtar URLs, redirecionar para a URL original e analisar o número de acessos.',
+      'Short Link is a Node.js project that allows users to shorten URLs, redirect to the original URL, and analyze the number of accesses.',
     link: 'https://www.postman.com/docking-module-participant-28243338/workspace/huannvictor/collection/24904242-b41c2ded-9fd3-4e26-85f3-a23a9e2a8f5d?action=share&creator=24904242',
     github: 'https://github.com/huannvictor/short-links',
   },
@@ -177,7 +176,7 @@ export const projectData: ProjectData[] = [
     category: 'react js',
     name: 'Expert Notes',
     description:
-      'Expert Notes é um aplicativo web React inovador desenvolvido durante o evento online NLW utilizando Vite. Integrando perfeitamente a funcionalidade de gravação de áudio, o aplicativo transcreve com eficiência palavras faladas em texto, oferecendo aos usuários a flexibilidade de optar pela entrada manual, se preferirem. Com um design elegante e moderno, Expert Notes é esteticamente aprimorado com Tailwind CSS, garantindo uma experiência de usuário visualmente atraente e intuitiva.',
+      'ExExpert Notes is an innovative React web application developed during the NLW online event utilizing Vite. Seamlessly integrating audio recording functionality, the app efficiently transcribes spoken words into text, offering users the flexibility to opt for manual input if preferred. Boasting a sleek and modern design, Expert Notes is aesthetically enhanced with Tailwind CSS, ensuring a visually appealing and intuitive user experience.',
     link: 'https://nlw-expert-notes-drab.vercel.app/',
     github: 'https://github.com/huannvictor/nlwExpert-Notes',
   },

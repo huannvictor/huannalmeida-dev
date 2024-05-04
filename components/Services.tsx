@@ -12,7 +12,7 @@ const Services = () => {
     <section className="mb-12 lg:mb-36">
       <div className="container mx-auto">
         <h2 className="section-title mx-auto mb-12 text-center lg:mb-24">
-          My Services
+          Meus Serviços
         </h2>
 
         <div className="grid justify-center gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-24">

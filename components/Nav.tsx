@@ -4,8 +4,8 @@ import {usePathname} from 'next/navigation'
 
 const links = [
   {path: '/', name: 'home'},
-  {path: '/projects', name: 'my projects'},
-  {path: '/contact', name: 'contact'},
+  {path: '/projects', name: 'projetos'},
+  {path: '/contact', name: 'olá'},
 ]
 
 interface NavProps {

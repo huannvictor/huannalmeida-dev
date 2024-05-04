@@ -32,13 +32,18 @@ export const content = {
       content:
         'Descubra mais sobre mim, minha jornada e interesses. Mergulhe na pessoa por trás do código – uma mistura de paixões, experiências e habilidades.',
     },
+    languageSkills: {
+      title: 'Idiomas',
+      options: [
+        'Português Brasileiro (nativo)',
+        'Inglês avançado'
+      ]
+    },
     tabsQualifications: {title: 'Minha Jornada'},
     tabsSkills: {
-      title: 'O que uso diariamente',
-      subtitle: {
-        skills: 'Skills',
-        tools: 'Ferramentas',
-      },
+      title: 'Minhas Habilidades',
+      skills: 'Skills',
+      tools: 'Ferramentas',
     },
   },
 }

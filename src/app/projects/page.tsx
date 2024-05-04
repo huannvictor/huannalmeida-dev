@@ -2,7 +2,7 @@
 
 import ProjectCard from '@/components/ProjectCard'
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
-import {projectData} from '@/data/data-en'
+import {projectData} from '@/data/data'
 import {useState} from 'react'
 
 const uniqueCategories = [

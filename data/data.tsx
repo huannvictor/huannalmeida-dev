@@ -94,11 +94,12 @@ export const skillData: SkillData[] = [
   {
     title: 'skills',
     data: [
-      {name: 'Javascript, Typescript, Python'},
-      {name: 'TailwindCss, Shadcn-ui'},
-      {name: 'Front-end Development'},
-      {name: 'Back-end Development'},
-      {name: 'Mobile Development'},
+      {name: 'Linguagens: Javascript, Python, C#'},
+      {name: 'Ecossistema JS: ReactJS, NodeJS, Typescript'},
+      {name: 'Estilização: TailwindCss, Shadcn-ui'},
+      {name: 'Desenvolvimento Front-end'},
+      {name: 'Desenvolvimento Back-end'},
+      {name: 'Desenvolvimento Mobile'},
       {name: 'Digital Design'},
     ],
   },

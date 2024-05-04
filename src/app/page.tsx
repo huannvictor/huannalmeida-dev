@@ -1,8 +1,8 @@
-import HeroSection from '@/components/screens/HeroSection'
-import About from '@/components/About'
-import Services from '@/components/Services'
-import Work from '@/components/Work'
-import Cta from '@/components/Cta'
+import HeroSection from '@/src/screens/HeroSection'
+import About from '@/src/components/About'
+import Services from '@/src/components/Services'
+import Work from '@/src/components/Work'
+import Cta from '@/src/components/Cta'
 // import Reviews from '@/components/Reviews'
 
 export default function Home() {

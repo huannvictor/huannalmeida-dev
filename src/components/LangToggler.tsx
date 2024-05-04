@@ -2,8 +2,8 @@
 
 import {LanguagesIcon} from 'lucide-react'
 import {useState} from 'react'
-import {Button} from './ui/button'
-import {HoverCard, HoverCardContent, HoverCardTrigger} from './ui/hover-card'
+import {Button} from '../../components/ui/button'
+import {HoverCard, HoverCardContent, HoverCardTrigger} from '../../components/ui/hover-card'
 
 export default function LangToggler() {
   const [lang, setLang] = useState('en')

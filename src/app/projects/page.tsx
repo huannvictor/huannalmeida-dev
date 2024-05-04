@@ -1,8 +1,8 @@
 'use client'
 
-import ProjectCard from '@/components/ProjectCard'
+import ProjectCard from '@/src/components/ProjectCard'
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
-import {projectData} from '@/data/data'
+import {projectData} from '@/src/common/data/data'
 import {useState} from 'react'
 
 const uniqueCategories = [

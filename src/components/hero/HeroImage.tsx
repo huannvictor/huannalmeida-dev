@@ -8,7 +8,7 @@ import {
   RiGitBranchFill,
 } from 'react-icons/ri'
 
-import Badge from '../Badge'
+import Badge from '../DynamicBadge'
 import DevImg from '../DevImg'
 import {content} from './content'
 

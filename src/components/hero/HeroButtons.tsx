@@ -7,8 +7,8 @@ import {
   DialogContent,
   DialogTitle,
   DialogDescription,
-} from '../ui/dialog'
-import {Button} from '../ui/button'
+} from '../../../components/ui/dialog'
+import {Button} from '../../../components/ui/button'
 
 import {Send, Download, FileDownIcon} from 'lucide-react'
 import {content} from './content'

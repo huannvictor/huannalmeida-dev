@@ -1,6 +1,6 @@
 import {HomeIcon, MailIcon, PhoneCallIcon} from 'lucide-react'
 
-import Form from '@/components/Form'
+import Form from '@/src/components/Form'
 import {RiWhatsappLine} from 'react-icons/ri'
 import Link from 'next/link'
 import {Button} from '@/components/ui/button'

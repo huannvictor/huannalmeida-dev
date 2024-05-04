@@ -3,10 +3,10 @@ import {Outfit} from 'next/font/google'
 import './globals.css'
 
 // COMPONENTS
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Footer from '@/src/components/Footer'
+import Header from '@/src/components/Header'
 // THEME PROVIDER
-import {ThemeProvider} from '@/components/ThemeProvider'
+import {ThemeProvider} from '@/src/components/ThemeProvider'
 
 const outfit = Outfit({subsets: ['latin']})
 

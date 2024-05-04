@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 import {Briefcase, GraduationCap} from 'lucide-react'
 
-import {Tabs, TabsContent, TabsList, TabsTrigger} from './ui/tabs'
+import {Tabs, TabsContent, TabsList, TabsTrigger} from '../../components/ui/tabs'
 
-import {infoData, qualificationData, skillData} from '../data/data'
+import {infoData, qualificationData, skillData} from '@/src/common/data/data'
 import DevImg from './DevImg'
 import {content} from './about/content'
 

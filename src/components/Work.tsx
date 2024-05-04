@@ -7,10 +7,10 @@ import {Pagination} from 'swiper/modules'
 import {Swiper, SwiperSlide} from 'swiper/react'
 
 import Link from 'next/link'
-import {Button} from './ui/button'
+import {Button} from '../../components/ui/button'
 import ProjectCard from './ProjectCard'
 
-import {projectData} from '@/data/data-en'
+import {projectData} from '@/src/common/data/data-en'
 import {content} from './work/content'
 
 const Work = () => {

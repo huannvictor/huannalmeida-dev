@@ -6,8 +6,8 @@ import 'swiper/css/pagination'
 import {Pagination} from 'swiper/modules'
 import {Swiper, SwiperSlide} from 'swiper/react'
 
-import {reviewsData} from '@/data/data-en'
-import {Card, CardDescription, CardHeader, CardTitle} from './ui/card'
+import {reviewsData} from '@/src/common/data/data-en'
+import {Card, CardDescription, CardHeader, CardTitle} from '../../components/ui/card'
 import Image from 'next/image'
 
 const Reviews = () => {

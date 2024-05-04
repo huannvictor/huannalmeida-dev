@@ -1,11 +1,11 @@
-import {servicesData} from '@/data/data'
+import {servicesData} from '@/src/common/data/data'
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from './ui/card'
+} from '../../components/ui/card'
 
 const Services = () => {
   return (

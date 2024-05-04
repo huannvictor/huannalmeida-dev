@@ -8,10 +8,10 @@ import {
   RiPaletteFill,
   RiGitBranchFill,
 } from 'react-icons/ri'
-import Badge from './Badge'
+import Badge from './DynamicBadge'
 import DevImg from './DevImg'
 import Socials from './Socials'
-import {Button} from './ui/button'
+import {Button} from '../../components/ui/button'
 import {
   Dialog,
   DialogContent,
@@ -19,7 +19,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from './ui/dialog'
+} from '../../components/ui/dialog'
 import {useEffect, useState} from 'react'
 
 const Hero = () => {

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import {Briefcase, GraduationCap} from 'lucide-react'
 
-import {Tabs, TabsContent, TabsList, TabsTrigger} from '../../components/ui/tabs'
+import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
 
 import {infoData, qualificationData, skillData} from '@/src/common/data/data'
 import DevImg from './DevImg'
@@ -59,6 +59,7 @@ export default function About() {
               </TabsList>
 
               <div className="mt-12 text-lg lg:mt-8">
+                {/** //* PERSONAL */}
                 <TabsContent value="personal">
                   <div className="text-center lg:text-left">
                     <h3 className="h3 mb-4">{content.pt.tabsPersonal.title}</h3>
@@ -91,6 +92,7 @@ export default function About() {
                     </div>
                   </div>
                 </TabsContent>
+                {/** //* QUALIFICATIONS */}
                 <TabsContent value="qualifications">
                   <div>
                     <h3 className="h3 mb-8 text-center lg:text-left">
@@ -98,7 +100,6 @@ export default function About() {
                     </h3>
 
                     <div className="grid gap-y-8 md:grid-cols-2">
-                      {/* //* EXPERIENCE */}
                       <div className="flex flex-col gap-y-6">
                         <div className="flex items-center gap-x-4 text-[22px] text-primary">
                           <Briefcase />

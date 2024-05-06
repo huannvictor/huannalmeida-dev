@@ -1,8 +1,8 @@
 import Cta from '@/src/components/Cta'
-import Work from '@/src/components/Work'
 import AboutSection from '@/src/pageSections/AboutSection'
 import HeroSection from '@/src/pageSections/HeroSection'
 import ServicesSection from '@/src/pageSections/ServicesSection'
+import WorkSection from '../pageSections/WorkSection'
 // import Reviews from '@/components/Reviews'
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <Work />
+      <WorkSection />
       {/* <Reviews /> */}
       <Cta />
     </main>

@@ -1,8 +1,7 @@
 'use client'
 
+import {motion,Variants} from 'framer-motion'
 import {FC, ReactNode} from 'react'
-
-import {Variants, motion} from 'framer-motion'
 
 // HOOKS
 import useScrollProgress from '@/hooks/useScrollProgress'

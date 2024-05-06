@@ -1,9 +1,9 @@
 import {HomeIcon, MailIcon, PhoneCallIcon} from 'lucide-react'
-
-import Form from '@/src/components/Form'
-import {RiWhatsappLine} from 'react-icons/ri'
 import Link from 'next/link'
+import {RiWhatsappLine} from 'react-icons/ri'
+
 import {Button} from '@/components/ui/button'
+import Form from '@/src/components/Form'
 
 const Contact = () => {
   return (

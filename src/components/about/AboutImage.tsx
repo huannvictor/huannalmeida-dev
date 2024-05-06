@@ -1,7 +1,5 @@
 import DevImg from "../DevImg";
 
-interface AboutImageProps {}
-
 export default function AboutImage (){
     return (
       <div className="relative hidden flex-1 lg:flex">

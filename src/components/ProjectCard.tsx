@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {RiGithubLine, RiLink} from 'react-icons/ri'
+
 import {Badge} from '../../components/ui/badge'
 import {Card, CardHeader} from '../../components/ui/card'
 

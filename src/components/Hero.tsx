@@ -2,15 +2,14 @@
 
 import {Download, FileDownIcon, Send} from 'lucide-react'
 import Link from 'next/link'
+import {useEffect, useState} from 'react'
 import {
   RiArrowDownSLine,
   RiBriefcase4Fill,
-  RiPaletteFill,
   RiGitBranchFill,
+  RiPaletteFill,
 } from 'react-icons/ri'
-import Badge from './DynamicBadge'
-import DevImg from './DevImg'
-import Socials from './Socials'
+
 import {Button} from '../../components/ui/button'
 import {
   Dialog,
@@ -20,7 +19,9 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '../../components/ui/dialog'
-import {useEffect, useState} from 'react'
+import DevImg from './DevImg'
+import Badge from './DynamicBadge'
+import Socials from './Socials'
 
 const Hero = () => {
   const [repos, setRepos] = useState(0)

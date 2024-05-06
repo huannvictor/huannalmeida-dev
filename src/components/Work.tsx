@@ -3,14 +3,14 @@
 import 'swiper/css'
 import 'swiper/css/pagination'
 
+import Link from 'next/link'
 import {Pagination} from 'swiper/modules'
 import {Swiper, SwiperSlide} from 'swiper/react'
 
-import Link from 'next/link'
+import {projectData} from '@/src/common/data/data-en'
+
 import {Button} from '../../components/ui/button'
 import ProjectCard from './ProjectCard'
-
-import {projectData} from '@/src/common/data/data-en'
 import {content} from './work/content'
 
 const Work = () => {

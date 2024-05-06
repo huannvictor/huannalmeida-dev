@@ -1,7 +1,9 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { getData } from "./getData";
 import { Briefcase, GraduationCap } from "lucide-react";
 import Image from 'next/image'
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+import { getData } from "./getData";
 
 interface AboutTabsProps {
   triggers: TabsTriggersProps[]

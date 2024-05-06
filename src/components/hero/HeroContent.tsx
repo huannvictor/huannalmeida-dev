@@ -1,6 +1,6 @@
 import Socials from '../Socials'
-import HeroButtons from './HeroButtons'
 import {content} from './content'
+import HeroButtons from './HeroButtons'
 
 export default function HeroContent() {
   return (

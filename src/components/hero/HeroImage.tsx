@@ -1,15 +1,14 @@
 'use client'
 
 import {useEffect, useState} from 'react'
-
 import {
   RiBriefcase4Fill,
-  RiPaletteFill,
   RiGitBranchFill,
+  RiPaletteFill,
 } from 'react-icons/ri'
 
-import Badge from '../DynamicBadge'
 import DevImg from '../DevImg'
+import Badge from '../DynamicBadge'
 import {content} from './content'
 
 export default function HeroImage() {

@@ -1,16 +1,15 @@
+import {Download, FileDownIcon,Send} from 'lucide-react'
 import Link from 'next/link'
 
+import {Button} from '../../../components/ui/button'
 import {
   Dialog,
-  DialogTrigger,
-  DialogHeader,
   DialogContent,
-  DialogTitle,
   DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
 } from '../../../components/ui/dialog'
-import {Button} from '../../../components/ui/button'
-
-import {Send, Download, FileDownIcon} from 'lucide-react'
 import {content} from './content'
 
 export default function HeroButtons() {

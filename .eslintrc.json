@@ -1,6 +1,7 @@
 {
   "extends": [
-    "next"
+    "standard",
+    "prettier"
   ],
   "plugins": ["simple-import-sort"],
   "rules": {

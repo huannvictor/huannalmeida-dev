@@ -1,7 +1,7 @@
-import About from "../components/about/index"
+import {infoData, qualificationData, skillData} from '@/src/common/data/data'
 
 import { content } from "../components/about/content"
-import {infoData, qualificationData, skillData} from '@/src/common/data/data'
+import About from "../components/about/index"
 
 export default function AboutSection (){
   return (

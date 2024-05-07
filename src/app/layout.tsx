@@ -1,5 +1,8 @@
 import './globals.css'
 
+// VERCEL SPEED INSIGHTS
+import { SpeedInsights } from "@vercel/speed-insights/next"
+// NEXT IMPORTS
 import type {Metadata} from 'next'
 import {Outfit} from 'next/font/google'
 
@@ -29,6 +32,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>

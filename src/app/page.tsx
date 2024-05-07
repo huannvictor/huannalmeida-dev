@@ -1,5 +1,5 @@
-import Cta from '@/src/components/Cta'
 import AboutSection from '@/src/pageSections/AboutSection'
+import CtaSection from '@/src/pageSections/CtaSection'
 import HeroSection from '@/src/pageSections/HeroSection'
 import ServicesSection from '@/src/pageSections/ServicesSection'
 import WorkSection from '@/src/pageSections/WorkSection'
@@ -13,7 +13,7 @@ export default function Home() {
       <ServicesSection />
       <WorkSection />
       {/* <Reviews /> */}
-      <Cta />
+      <CtaSection />
     </main>
   )
 }

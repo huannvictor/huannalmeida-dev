@@ -1,93 +1,93 @@
 interface Qualification {
-  university: string
-  qualification: string
-  years: string
+	university: string;
+	qualification: string;
+	years: string;
 }
 
 interface Experience {
-  company: string
-  role: string
-  years: string
+	company: string;
+	role: string;
+	years: string;
 }
 
 interface Skill {
-  name: string
+	name: string;
 }
 
 interface Tool {
-  imgPath: string
+	imgPath: string;
 }
 
 interface InfoData {
-  icon: JSX.Element;
-  text: string;
+	icon: JSX.Element;
+	text: string;
 }
 
 interface QualificationData {
-  title: string
-  data: (Qualification | Experience)[]
+	title: string;
+	data: (Qualification | Experience)[];
 }
 
 interface SkillData {
-  title: string
-  data: (Skill | Tool)[]
+	title: string;
+	data: (Skill | Tool)[];
 }
 
 interface ServicesData {
-  icon: ReactNode
-  title: string
-  description: string
+	icon: ReactNode;
+	title: string;
+	description: string;
 }
 
 interface ProjectData {
-  image: string
-  category: string
-  name: string
-  description: string
-  link: string
-  github: string
+	image: string;
+	category: string;
+	name: string;
+	description: string;
+	link: string;
+	github: string;
 }
 
 interface ReviewsData {
-  avatar: string
-  name: string
-  job: string
-  review: string
+	avatar: string;
+	name: string;
+	job: string;
+	review: string;
 }
 
 interface BadgeProps {
-  containerStyles: string
-  icon: ReactNode
-  endCountNum: number
-  endCountText?: string
-  badgeText: string
+	containerStyles: string;
+	icon: ReactNode;
+	endCountNum?: number;
+	endCountText?: string;
+	badgeText: string;
 }
 
 interface TabsTriggersProps {
-  title: string
-  value: string
+	title: string;
+	value: string;
 }
 
 interface TabsContentProps {
-    sectionTitle: string;
-    tabsTriggers: {
-      title: string;
-      value: string;
-    }[];
-    tabsPersonal: {
-      title: string;
-      content: string;
-    };
-    languageSkills: {
-      title: string;
-      options: string[];
-    };
-    tabsQualifications: {
-      title: string;
-    };
-    tabsSkills: {
-      title: string;
-      skills: string;
-      tools: string;
-    };
+	sectionTitle: string;
+	tabsTriggers: {
+		title: string;
+		value: string;
+	}[];
+	tabsPersonal: {
+		title: string;
+		content: string;
+	};
+	languageSkills: {
+		title: string;
+		options: string[];
+	};
+	tabsQualifications: {
+		title: string;
+	};
+	tabsSkills: {
+		title: string;
+		skills: string;
+		tools: string;
+	};
 }

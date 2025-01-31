@@ -76,7 +76,7 @@ interface TabsContentProps {
 	}[];
 	tabsPersonal: {
 		title: string;
-		content: string;
+		content: string[];
 	};
 	languageSkills: {
 		title: string;

@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { projectData } from "@/src/common/data/data";
 import ProjectCard from "@/src/components/ProjectCard";
-
-import { v4 as uuidv4 } from "uuid";
 
 const uniqueCategories = [
 	"all projects",

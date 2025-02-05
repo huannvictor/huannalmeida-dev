@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { v4 as uuidv4 } from "uuid";
 
 import { reviewsData } from "@/src/common/data/data-en";
 
@@ -15,8 +16,6 @@ import {
 	CardHeader,
 	CardTitle,
 } from "../../components/ui/card";
-
-import { v4 as uuidv4 } from "uuid";
 
 const Reviews = () => {
 	return (

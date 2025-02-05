@@ -1,5 +1,6 @@
 import { Briefcase, GraduationCap } from "lucide-react";
 import Image from "next/image";
+import { v4 as uuidv4 } from "uuid";
 
 import {
 	HoverCard,
@@ -9,8 +10,6 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { getData } from "./getData";
-
-import { v4 as uuidv4 } from "uuid";
 
 interface AboutTabsProps {
 	triggers: TabsTriggersProps[];

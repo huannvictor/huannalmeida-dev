@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 import {
 	Card,
 	CardContent,
@@ -5,7 +7,6 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { v4 as uuidv4 } from "uuid";
 
 interface ServicesCardsProps {
 	servicesData: ServicesData[];

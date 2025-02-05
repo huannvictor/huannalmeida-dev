@@ -16,6 +16,7 @@ interface Skill {
 
 interface Tool {
 	imgPath: string;
+	tool: string;
 }
 
 interface InfoData {
@@ -44,7 +45,7 @@ interface ProjectData {
 	category: string;
 	name: string;
 	description: string;
-	link: string;
+	link: string | null;
 	github: string;
 }
 

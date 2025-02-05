@@ -1,9 +1,9 @@
 import {
 	Calendar,
-	Gem,
+	DatabaseZap,
 	Home,
+	Layers,
 	Layout,
-	Lightbulb,
 	MailIcon,
 	PhoneCall,
 	User2,
@@ -83,12 +83,12 @@ export const qualificationData: QualificationData[] = [
 			},
 			{
 				company: "Skill Labs",
-				role: "Desenvolvedor Front-End Junior",
+				role: "Desenvolvedor Frontend Junior",
 				years: "Jan 2023 - Ago 2023",
 			},
 			{
 				company: "Organize Soft",
-				role: "Desenvolvedor Front-End Junior",
+				role: "Desenvolvedor Frontend Junior",
 				years: "Dez 2022 - Fev 2023",
 			},
 		],
@@ -100,22 +100,21 @@ export const skillData: SkillData[] = [
 		title: "skills",
 		data: [
 			{ name: "Linguagens: Typescript, Python, C#" },
-			{ name: "Ecossistema JS que mais trabalho: ReactJS, NodeJS" },
-			{ name: "Ecossistema JS que tenho conhecimento: AngularJS" },
+			{ name: "Ecossistema JS, o que mais trabalho: ReactJS, NodeJS" },
+			{ name: "Ecossistema JS, o que tenho conhecimento: AngularJS" },
 			{ name: "Estilização: TailwindCss, Shadcn-ui" },
-			{ name: "Desenvolvimento Front-end" },
-			{ name: "Desenvolvimento Back-end" },
-			{ name: "Desenvolvimento Mobile" },
+			{ name: "Backend: Postgres, Prisma" },
+			{ name: "Mobile: React Native" },
 			{ name: "Digital Design" },
 		],
 	},
 	{
 		title: "ferramentas",
 		data: [
-			{ imgPath: "/about/vscode.svg" },
-			{ imgPath: "/about/figma.svg" },
-			{ imgPath: "/about/trello.svg" },
-			{ imgPath: "/about/miro.svg" },
+			{ imgPath: "/about/vscode.svg", tool: "VS Code" },
+			{ imgPath: "/about/figma.svg", tool: "Figma" },
+			{ imgPath: "/about/trello.svg", tool: "Trello" },
+			{ imgPath: "/about/miro.svg", tool: "Miro" },
 		],
 	},
 ];
@@ -123,25 +122,34 @@ export const skillData: SkillData[] = [
 export const servicesData: ServicesData[] = [
 	{
 		icon: <Layout size={72} strokeWidth={0.8} />,
-		title: "Desenvolvimento Frontend",
+		title: "Frontend",
 		description:
-			"Criação de interfaces de usuário cativantes com código limpo e eficiente.",
+			"Criação de interfaces de usuário com ferramentas modernas que otimizam a experiência do usuário.",
 	},
 	{
-		icon: <Lightbulb size={72} strokeWidth={0.8} />,
-		title: "Transformando Ideias",
+		icon: <DatabaseZap size={72} strokeWidth={0.8} />,
+		title: "Backend",
 		description:
-			"Dando vida à sua visão com soluções de front-end interativas e dinâmicas.",
+			"Desenvolvimento de servidores e bancos de dados eficientes para aplicativos web e móveis.",
 	},
 	{
-		icon: <Gem size={72} strokeWidth={0.8} />,
-		title: "Soluções de front-end inovadoras",
+		icon: <Layers size={72} strokeWidth={0.8} />,
+		title: "Fullstack",
 		description:
-			"Criação de designs integrados e centrados no usuário que ressoam com seu público.",
+			"utilizando tecnologias modernas para criar aplicativos web e móveis completos.",
 	},
 ];
 
 export const projectData: ProjectData[] = [
+	{
+		image: "/work/CSVGeneratorFromFiles.png",
+		category: "python",
+		name: "CSVGeneratorFromFiles",
+		description:
+			"Este projeto consiste em um script Python que automatiza a organização e geração de relatórios a partir de arquivos armazenados em uma pasta.",
+		link: null,
+		github: "https://github.com/huannvictor/CSVGeneratorFromFiles",
+	},
 	{
 		image: "/work/cookapp.png",
 		category: "react native",
@@ -157,7 +165,7 @@ export const projectData: ProjectData[] = [
 		name: "Discord Clone",
 		description:
 			"Neste curso de 11 horas aprendi como criar um fullstack ponta a ponta e um clone do Discord em tempo real, tudo com servidores, canais, chamadas de vídeo, chamadas de áudio, edição e exclusão de mensagens, bem como funções de membros.",
-		link: "/",
+		link: null,
 		github: "https://github.com/huannvictor/discord-clone",
 	},
 	{

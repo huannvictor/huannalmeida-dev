@@ -1,11 +1,13 @@
 import { Briefcase, GraduationCap } from "lucide-react";
 import Image from "next/image";
+
 import {
 	HoverCard,
 	HoverCardContent,
 	HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 import { getData } from "./getData";
 
 interface AboutTabsProps {

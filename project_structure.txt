@@ -1,0 +1,158 @@
+components
+├── ui
+│   └── badge.tsx
+│   └── button.tsx
+│   └── card.tsx
+│   └── dialog.tsx
+│   └── form.tsx
+│   └── hover-card.tsx
+│   └── input.tsx
+│   └── label.tsx
+│   └── sheet.tsx
+│   └── tabs.tsx
+│   └── textarea.tsx
+hooks
+├── useScrollProgress.tsx
+lib
+├── utils.ts
+public
+├── about
+│   ├── developer.png
+│   ├── figma.svg
+│   ├── illustrator.svg
+│   ├── miro.svg
+│   ├── notion.svg
+│   ├── shape-dark.svg
+│   ├── shape-light.svg
+│   ├── trello.svg
+│   ├── vscode.svg
+│   ├── wordpress.svg
+├── contact
+│   ├── illustration-dark.svg
+│   ├── illustration-light.svg
+├── cta
+│   ├── wave.png
+│   ├── wave.svg
+├── files
+│   ├── CV_HuannAlmeida_EN.pdf
+│   ├── CV_HuannAlmeida_PT.pdf
+├── hero
+│   ├── developer.png
+│   ├── hero-bg.png
+│   ├── shape-1.svg
+│   ├── shape-2-dark.svg
+│   ├── shape-2-light.svg
+├── reviews
+│   ├── avatar-1.png
+│   ├── avatar-2.png
+│   ├── avatar-3.png
+│   ├── avatar-4.png
+│   ├── avatar-5.png
+│   ├── avatar-6.png
+├── work
+│   ├── 1.png
+│   ├── 2.png
+│   ├── 3.png
+│   ├── 4.png
+│   ├── candycrush.png
+│   ├── cookapp.png
+│   ├── CSVGeneratorFromFiles.png
+│   ├── discordclone.png
+│   ├── nlwExpertsNotes.png
+│   ├── project-bg-dark.png
+│   ├── project-bg-light.png
+│   ├── shortlinks.png
+├── dots-dark.svg
+├── dots-light.svg
+├── logo.svg
+src
+├── app
+│   ├── contact
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   ├── projects
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── template.tsx
+├── common
+│   ├── data
+│   │   └── customtypes.d.ts
+│   │   └── data-en.tsx
+│   │   └── data.tsx
+├── components
+│   ├── about
+│   │   ├── AboutImage.tsx
+│   │   ├── AboutRoot.tsx
+│   │   ├── AboutTabs.tsx
+│   │   ├── AboutTabsContainer.tsx
+│   │   ├── content.ts
+│   │   ├── getData.ts
+│   │   ├── index.tsx
+│   ├── cta
+│   │   ├── btnText.tsx
+│   │   ├── content.ts
+│   │   ├── CtaContainer.tsx
+│   │   ├── CtaRoot.tsx
+│   │   ├── CtaText.tsx
+│   │   ├── index.tsx
+│   ├── hero
+│   │   ├── content.ts
+│   │   ├── HeroButtons.tsx
+│   │   ├── HeroContent.tsx
+│   │   ├── HeroImage.tsx
+│   │   ├── HeroRoot.tsx
+│   │   ├── index.ts
+│   │   ├── types.d.ts
+│   ├── servives
+│   │   ├── index.tsx
+│   │   ├── ServicesCards.tsx
+│   │   ├── ServicesContainer.tsx
+│   │   ├── ServicesRoot.tsx
+│   ├── work
+│   │   ├── content.ts
+│   │   ├── index.tsx
+│   │   ├── WorkCardsCarousel.tsx
+│   │   ├── WorkContainer.tsx
+│   │   ├── WorkRoot.tsx
+│   │   ├── WorkTextContent.tsx
+│   ├── Cta.tsx
+│   ├── DevImg.tsx
+│   ├── DynamicBadge.tsx
+│   ├── Footer.tsx
+│   ├── Form.tsx
+│   ├── Header.tsx
+│   ├── LangToggler.tsx
+│   ├── Logo.tsx
+│   ├── MobileNav.tsx
+│   ├── Nav.tsx
+│   ├── ProjectCard.tsx
+│   ├── Reviews.tsx
+│   ├── Services.tsx
+│   ├── Socials.tsx
+│   ├── ThemeProvider.tsx
+│   ├── ThemeToggler.tsx
+├── pageSections
+│   └── AboutSection.tsx
+│   └── CtaSection.tsx
+│   └── HeroSection.tsx
+│   └── ServicesSection.tsx
+│   └── WorkSection.tsx
+.eslintrc.json
+.gitignore
+components.json
+estrutura.txt
+next-env.d.ts
+next.config.mjs
+package.json
+pnpm-lock.yaml
+postcss.config.js
+prettier.config.js
+project_structure.txt
+README.md
+structure.ps1
+tailwind.config.ts
+tsconfig.json

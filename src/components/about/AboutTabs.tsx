@@ -4,6 +4,11 @@ import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { getData } from "./getData";
+import {
+	HoverCard,
+	HoverCardContent,
+	HoverCardTrigger,
+} from "@/components/ui/hover-card";
 
 interface AboutTabsProps {
 	triggers: TabsTriggersProps[];
@@ -190,17 +195,24 @@ export default function AboutTabs({
 								<div className="flex justify-center gap-x-8 lg:justify-start">
 									{getData(skillData, "ferramentas").data.map((item, index) => {
 										// @ts-expect-error destructuring data
-										const { imgPath } = item;
+										const { imgPath, tool } = item;
 										return (
-											<div key={index}>
-												<Image
-													src={imgPath}
-													width={48}
-													height={48}
-													alt=""
-													priority
-												/>
-											</div>
+											<HoverCard key={tool}>
+												<div>
+													<HoverCardTrigger asChild>
+														<Image
+															src={imgPath}
+															width={48}
+															height={48}
+															alt={tool}
+															priority
+														/>
+													</HoverCardTrigger>
+													<HoverCardContent className="w-fit dark:bg-zinc-700/50 bg-zinc-100/50">
+														<p className="text-xs text-zinc-400">{tool}</p>
+													</HoverCardContent>
+												</div>
+											</HoverCard>
 										);
 									})}
 								</div>

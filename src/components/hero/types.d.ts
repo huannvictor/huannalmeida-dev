@@ -1,7 +1,7 @@
 interface HeroProps {
-  lang: 'en' | 'pt'
+	lang: "en" | "pt";
 }
 
 interface HeroRootProps {
-  children: ReactNode
+	children: ReactNode;
 }

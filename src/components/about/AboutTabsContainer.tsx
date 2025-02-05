@@ -1,11 +1,9 @@
 interface AboutTabsContainerProps {
-  children: React.ReactNode
+	children: React.ReactNode;
 }
 
-export default function AboutTabsContainer ({children}: AboutTabsContainerProps){
-    return (
-      <div className="flex flex-col lg:flex-row">
-        {children}
-      </div>
-    );
-};
+export default function AboutTabsContainer({
+	children,
+}: AboutTabsContainerProps) {
+	return <div className="flex flex-col lg:flex-row">{children}</div>;
+}

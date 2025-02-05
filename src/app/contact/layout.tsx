@@ -1,14 +1,14 @@
-import type {Metadata} from 'next'
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Huann Almeida - Contact',
-  description: 'Contact me.',
-}
+	title: "Huann Almeida - Contact",
+	description: "Contact me.",
+};
 
 export default function ContactLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode
+	children: React.ReactNode;
 }>) {
-  return <>{children}</>
+	return <>{children}</>;
 }

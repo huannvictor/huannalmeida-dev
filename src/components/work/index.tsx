@@ -4,10 +4,10 @@ import WorkRoot from "./WorkRoot";
 import WorkTextContent from "./WorkTextContent";
 
 const Work = {
-  Root: WorkRoot,
-  Container: WorkContainer,
-  TextContent: WorkTextContent,
-  Carousel: WorkCadsCarousel,
-}
+	Root: WorkRoot,
+	Container: WorkContainer,
+	TextContent: WorkTextContent,
+	Carousel: WorkCadsCarousel,
+};
 
-export default Work
+export default Work;

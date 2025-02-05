@@ -1,15 +1,15 @@
 import Link from "next/link";
 
-import {Button} from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 interface CtaButtonProps {
-  btnTxt: string
+	btnTxt: string;
 }
 
-export default function CtaButton ({btnTxt}: CtaButtonProps){
-  return (
-    <Link href="/contact">
-      <Button>{btnTxt}</Button>
-    </Link>
-  );
-};
+export default function CtaButton({ btnTxt }: CtaButtonProps) {
+	return (
+		<Link href="/contact">
+			<Button>{btnTxt}</Button>
+		</Link>
+	);
+}

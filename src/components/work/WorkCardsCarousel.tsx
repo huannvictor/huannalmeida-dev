@@ -8,6 +8,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import ProjectCard from "../ProjectCard";
 
+import { v4 as uuidv4 } from "uuid";
+
 interface WorkCadsCarouselProps {
 	projectData: ProjectData[];
 }
@@ -27,11 +29,11 @@ export default function WorkCadsCarousel({
 				modules={[Pagination]}
 				pagination={{ clickable: true }}
 			>
-				{projectData.slice(0, 4).map((project, index) => {
+				{projectData.slice(0, 4).map((project) => {
 					const { category, description, github, image, link, name } = project;
 
 					return (
-						<SwiperSlide key={index}>
+						<SwiperSlide key={uuidv4()}>
 							<ProjectCard
 								image={image}
 								category={category}

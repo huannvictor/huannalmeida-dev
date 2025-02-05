@@ -10,6 +10,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { getData } from "./getData";
 
+import { v4 as uuidv4 } from "uuid";
+
 interface AboutTabsProps {
 	triggers: TabsTriggersProps[];
 	content: TabsContentProps;
@@ -29,11 +31,11 @@ export default function AboutTabs({
 		<div className="flex-1">
 			<Tabs defaultValue="personal">
 				<TabsList className="grid w-full lg:max-w-[520px] lg:grid-cols-3">
-					{triggers.map((trigger, index) => (
+					{triggers.map((trigger) => (
 						<TabsTrigger
 							className="w-[162px] lg:w-auto"
 							value={trigger.value}
-							key={index}
+							key={uuidv4()}
 						>
 							{trigger.title}
 						</TabsTrigger>
@@ -45,17 +47,20 @@ export default function AboutTabs({
 					<TabsContent value="personal">
 						<div className="text-center lg:text-left">
 							<h3 className="h3 mb-4">{content.tabsPersonal.title}</h3>
-							{content.tabsPersonal.content.map((paragraph, index) => (
-								<p className="paragraph mx-auto max-w-xl lg:mx-0" key={index}>
+							{content.tabsPersonal.content.map((paragraph) => (
+								<p
+									className="paragraph mx-auto max-w-xl lg:mx-0"
+									key={uuidv4()}
+								>
 									{paragraph}
 								</p>
 							))}
 
 							<div className="mb-12 grid gap-4 lg:grid-cols-2">
-								{infoData.map((item, index) => (
+								{infoData.map((item) => (
 									<div
 										className="mx-auto flex items-center justify-start gap-x-4 md:mx-24 lg:mx-0"
-										key={index}
+										key={uuidv4()}
 									>
 										<div className="text-primary">{item.icon}</div>
 										<div className="text-sm md:text-base">{item.text}</div>
@@ -69,8 +74,8 @@ export default function AboutTabs({
 								</div>
 								<div className="border-b border-border" />
 								<div className="text-sm md:text-base">
-									{content.languageSkills.options.map((lang, index) => (
-										<p key={index}>{lang}</p>
+									{content.languageSkills.options.map((lang) => (
+										<p key={uuidv4()}>{lang}</p>
 									))}
 								</div>
 							</div>
@@ -95,12 +100,12 @@ export default function AboutTabs({
 
 									<div className="flex flex-col gap-y-8">
 										{getData(qualificationData, "experiência").data.map(
-											(item, index) => {
+											(item) => {
 												// @ts-expect-error destructuring data
 												const { company, role, years } = item;
 
 												return (
-													<div className="group flex gap-x-8" key={index}>
+													<div className="group flex gap-x-8" key={uuidv4()}>
 														<div className="relative ml-2 h-[84px] w-[1px] bg-border">
 															<div className="absolute -left-[5px] size-[11px] rounded-full bg-primary transition-all duration-500 group-hover:translate-y-[84px]" />
 														</div>
@@ -132,31 +137,29 @@ export default function AboutTabs({
 									</div>
 
 									<div className="flex flex-col gap-y-8">
-										{getData(qualificationData, "educação").data.map(
-											(item, index) => {
-												// @ts-expect-error destructuring data
-												const { university, qualification, years } = item;
+										{getData(qualificationData, "educação").data.map((item) => {
+											// @ts-expect-error destructuring data
+											const { university, qualification, years } = item;
 
-												return (
-													<div className="group flex gap-x-8" key={index}>
-														<div className="relative ml-2 h-[84px] w-[1px] bg-border">
-															<div className="absolute -left-[5px] size-[11px] rounded-full bg-primary transition-all duration-500 group-hover:translate-y-[84px]" />
+											return (
+												<div className="group flex gap-x-8" key={uuidv4()}>
+													<div className="relative ml-2 h-[84px] w-[1px] bg-border">
+														<div className="absolute -left-[5px] size-[11px] rounded-full bg-primary transition-all duration-500 group-hover:translate-y-[84px]" />
+													</div>
+													<div>
+														<div className="mb-1 text-lg font-semibold leading-none md:text-xl">
+															{university}
 														</div>
-														<div>
-															<div className="mb-1 text-lg font-semibold leading-none md:text-xl">
-																{university}
-															</div>
-															<div className="mb-2 text-base leading-none text-muted-foreground md:text-lg">
-																{qualification}
-															</div>
-															<div className="text-sm font-medium md:text-base">
-																{years}
-															</div>
+														<div className="mb-2 text-base leading-none text-muted-foreground md:text-lg">
+															{qualification}
+														</div>
+														<div className="text-sm font-medium md:text-base">
+															{years}
 														</div>
 													</div>
-												);
-											},
-										)}
+												</div>
+											);
+										})}
 									</div>
 								</div>
 							</div>
@@ -172,12 +175,12 @@ export default function AboutTabs({
 								</h4>
 								<div className="mb-4 border-b border-border" />
 								<div className="mx-auto text-zinc-400text-left space-y-2 md:text-center lg:mx-0 lg:text-left">
-									{getData(skillData, "skills").data.map((item, index) => {
+									{getData(skillData, "skills").data.map((item) => {
 										// @ts-expect-error destructuring data
 										const { name } = item;
 										return (
 											<p
-												key={index}
+												key={uuidv4()}
 												className="text-base font-medium md:text-lg"
 											>
 												{name}
@@ -193,11 +196,11 @@ export default function AboutTabs({
 								</h4>
 								<div className="mb-4 border-b border-border" />
 								<div className="flex justify-center gap-x-8 lg:justify-start">
-									{getData(skillData, "ferramentas").data.map((item, index) => {
+									{getData(skillData, "ferramentas").data.map((item) => {
 										// @ts-expect-error destructuring data
 										const { imgPath, tool } = item;
 										return (
-											<HoverCard key={tool}>
+											<HoverCard key={uuidv4()}>
 												<div>
 													<HoverCardTrigger asChild>
 														<Image

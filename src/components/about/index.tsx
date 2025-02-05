@@ -4,10 +4,10 @@ import AboutTabs from "./AboutTabs";
 import AboutTabsContainer from "./AboutTabsContainer";
 
 const About = {
-  Root: AboutRoot,
-  Container: AboutTabsContainer,
-  Image: AboutImage,
-  Tabs: AboutTabs
-}
+	Root: AboutRoot,
+	Container: AboutTabsContainer,
+	Image: AboutImage,
+	Tabs: AboutTabs,
+};
 
-export default About
+export default About;

@@ -200,8 +200,7 @@ export const projectData: ProjectData[] = [
 		category: "Javascript",
 		name: "NerdBox Store",
 		description:
-			"De maneira dinâmica conseguimos cadastrar o produto e já visualizá-lo na mesma página. Opções de editar e excluir são criados a cada linha do item. O software utiliza da memória local da máquina para realizar as operações, impedindo de migrar seus dados para outra máquina.
-",
+			"De maneira dinâmica conseguimos cadastrar o produto e já visualizá-lo na mesma página. Opções de editar e excluir são criados a cada linha do item. O software utiliza da memória local da máquina para realizar as operações, impedindo de migrar seus dados para outra máquina.",
 		link: "https://nerdbox-store.vercel.app/",
 		github: "https://github.com/huannvictor/NerdBox-Store",
 	},

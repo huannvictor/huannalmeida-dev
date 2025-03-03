@@ -142,6 +142,15 @@ export const servicesData: ServicesData[] = [
 
 export const projectData: ProjectData[] = [
 	{
+		image: "/work/fsw-donalds.png",
+		category: "NextJs",
+		name: "FSW 7.0",
+		description:
+			"Este é um projeto de um sistema de pedidos para um restaurante fictício chamado FSW Donalds. O sistema permite que os clientes façam pedidos online, selecionem produtos do menu e finalizem seus pedidos.",
+		link: "https://fsw-donalds-tau.vercel.app/",
+		github: "https://github.com/huannvictor/fsw-donalds",
+	},
+	{
 		image: "/work/CSVGeneratorFromFiles.png",
 		category: "python",
 		name: "CSVGeneratorFromFiles",

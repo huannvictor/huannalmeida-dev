@@ -213,6 +213,15 @@ export const projectData: ProjectData[] = [
 		link: "https://nerdbox-store.vercel.app/",
 		github: "https://github.com/huannvictor/NerdBox-Store",
 	},
+	{
+		image: "/work/TechLibrary.png",
+		category: "CSharp",
+		name: "Tech Library",
+		description:
+			"TechLibrary é um projeto backend para gerenciar uma biblioteca. Este projeto foi desenvolvido durante a Next Level Week (NLW) da Rocketseat, um evento online que oferece uma experiência prática de desenvolvimento de software, com foco em tecnologias modernas e boas práticas de programação.",
+		link: null,
+		github: "https://github.com/huannvictor/TechLibrary",
+	},
 ];
 
 export const reviewsData: ReviewsData[] = [

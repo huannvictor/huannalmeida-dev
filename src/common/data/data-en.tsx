@@ -139,6 +139,7 @@ export const projectData: ProjectData[] = [
 		image: "/work/cookapp.png",
 		category: "react native",
 		name: "Cook App",
+		techArea: "mobile",
 		description:
 			"Built CookApp using React Native, following Rocketseat's tutorial.It's a recipe app where users select ingredients and get personalized recipe options",
 		link: "https://www.figma.com/file/op20QBiNSq1HaFue5minyl/Cook-App?type=design&node-id=0%3A1&mode=design&t=O1HJRbDhFFX98o8C-1",
@@ -148,6 +149,7 @@ export const projectData: ProjectData[] = [
 		image: "/work/discordclone.png",
 		category: "next js",
 		name: "Discord Clone",
+		techArea: "fullstack",
 		description:
 			"In this 11 hour course I learned how to create an end-to-end fullstack and real-time discord clone, all with servers, channels, video calls, audio calls, editing and deleting messages as well as member roles.",
 		link: null,
@@ -156,6 +158,7 @@ export const projectData: ProjectData[] = [
 	{
 		image: "/work/candycrush.png",
 		category: "react js",
+		techArea: "frontend",
 		name: "Candy Crush React",
 		description:
 			"In a brisk tutorial, I mastered crafting a Candy Crush web clone, delving into programming logic and essential React.js concepts along the way.",
@@ -165,6 +168,7 @@ export const projectData: ProjectData[] = [
 	{
 		image: "/work/shortlinks.png",
 		category: "node js",
+		techArea: "backend",
 		name: "Short Link",
 		description:
 			"Short Link is a Node.js project that allows users to shorten URLs, redirect to the original URL, and analyze the number of accesses.",
@@ -174,6 +178,7 @@ export const projectData: ProjectData[] = [
 	{
 		image: "/work/nlwExpertsNotes.png",
 		category: "react js",
+		techArea: "frontend",
 		name: "Expert Notes",
 		description:
 			"ExExpert Notes is an innovative React web application developed during the NLW online event utilizing Vite. Seamlessly integrating audio recording functionality, the app efficiently transcribes spoken words into text, offering users the flexibility to opt for manual input if preferred. Boasting a sleek and modern design, Expert Notes is aesthetically enhanced with Tailwind CSS, ensuring a visually appealing and intuitive user experience.",

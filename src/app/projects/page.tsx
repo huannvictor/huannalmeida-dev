@@ -7,18 +7,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { projectData } from "@/src/common/data/data";
 import ProjectCard from "@/src/components/ProjectCard";
 
-const uniqueCategories = [
-	"all projects",
-	...new Set(projectData.map((item) => item.category)),
-];
-
-const uniqueTechAreas = [
+const techAreas = [
 	"all areas",
 	...new Set(projectData.map((item) => item.techArea)),
 ];
 
 const Projects = () => {
-	const [techAreas, setTechAreas] = useState(uniqueTechAreas);
 	const [techArea, setTechArea] = useState("all areas");
 
 	const filteredTechAreas = projectData.filter((project) => {

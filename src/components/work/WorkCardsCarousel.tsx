@@ -29,13 +29,15 @@ export default function WorkCadsCarousel({
 				pagination={{ clickable: true }}
 			>
 				{projectData.slice(0, 4).map((project) => {
-					const { category, description, github, image, link, name } = project;
+					const { category, techArea, description, github, image, link, name } =
+						project;
 
 					return (
 						<SwiperSlide key={uuidv4()}>
 							<ProjectCard
 								image={image}
 								category={category}
+								techArea={techArea}
 								name={name}
 								description={description}
 								link={link}

@@ -144,6 +144,7 @@ export const projectData: ProjectData[] = [
 	{
 		image: "/work/fsw-donalds.png",
 		category: "NextJs",
+		techArea: "frontend",
 		name: "FSW 7.0",
 		description:
 			"Este é um projeto de um sistema de pedidos para um restaurante fictício chamado FSW Donalds. O sistema permite que os clientes façam pedidos online, selecionem produtos do menu e finalizem seus pedidos.",
@@ -153,6 +154,7 @@ export const projectData: ProjectData[] = [
 	{
 		image: "/work/CSVGeneratorFromFiles.png",
 		category: "python",
+		techArea: "automation",
 		name: "CSVGeneratorFromFiles",
 		description:
 			"Este projeto consiste em um script Python que automatiza a organização e geração de relatórios a partir de arquivos armazenados em uma pasta.",
@@ -162,6 +164,7 @@ export const projectData: ProjectData[] = [
 	{
 		image: "/work/cookapp.png",
 		category: "react native",
+		techArea: "mobile",
 		name: "Cook App",
 		description:
 			"Criei o CookApp usando React Native, seguindo o tutorial do Rocketseat. É um aplicativo de receitas onde os usuários selecionam ingredientes e obtêm opções de receitas personalizadas",
@@ -171,6 +174,7 @@ export const projectData: ProjectData[] = [
 	{
 		image: "/work/discordclone.png",
 		category: "next js",
+		techArea: "fullstack",
 		name: "Discord Clone",
 		description:
 			"Neste curso de 11 horas aprendi como criar um fullstack ponta a ponta e um clone do Discord em tempo real, tudo com servidores, canais, chamadas de vídeo, chamadas de áudio, edição e exclusão de mensagens, bem como funções de membros.",
@@ -180,6 +184,7 @@ export const projectData: ProjectData[] = [
 	{
 		image: "/work/candycrush.png",
 		category: "react js",
+		techArea: "frontend",
 		name: "Candy Crush React",
 		description:
 			"Em um tutorial rápido, dominei a criação de um clone da web do Candy Crush, me aprofundando na lógica de programação e nos conceitos essenciais do React.js ao longo do caminho.",
@@ -190,6 +195,7 @@ export const projectData: ProjectData[] = [
 		image: "/work/shortlinks.png",
 		category: "node js",
 		name: "Short Link",
+		techArea: "backend",
 		description:
 			"Short Link é um projeto Node.js que permite aos usuários encurtar URLs, redirecionar para a URL original e analisar o número de acessos.",
 		link: "https://www.postman.com/docking-module-participant-28243338/workspace/huannvictor/collection/24904242-b41c2ded-9fd3-4e26-85f3-a23a9e2a8f5d?action=share&creator=24904242",
@@ -199,6 +205,7 @@ export const projectData: ProjectData[] = [
 		image: "/work/nlwExpertsNotes.png",
 		category: "react js",
 		name: "Expert Notes",
+		techArea: "frontend",
 		description:
 			"Expert Notes é um aplicativo web React inovador desenvolvido durante o evento online NLW utilizando Vite. Integrando perfeitamente a funcionalidade de gravação de áudio, o aplicativo transcreve com eficiência palavras faladas em texto, oferecendo aos usuários a flexibilidade de optar pela entrada manual, se preferirem. Com um design elegante e moderno, Expert Notes é esteticamente aprimorado com Tailwind CSS, garantindo uma experiência de usuário visualmente atraente e intuitiva.",
 		link: "https://nlw-expert-notes-drab.vercel.app/",
@@ -207,6 +214,7 @@ export const projectData: ProjectData[] = [
 	{
 		image: "/work/NerdBox-Store.png",
 		category: "Javascript",
+		techArea: "frontend",
 		name: "NerdBox Store",
 		description:
 			"De maneira dinâmica conseguimos cadastrar o produto e já visualizá-lo na mesma página. Opções de editar e excluir são criados a cada linha do item. O software utiliza da memória local da máquina para realizar as operações, impedindo de migrar seus dados para outra máquina.",
@@ -216,6 +224,7 @@ export const projectData: ProjectData[] = [
 	{
 		image: "/work/TechLibrary.png",
 		category: "CSharp",
+		techArea: "backend",
 		name: "Tech Library",
 		description:
 			"TechLibrary é um projeto backend para gerenciar uma biblioteca. Este projeto foi desenvolvido durante a Next Level Week (NLW) da Rocketseat, um evento online que oferece uma experiência prática de desenvolvimento de software, com foco em tecnologias modernas e boas práticas de programação.",

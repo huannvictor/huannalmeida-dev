@@ -11,14 +11,18 @@ const uniqueCategories = [
 	"all projects",
 	...new Set(projectData.map((item) => item.category)),
 ];
-const Projects = () => {
-	const [categories, setCategories] = useState(uniqueCategories);
-	const [category, setCategory] = useState("all projects");
 
-	const filteredProjects = projectData.filter((project) => {
-		return category === "all projects"
-			? project
-			: project.category === category;
+const uniqueTechAreas = [
+	"all areas",
+	...new Set(projectData.map((item) => item.techArea)),
+];
+
+const Projects = () => {
+	const [techAreas, setTechAreas] = useState(uniqueTechAreas);
+	const [techArea, setTechArea] = useState("all areas");
+
+	const filteredTechAreas = projectData.filter((project) => {
+		return techArea === "all areas" ? project : project.techArea === techArea;
 	});
 
 	return (
@@ -28,29 +32,30 @@ const Projects = () => {
 					My Projects
 				</h2>
 
-				<Tabs defaultValue={category} className="mb-24 xl:mb-48">
+				<Tabs defaultValue={techArea} className="mb-24 xl:mb-48">
 					<TabsList className="mx-auto mb-12 grid size-fit dark:border-none md:flex md:border lg:max-w-[640px]">
-						{categories.map((category, index) => {
+						{techAreas.map((techArea) => {
 							return (
 								<TabsTrigger
 									className="w-[162px] capitalize md:w-auto"
 									key={uuidv4()}
-									value={category}
-									onClick={() => setCategory(category)}
+									value={techArea}
+									onClick={() => setTechArea(techArea)}
 								>
-									{category}
+									{techArea}
 								</TabsTrigger>
 							);
 						})}
 					</TabsList>
 
 					<div className="grid grid-cols-1 gap-4 text-lg lg:grid-cols-3 xl:mt-8">
-						{filteredProjects.map((project, index) => {
+						{filteredTechAreas.map((project) => {
 							return (
-								<TabsContent value={category} key={uuidv4()}>
+								<TabsContent value={techArea} key={uuidv4()}>
 									<ProjectCard
 										key={uuidv4()}
 										category={project.category}
+										techArea={project.techArea}
 										description={project.description}
 										github={project.github}
 										image={project.image}

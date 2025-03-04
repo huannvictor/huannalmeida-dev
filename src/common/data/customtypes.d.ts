@@ -43,6 +43,13 @@ interface ServicesData {
 interface ProjectData {
 	image: string;
 	category: string;
+	techArea:
+		| "frontend"
+		| "backend"
+		| "fullstack"
+		| "mobile"
+		| "automation"
+		| "other";
 	name: string;
 	description: string;
 	link: string | null;

@@ -39,10 +39,10 @@ export const qualificationData: QualificationData[] = [
 			{
 				university: "Wyden",
 				qualification: "Análise e Desenvolvimento de Sistemas",
-				years: "2024 - 2027",
+				years: "2024 - 2026",
 			},
 			{
-				university: "EBAC ",
+				university: "EBAC",
 				qualification: "Dev Fullstack Javascript",
 				years: "2023",
 			},

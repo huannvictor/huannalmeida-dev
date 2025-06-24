@@ -43,7 +43,7 @@ export default function HeroButtons() {
 								<FileDownIcon />
 							</Button>
 						</Link>
-						<Link target="_blank" href="/files/CV_HuannAlmeida_PT.pdf">
+						<Link target="_blank" href="/files/CV_HuannAlmeida_PTBR.pdf">
 							<Button variant="link" className="flex items-center gap-x-2">
 								Versão em Português
 								<FileDownIcon />

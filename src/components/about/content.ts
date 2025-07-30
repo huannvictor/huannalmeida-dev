@@ -30,7 +30,7 @@ export const content = {
 		tabsPersonal: {
 			title: "Dev Fullstack, mas antes...",
 			content: [
-				"Desde 2021 tenho aprendido sobre o mundo da programação e me apaixonado cada vez mais.",
+				"Desde 2020 tenho aprendido sobre o mundo da programação e me apaixonado cada vez mais.",
 				"Atualmente atuo na área como freelancer e estou em transição de carreira de assistente comercial.",
 				"Esses anos de experiência na área administrativa me proporcionaram habilidades de comunicação, organização e resolução de problemas. E agora, estou aplicando essas habilidades no desenvolvimento de software.",
 			],

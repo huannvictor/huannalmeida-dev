@@ -21,7 +21,7 @@ export const content = {
 		heroTitle: "Desenvolvedor Fullstack",
 		heroGreeting: "Olá, me chamo Huann Almeida",
 		heroPersonalPresentation: {
-			text: "Crio interfaces utilizando ReactJS, Figma, TailwindCSS e ShadcnUI. Possuo experiência em desenvolvimento backend com Postgresql e conhecimento em ORM como Prisma.",
+			text: "Minha missão é clara: transformar ideias em soluções com impacto, usando tecnologia, empatia e visão.",
 			invitation: "Vamos construir algo incrível juntos?",
 		},
 		heroBtn: {

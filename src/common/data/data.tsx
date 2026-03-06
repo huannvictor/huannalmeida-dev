@@ -153,7 +153,7 @@ export const servicesData: ServicesData[] = [
 
 export const projectData: ProjectData[] = [
 	{
-    image: "", // Insira o caminho da imagem de preview do projeto
+    image: "/work/AssistantListFlow.png",
     category: "Python",
     techArea: "automation",
     name: "AssistantListFlow",
@@ -162,7 +162,7 @@ export const projectData: ProjectData[] = [
     github: "https://github.com/huannvictor/AssistantListFlow",
   },
   {
-    image: "",
+    image: "/work/EducForm-Bot.png",
     category: "Python",
     techArea: "automation",
     name: "EducForm Bot",
@@ -171,7 +171,7 @@ export const projectData: ProjectData[] = [
     github: "https://github.com/huannvictor/EducForm-Bot",
   },
   {
-    image: "",
+    image: "/work/ContactCollector-Scraper.png",
     category: "Python",
     techArea: "automation",
     name: "Contact Collector Scraper",
@@ -180,7 +180,7 @@ export const projectData: ProjectData[] = [
     github: "https://github.com/huannvictor/ContactCollector-Scraper",
   },
   {
-    image: "",
+    image: "/work/MapaStatus.png",
     category: "Python",
     techArea: "automation",
     name: "Mapa Status",
@@ -189,7 +189,7 @@ export const projectData: ProjectData[] = [
     github: "https://github.com/huannvictor/MapaStatus",
   },
   {
-    image: "",
+    image: "/work/CommercialFlow-Bot.png",
     category: "Python",
     techArea: "automation",
     name: "Commercial Flow Bot",
@@ -198,7 +198,7 @@ export const projectData: ProjectData[] = [
     github: "https://github.com/huannvictor/CommercialFlow-Bot",
   },
   {
-    image: "",
+    image: "/work/ScanFlow-Bot.png",
     category: "Python",
     techArea: "automation",
     name: "Scan Flow Bot",

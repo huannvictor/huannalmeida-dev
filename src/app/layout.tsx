@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import { Analytics } from '@vercel/analytics/next';
 // VERCEL SPEED INSIGHTS
 import { SpeedInsights } from "@vercel/speed-insights/next";
 // NEXT IMPORTS
@@ -76,6 +77,7 @@ export default function RootLayout({
 					<Footer />
 					<SpeedInsights />
 				</ThemeProvider>
+				<Analytics />
 			</body>
 		</html>
 	);

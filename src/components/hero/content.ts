@@ -1,7 +1,7 @@
 export const content = {
 	en: {
 		heroTitle: "Web Developer",
-		heroGreeting: "Hello, my name is Huann Almeida",
+		heroGreeting: "Huann Almeida",
 		heroPersonalPresentation: {
 			text: "Enthusiast of React and frontend, I'm on the lookout for exciting challenges to craft amazing experiences.",
 			invitation: "Let's build something awesome together?",
@@ -19,10 +19,10 @@ export const content = {
 	},
 	pt: {
 		heroTitle: "Desenvolvedor Fullstack",
-		heroGreeting: "Olá, me chamo Huann Almeida",
+		heroGreeting: "Huann Almeida",
 		heroPersonalPresentation: {
-			text: "Minha missão é clara: transformar ideias em soluções com impacto, usando tecnologia, empatia e visão.",
-			invitation: "Vamos construir algo incrível juntos?",
+			text: "Com experiência em liderança técnica, projeto arquiteturas robustas para a web e desenvolvo automações inteligentes que resolvem gargalos operacionais complexos.",
+			invitation: "Muito além do código: tecnologia que impulsiona negócios",
 		},
 		heroBtn: {
 			contact: "Meu contato",

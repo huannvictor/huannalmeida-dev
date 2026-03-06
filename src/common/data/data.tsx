@@ -1,4 +1,5 @@
 import {
+	Bot,
 	Calendar,
 	DatabaseZap,
 	Home,
@@ -42,34 +43,44 @@ export const qualificationData: QualificationData[] = [
 				years: "2024 - 2026",
 			},
 			{
-				university: "EBAC",
-				qualification: "Dev Fullstack Javascript",
-				years: "2023",
+				university: "Formações Complementares",
+				qualification: `Full Stack Club • Curso.dev • EBAC • OneBitCode • Rocketseat`,
+				years: "2022-026",
 			},
-			{
-				university: "OneBitCode",
-				qualification: "Dev Fullstack Javascript",
-				years: "2023",
-			},
-			{
-				university: "Rocketseat",
-				qualification: "Dev Fullstack Javascript",
-				years: "2022",
-			},
-			{
-				university: "UNIESP",
-				qualification: "Administração de Empresas",
-				years: "2010 - 2018",
-			},
+			// {
+			// 	university: "Full Stack Club",
+			// 	qualification: "Desenvolvedor Fullstack",
+			// 	years: "2026",
+			// },
+			// {
+			// 	university: "Curso.dev",
+			// 	qualification: "Dev Fullstack Javascript",
+			// 	years: "2025",
+			// },
+			// {
+			// 	university: "EBAC",
+			// 	qualification: "Dev Fullstack Javascript",
+			// 	years: "2023",
+			// },
+			// {
+			// 	university: "OneBitCode",
+			// 	qualification: "Dev Fullstack Javascript",
+			// 	years: "2023",
+			// },
+			// {
+			// 	university: "Rocketseat",
+			// 	qualification: "Dev Fullstack Javascript",
+			// 	years: "2022",
+			// }
 		],
 	},
 	{
 		title: "experiência",
 		data: [
 			{
-				company: "Freelancer",
-				role: "Desenvolvedor Fullstack",
-				years: "Dez 2022 - atual",
+				company: "Desenvolvedor de Automação",
+				role: "Editora Construir",
+				years: "Nov 2024 - atual",
 			},
 			{
 				company: "Editora Construir",
@@ -122,25 +133,79 @@ export const skillData: SkillData[] = [
 export const servicesData: ServicesData[] = [
 	{
 		icon: <Layout size={72} strokeWidth={0.8} />,
-		title: "Frontend",
+		title: "Arquitetura Front-end",
 		description:
-			"Criação de interfaces de usuário com ferramentas modernas que otimizam a experiência do usuário.",
+			"Criação de SPAs escaláveis com React, Next.js e Angular, focando em performance, componentização e UI/UX.",
 	},
 	{
 		icon: <DatabaseZap size={72} strokeWidth={0.8} />,
-		title: "Backend",
+		title: "Desenvolvimento de APIs",
 		description:
-			"Desenvolvimento de servidores e bancos de dados eficientes para aplicativos web e móveis.",
+			"Construção de APIs RESTful robustas em Node.js com integrações seguras e modelagem de banco de dados.",
 	},
 	{
-		icon: <Layers size={72} strokeWidth={0.8} />,
-		title: "Fullstack",
+		icon: <Bot size={72} strokeWidth={0.8} />,
+		title: "Automação de Processos (RPA)",
 		description:
-			"utilizando tecnologias modernas para criar aplicativos web e móveis completos.",
+			"Desenvolvimento de bots e scripts em Python para automatizar fluxos de trabalho, processar PDFs e integrar sistemas.",
 	},
 ];
 
 export const projectData: ProjectData[] = [
+	{
+    image: "", // Insira o caminho da imagem de preview do projeto
+    category: "Python",
+    techArea: "automation",
+    name: "AssistantListFlow",
+    description: "Ferramenta de automação para conversão de documentos PDF em imagens e geração de metadados, eliminando gargalos operacionais e otimizando a integração em lote para sistemas de gestão legados.",
+    link: "", 
+    github: "https://github.com/huannvictor/AssistantListFlow",
+  },
+  {
+    image: "",
+    category: "Python",
+    techArea: "automation",
+    name: "EducForm Bot",
+    description: "Automação inteligente focada na geração e preenchimento cirúrgico de documentos PDF[cite: 36]. Reduz drasticamente o tempo de processamento de dezenas de horas para menos de um minuto, garantindo zero erros de digitação.",
+    link: "",
+    github: "https://github.com/huannvictor/EducForm-Bot",
+  },
+  {
+    image: "",
+    category: "Python",
+    techArea: "automation",
+    name: "Contact Collector Scraper",
+    description: "Sistema de coleta automatizada de dados educacionais construído com Playwright[cite: 38]. Realiza navegação automatizada, extração, higienização com Regex e padronização das informações em relatórios.",
+    link: "",
+    github: "https://github.com/huannvictor/ContactCollector-Scraper",
+  },
+  {
+    image: "",
+    category: "Python",
+    techArea: "automation",
+    name: "Mapa Status",
+    description: "Ferramenta RPA de alta performance com processamento paralelo para análise e extração de dados não-estruturados em centenas de relatórios PDF[cite: 40], consolidando tudo em planilhas para análise executiva.",
+    link: "",
+    github: "https://github.com/huannvictor/MapaStatus",
+  },
+  {
+    image: "",
+    category: "Python",
+    techArea: "automation",
+    name: "Commercial Flow Bot",
+    description: "Sistema de triagem automática de documentos e extração estruturada de dados[cite: 42]. Lê PDFs em lote, identifica parâmetros via Regex e organiza fisicamente os arquivos em diretórios categorizados.",
+    link: "",
+    github: "https://github.com/huannvictor/CommercialFlow-Bot",
+  },
+  {
+    image: "",
+    category: "Python",
+    techArea: "automation",
+    name: "Scan Flow Bot",
+    description: "Automação em Python projetada para auditar o sistema de arquivos, analisar metadados cronológicos e gerar relatórios executivos do status de documentos digitalizados[cite: 44].",
+    link: "",
+    github: "https://github.com/huannvictor/ScanFlow-Bot",
+  },
 	{
 		image: "/work/fsw-donalds.png",
 		category: "NextJs",

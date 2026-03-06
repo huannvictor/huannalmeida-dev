@@ -28,11 +28,11 @@ export const content = {
 			{ title: "Habilidades", value: "skills" },
 		],
 		tabsPersonal: {
-			title: "Dev Fullstack, mas antes...",
+			title: "Descubra como posso agregar valor técnico e estratégico ao seu time",
 			content: [
-				"Desde 2020 tenho aprendido sobre o mundo da programação e me apaixonado cada vez mais.",
-				"Atualmente atuo na área como freelancer e estou em transição de carreira de assistente comercial.",
-				"Esses anos de experiência na área administrativa me proporcionaram habilidades de comunicação, organização e resolução de problemas. E agora, estou aplicando essas habilidades no desenvolvimento de software.",
+				"Desenvolvedor Full Stack com forte atuação em liderança técnica (Tech Lead) e criação de ecossistemas de automação.",
+				"Combino anos de experiência no desenvolvimento de Single Page Applications (SPAs) modernas e APIs escaláveis com o desenvolvimento de rotinas RPA em Python.",
+				"O meu foco é transformar problemas de negócio complexos em arquiteturas de software eficientes, entregando aplicações que garantem performance, estabilidade e eliminação de processos manuais.",
 			],
 		},
 		languageSkills: {

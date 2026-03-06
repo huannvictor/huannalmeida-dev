@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/react';
 // VERCEL SPEED INSIGHTS
 import { SpeedInsights } from "@vercel/speed-insights/next";
 // NEXT IMPORTS
@@ -16,6 +16,7 @@ import { ThemeProvider } from "@/src/components/ThemeProvider";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://huannalmeida.dev.br"),
 	title: {
 		default: "Huann Almeida | Desenvolvedor Fullstack",
 		template: "%s | Huann Almeida",

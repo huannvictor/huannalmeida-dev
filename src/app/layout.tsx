@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 			"Explore meu portfólio de desenvolvimento frontend e fullstack, apresentando projetos inovadores e soluções criativas.",
 		images: [
 			{
-				url: "/og-image.png", // Certifique-se de criar esta imagem em /public futuramente
+				url: "/og-image.png",
 				width: 1200,
 				height: 630,
 				alt: "Huann Almeida Portfólio",

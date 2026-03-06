@@ -13,10 +13,9 @@ const ProjectCard = (project: ProjectData) => {
 					<Image
 						className="absolute bottom-0 shadow-2xl"
 						src={project.image}
-						alt={project.name}
+						alt={`Screenshot do projeto ${project.name}`}
 						width={247}
 						height={250}
-						priority
 					/>
 					<div className="flex gap-x-4">
 						{project.link ? (

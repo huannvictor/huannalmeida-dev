@@ -15,27 +15,19 @@ const Contact = () => {
 							<span className="h-[2px] w-[30px] bg-primary" />
 							Olá 👋
 						</div>
-						<h1 className="h1 mb-8 max-w-md">Vamos desenvolver juntos.</h1>
+						<h1 className="h1 mb-8 max-w-screen-lg">Procurando um desenvolvedor com sólida experiência técnica e visão estratégica?</h1>
 						<div>
 							<p className="subtitle xl:max-w-2/3">
-								Procurando um desenvolvedor front-end experiente? Sua busca
-								termina aqui!
+								Como <strong>Tech Lead Front-End</strong> e <strong>Desenvolvedor de Automação</strong>,trago uma abordagem completa para o seu time.
 							</p>
 							<p className="subtitle xl:max-w-2/3">
-								Como desenvolvedor front-end freelancer e atual líder técnico da
-								SkillLab, uma startup dinâmica, trago uma vasta experiência na
-								construção e liderança de equipes de desenvolvimento de alto
-								desempenho.
+								Especialista em ecossistemas modernos com <strong>React, Next.js e Tailwind CSS</strong>, além de desenvolver soluções de <strong>RPA em Python</strong> que transformam processos manuais em fluxos de trabalho eficientes e escaláveis.
 							</p>
 							<p className="subtitle xl:max-w-2/3">
-								Proficiente em React.js, Next.js e Tailwind CSS, estou pronto
-								para trazer minha liderança e habilidades técnicas para sua
-								organização. Além disso, embora eu me destaque nessas
-								tecnologias, também estou aberto a aprender e trabalhar com
-								outras, como Angular e várias bibliotecas/frameworks JavaScript.
+								Meu foco é unir alta performance técnica com a liderança necessária para impulsionar a inovação e o crescimento real da sua organização.
 							</p>
-							<p className="subtitle xl:max-w-2/3">
-								Vamos impulsionar a inovação juntos.
+							<p className="subtitle xl:max-w-2/3 font-medium">
+								Vamos conversar sobre como posso agregar valor ao seu time.
 							</p>
 						</div>
 					</div>

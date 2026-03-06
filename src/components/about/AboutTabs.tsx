@@ -207,7 +207,6 @@ export default function AboutTabs({
 															width={48}
 															height={48}
 															alt={tool}
-															priority
 														/>
 													</HoverCardTrigger>
 													<HoverCardContent className="w-fit dark:bg-zinc-700/50 bg-zinc-100/50">

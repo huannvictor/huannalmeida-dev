@@ -24,7 +24,7 @@ export default function HeroImage() {
 				setRepos(Number(data.public_repos));
 				setCreatedAt(data.created_at);
 			});
-	});
+	}, []);
 
 	return (
 		<div className="relative hidden lg:ml-32 lg:flex">
@@ -54,6 +54,8 @@ export default function HeroImage() {
 			<DevImg
 				containerStyles="bg-hero_shape w-[408px] h-[370px] bg-no-repeat relative bg-bottom"
 				imgSrc="/hero/developer.png"
+				alt="Foto de Huann Almeida - Desenvolvedor Fullstack"
+				priority={true}
 			/>
 		</div>
 	);

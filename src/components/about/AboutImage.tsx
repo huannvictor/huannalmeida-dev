@@ -6,6 +6,7 @@ export default function AboutImage (){
         <DevImg
           containerStyles="bg-about_shape_light dark:bg-about_shape_dark size-[408px] bg-no-repeat relative"
           imgSrc="/about/developer.png"
+          alt="Huann Almeida trabalhando"
         />
       </div>
     );

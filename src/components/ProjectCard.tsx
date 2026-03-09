@@ -9,7 +9,7 @@ const ProjectCard = (project: ProjectData) => {
 	return (
 		<Card className="group relative overflow-hidden border-2">
 			<CardHeader className="p-0">
-				<div className="relative flex h-[300px] w-full items-center justify-center overflow-hidden bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:bg-[110%] xl:bg-no-repeat xl:dark:bg-work_project_bg_dark">
+				<div className="relative flex h-75 w-full items-center justify-center overflow-hidden bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:bg-position-[110%] xl:bg-no-repeat xl:dark:bg-work_project_bg_dark">
 					<Image
 						className="absolute bottom-0 shadow-2xl"
 						src={project.image}
@@ -22,7 +22,7 @@ const ProjectCard = (project: ProjectData) => {
 							<Link
 								target="_blank"
 								href={project.link}
-								className="flex size-[54px] scale-0 items-center justify-center rounded-full bg-secondary opacity-0 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100"
+								className="flex size-13.5 scale-0 items-center justify-center rounded-full bg-secondary opacity-0 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100"
 							>
 								<RiLink size={24} className="text-white" />
 							</Link>
@@ -30,7 +30,7 @@ const ProjectCard = (project: ProjectData) => {
 						<Link
 							target="_blank"
 							href={project.github}
-							className="flex size-[54px] scale-0 items-center justify-center rounded-full bg-secondary opacity-0 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100"
+							className="flex size-13.5 scale-0 items-center justify-center rounded-full bg-secondary opacity-0 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100"
 						>
 							<RiGithubLine size={24} className="text-white" />
 						</Link>
@@ -38,7 +38,7 @@ const ProjectCard = (project: ProjectData) => {
 				</div>
 			</CardHeader>
 
-			<div className="h-full px-8 py-6">
+			<div className="px-8 py-6">
 				<Badge className="absolute left-5 top-4 mb-2 text-sm font-medium uppercase">
 					{project.category}
 				</Badge>

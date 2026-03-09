@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-import { servicesData } from "@/src/common/data/data";
+import { getServicesData } from "@/src/common/data/data";
 
 import {
 	Card,
@@ -10,7 +10,9 @@ import {
 	CardTitle,
 } from "../../components/ui/card";
 
-const Services = () => {
+const Services = async () => {
+	const servicesData = await getServicesData();
+	
 	return (
 		<section className="mb-12 lg:mb-36">
 			<div className="container mx-auto">
@@ -22,11 +24,11 @@ const Services = () => {
 					{servicesData.map((item) => {
 						return (
 							<Card
-								className="relative flex h-[300px] w-full max-w-[424px] flex-col items-center justify-center border-2 pb-10 pt-16"
+								className="relative flex h-75 w-full max-w-106 flex-col items-center justify-center border-2 pb-10 pt-16"
 								key={uuidv4()}
 							>
-								<CardHeader className="absolute -top-[60px] text-primary">
-									<div className="flex h-[80px] w-[140px] items-center justify-center bg-white dark:bg-background">
+								<CardHeader className="absolute -top-15 text-primary">
+									<div className="flex h-20 w-35 items-center justify-center bg-white dark:bg-background">
 										{item.icon}
 									</div>
 								</CardHeader>

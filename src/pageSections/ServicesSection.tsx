@@ -1,6 +1,6 @@
 import { getServicesData } from "@/src/common/data/data";
 
-import Services from "../components/servives";
+import Services from "../components/services/index";
 
 interface ServicesSectionProps {}
 

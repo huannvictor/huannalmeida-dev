@@ -96,8 +96,8 @@
   "Contact": {
     "greeting": "Hello 👋",
     "headline": "Looking for a developer with solid technical experience and strategic vision?",
-    "desc1": "As a **Tech Lead Front-End** and **Automation Developer**, I bring a complete approach to your team.",
-    "desc2": "Specialist in modern ecosystems with **React, Next.js, and Tailwind CSS**, as well as developing **RPA solutions in Python** that transform manual processes into efficient and scalable workflows.",
+    "desc1": "As a Tech Lead Front-End and Automation Developer, I bring a complete approach to your team.",
+    "desc2": "Specialist in modern ecosystems with React, Next.js, and Tailwind CSS, as well as developing RPA solutions in Python that transform manual processes into efficient and scalable workflows.",
     "desc3": "My focus is to unite high technical performance with the leadership necessary to drive innovation and real growth for your organization.",
     "invitation": "Let's talk about how I can add value to your team.",
     "btnText": "send me a message ;)",

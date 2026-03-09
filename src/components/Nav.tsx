@@ -1,7 +1,6 @@
+import { Link, usePathname } from "@/src/i18n/navigation";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { v4 as uuidv4 } from "uuid";
 
 interface NavProps {

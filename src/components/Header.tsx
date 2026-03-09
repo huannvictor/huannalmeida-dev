@@ -10,7 +10,7 @@ import { MobileNav } from "./MobileNav";
 import { Nav } from "./Nav";
 import ThemeToggler from "./ThemeToggler";
 
-export default function Header() {
+export default function Header() {	
 	const [header, setHeader] = useState<boolean>(false);
 	const pathname: string = usePathname();
 

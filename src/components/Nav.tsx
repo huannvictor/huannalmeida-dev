@@ -1,13 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { v4 as uuidv4 } from "uuid";
-
-const links = [
-	{ path: "/", name: "home" },
-	{ path: "/projects", name: "projetos" },
-	{ path: "/contact", name: "olá" },
-];
 
 interface NavProps {
 	containerStyles: string;
@@ -20,6 +15,15 @@ export const Nav = ({
 	linkStyles,
 	underlineStyles,
 }: NavProps) => {
+	
+	const t = useTranslations('Nav')
+
+	const links = [
+		{ path: "/", name: t('home') },
+		{ path: "/projects", name: t('projects') },
+		{ path: "/contact", name: t('contact') },
+	];
+
 	const path = usePathname();
 
 	return (

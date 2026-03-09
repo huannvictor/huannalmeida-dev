@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import Socials from "./Socials";
 
 const Footer = () => {
+	const t = useTranslations('Footer')
 	return (
 		<footer className="bg-secondary py-12">
 			<div className="container mx-auto">
@@ -11,7 +13,7 @@ const Footer = () => {
 					/>
 
 					<div className="text-muted-foreground">
-						Copyright &copy; Huann Almeida. All rights reserved.
+						{t('copyright')}
 					</div>
 				</div>
 			</div>

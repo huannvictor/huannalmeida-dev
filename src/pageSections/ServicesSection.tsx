@@ -1,10 +1,12 @@
-import { servicesData } from "@/src/common/data/data";
+import { getServicesData } from "@/src/common/data/data";
 
 import Services from "../components/servives";
 
 interface ServicesSectionProps {}
 
-export default function ServicesSection({}: ServicesSectionProps) {
+export default async function ServicesSection({}: ServicesSectionProps) {
+	const servicesData = await getServicesData()
+
 	return (
 		<Services.Root>
 			<Services.Container title="Meus Serviços">

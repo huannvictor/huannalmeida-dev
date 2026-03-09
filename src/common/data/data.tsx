@@ -90,7 +90,7 @@ export const getQualificationData = async () => {
 	]
 };
 
-export const getSkillData = async () => {
+export const getSkillData = async (): Promise<SkillData[]> => {
 	const s = await getTranslations('About.skills')
 	const d = await getTranslations('Data.Skills')
 
@@ -119,26 +119,27 @@ export const getSkillData = async () => {
 	];
 }
 
-export const servicesData: ServicesData[] = [
-	{
-		icon: <Layout size={72} strokeWidth={0.8} />,
-		title: "Arquitetura Front-end",
-		description:
-			"Criação de SPAs escaláveis com React, Next.js e Angular, focando em performance, componentização e UI/UX.",
-	},
-	{
-		icon: <DatabaseZap size={72} strokeWidth={0.8} />,
-		title: "Desenvolvimento de APIs",
-		description:
-			"Construção de APIs RESTful robustas em Node.js com integrações seguras e modelagem de banco de dados.",
-	},
-	{
-		icon: <Bot size={72} strokeWidth={0.8} />,
-		title: "Automação de Processos (RPA)",
-		description:
-			"Desenvolvimento de bots e scripts em Python para automatizar fluxos de trabalho, processar PDFs e integrar sistemas.",
-	},
-];
+export const getServicesData = async (): Promise<ServicesData[]> => {
+	const s = await getTranslations('Services')
+	return [
+		{
+			icon: <Layout size={72} strokeWidth={0.8} />,
+			title: s('service1.title'),
+			description: s('service1.description'),
+		},
+		{
+			icon: <DatabaseZap size={72} strokeWidth={0.8} />,
+			title: s('service2.title'),
+			description:s('service2.description'),
+		},
+		{
+			icon: <Bot size={72} strokeWidth={0.8} />,
+			title: s('service3.title'),
+			description: s('service3.description'),
+		},
+	];
+} 
+	
 
 export const projectData: ProjectData[] = [
 	{

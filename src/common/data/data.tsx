@@ -3,132 +3,121 @@ import {
 	Calendar,
 	DatabaseZap,
 	Home,
-	Layers,
 	Layout,
 	MailIcon,
 	PhoneCall,
 	User2,
 } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
-export const infoData = [
-	{
-		icon: <User2 size={20} />,
-		text: "Huann Almeida",
-	},
-	{
-		icon: <PhoneCall size={20} />,
-		text: "+55 83 99980-2317",
-	},
-	{
-		icon: <MailIcon size={20} />,
-		text: "huannvictor@gmail.com",
-	},
-	{
-		icon: <Calendar size={20} />,
-		text: "Nasci em 22 Set, 1990",
-	},
-	{
-		icon: <Home size={20} />,
-		text: "João Pessoa • Paraíba • Brasil",
-	},
-];
+export const getInfoData = async () => {
+	const t = await getTranslations('About.infoData')
 
-export const qualificationData: QualificationData[] = [
-	{
-		title: "educação",
-		data: [
-			{
-				university: "Wyden",
-				qualification: "Análise e Desenvolvimento de Sistemas",
-				years: "2024 - 2026",
-			},
-			{
-				university: "Formações Complementares",
-				qualification: `Full Stack Club • Curso.dev • EBAC • OneBitCode • Rocketseat`,
-				years: "2022-026",
-			},
-			// {
-			// 	university: "Full Stack Club",
-			// 	qualification: "Desenvolvedor Fullstack",
-			// 	years: "2026",
-			// },
-			// {
-			// 	university: "Curso.dev",
-			// 	qualification: "Dev Fullstack Javascript",
-			// 	years: "2025",
-			// },
-			// {
-			// 	university: "EBAC",
-			// 	qualification: "Dev Fullstack Javascript",
-			// 	years: "2023",
-			// },
-			// {
-			// 	university: "OneBitCode",
-			// 	qualification: "Dev Fullstack Javascript",
-			// 	years: "2023",
-			// },
-			// {
-			// 	university: "Rocketseat",
-			// 	qualification: "Dev Fullstack Javascript",
-			// 	years: "2022",
-			// }
-		],
-	},
-	{
-		title: "experiência",
-		data: [
-			{
-				company: "Desenvolvedor de Automação",
-				role: "Editora Construir",
-				years: "Nov 2024 - atual",
-			},
-			{
-				company: "Editora Construir",
-				role: "Assistente Commercial",
-				years: "Mai 2018 - atual",
-			},
-			{
-				company: "Skill Labs",
-				role: "Tech Lead Front-End",
-				years: "Ago 2023 - atual",
-			},
-			{
-				company: "Skill Labs",
-				role: "Desenvolvedor Frontend Junior",
-				years: "Jan 2023 - Ago 2023",
-			},
-			{
-				company: "Organize Soft",
-				role: "Desenvolvedor Frontend Junior",
-				years: "Dez 2022 - Fev 2023",
-			},
-		],
-	},
-];
+	return [
+		{
+			icon: <User2 size={20} />,
+			text: "Huann Almeida",
+		},
+		{
+			icon: <PhoneCall size={20} />,
+			text: "+55 83 99980-2317",
+		},
+		{
+			icon: <MailIcon size={20} />,
+			text: "huannvictor@gmail.com",
+		},
+		{
+			icon: <Calendar size={20} />,
+			text: t('birthdate'),
+		},
+		{
+			icon: <Home size={20} />,
+			text: t('location'),
+		},
+	]
+}	
 
-export const skillData: SkillData[] = [
-	{
-		title: "skills",
-		data: [
-			{ name: "Linguagens: Typescript, Python, C#" },
-			{ name: "Ecossistema JS, o que mais trabalho: ReactJS, NodeJS" },
-			{ name: "Ecossistema JS, o que tenho conhecimento: AngularJS" },
-			{ name: "Estilização: TailwindCss, Shadcn-ui" },
-			{ name: "Backend: Postgres, Prisma" },
-			{ name: "Mobile: React Native" },
-			{ name: "Digital Design" },
-		],
-	},
-	{
-		title: "ferramentas",
-		data: [
-			{ imgPath: "/about/vscode.svg", tool: "VS Code" },
-			{ imgPath: "/about/figma.svg", tool: "Figma" },
-			{ imgPath: "/about/trello.svg", tool: "Trello" },
-			{ imgPath: "/about/miro.svg", tool: "Miro" },
-		],
-	},
-];
+export const getQualificationData = async () => {
+	const q = await getTranslations('About.qualifications')
+	const d = await getTranslations('Data.Qualifications')
+
+	return [
+		{
+			title: q('experience'),
+			data: [
+				{
+					company: "Editora Construir",
+					role: d('Experience.Automation'),
+					years: d('Experience.Years.Automation'),
+				},
+				{
+					company: "Editora Construir",
+					role: d('Experience.Assistant'),
+					years: d('Experience.Years.Assistant'),
+				},
+				{
+					company: "Skill Labs",
+					role: d('Experience.TechLead'),
+					years: d('Experience.Years.TechLead'),
+				},
+				{
+					company: "Skill Labs",
+					role: d('Experience.Junior'),
+					years: d('Experience.Years.JuniorSkillLabs'),
+				},
+				{
+					company: "Organize Soft",
+					role: d('Experience.Junior'),
+					years: d('Experience.Years.JuniorOrganize'),
+				},
+			],
+		},
+		{
+			title: q('education'),
+			data: [
+				{
+					university: "Wyden",
+					qualification: d('Education.ADS'),
+					years: d('Education.Years.ADS'),
+				},
+				{
+					university: d('Education.Complementary'),
+					qualification: `Full Stack Club • Curso.dev • EBAC • OneBitCode • Rocketseat`,
+					years: d('Education.Years.Complementary'),
+				},
+			],
+		},
+	]
+};
+
+export const getSkillData = async () => {
+	const s = await getTranslations('About.skills')
+	const d = await getTranslations('Data.Skills')
+
+	return [
+		{
+			title: s('skills'),
+			data: [
+				{ name: d('Languages') },
+				{ name: d('EcosystemJSWork') },
+				{ name: d('EcosystemJSKnowledge') },
+				{ name: d('Styling') },
+				{ name: d('Backend') },
+				{ name: d('Mobile') },
+				{ name: d('DigitalDesign') },
+			],
+		},
+		{
+			title: s('tools'),
+			data: [
+				{ imgPath: "/about/vscode.svg", tool: "VS Code" },
+				{ imgPath: "/about/figma.svg", tool: "Figma" },
+				{ imgPath: "/about/trello.svg", tool: "Trello" },
+				{ imgPath: "/about/miro.svg", tool: "Miro" },
+			],
+		},
+	];
+}
 
 export const servicesData: ServicesData[] = [
 	{

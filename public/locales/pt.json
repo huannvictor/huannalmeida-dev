@@ -43,6 +43,10 @@
         "O meu foco é transformar problemas de negócio complexos em arquiteturas de software eficientes, entregando aplicações que garantem performance, estabilidade e eliminação de processos manuais."
       ]
     },
+    "infoData": {
+      "birthdate": "Nasci em 22 Set, 1990",
+      "location": "João Pessoa • Paraíba • Brasil"
+    },
     "languages": {
       "title": "Idiomas",
       "options": [
@@ -113,13 +117,24 @@
     "Qualifications": {
       "Education": {
         "ADS": "Análise e Desenvolvimento de Sistemas",
-        "Complementary": "Formações Complementares"
+        "Complementary": "Formações Complementares",
+        "Years": {
+          "ADS": "2024 - 2026",
+          "Complementary": "2022 - 2026"
+        }
       },
       "Experience": {
         "Automation": "Desenvolvedor de Automação",
         "Assistant": "Assistente Commercial",
         "TechLead": "Tech Lead Front-End",
-        "Junior": "Desenvolvedor Frontend Junior"
+        "Junior": "Desenvolvedor Frontend Junior",
+        "Years": {
+          "Automation": "Nov 2024 - Atual",
+          "Assistant": "Mai 2018 - Atual",
+          "TechLead": "Ago 2023 - Atual",
+          "JuniorSkillLabs": "Jan 2023 - Ago 2023",
+          "JuniorOrganize": "Dez 2022 - Fev 2023"
+        }
       }
     },
     "Skills": {

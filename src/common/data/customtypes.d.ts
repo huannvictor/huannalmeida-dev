@@ -76,6 +76,26 @@ interface TabsTriggersProps {
 	value: string;
 }
 
+interface PersonalContent {
+	title: string;
+	content: string[];
+}
+
+interface languageSkills {
+	title: string;
+	options: string[];
+};
+
+interface tabsQualifications {
+	title: string;
+};
+
+interface tabsSkills {
+	title: string;
+	skills: string;
+	tools: string;
+};
+
 interface TabsContentProps {
 	sectionTitle: string;
 	tabsTriggers: {

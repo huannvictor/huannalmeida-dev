@@ -43,6 +43,10 @@
         "My focus is on transforming complex business problems into efficient software architectures, delivering applications that ensure performance, stability, and the elimination of manual processes."
       ]
     },
+    "infoData": {
+      "birthdate": "Born on Sep 22, 1990",
+      "location": "João Pessoa • Paraiba • Brazil"
+    },
     "languages": {
       "title": "Languages",
       "options": [
@@ -113,13 +117,24 @@
     "Qualifications": {
       "Education": {
         "ADS": "Analysis and Systems Development",
-        "Complementary": "Complementary Training"
+        "Complementary": "Complementary Training",
+        "Years": {
+          "ADS": "2024 - 2026",
+          "Complementary": "2022 - 2026"
+        }
       },
       "Experience": {
         "Automation": "Automation Developer",
         "Assistant": "Commercial Assistant",
         "TechLead": "Front-End Tech Lead",
-        "Junior": "Junior Frontend Developer"
+        "Junior": "Junior Frontend Developer",
+        "Years": {
+          "Automation": "Nov 2024 - Present",
+          "Assistant": "May 2018 - Present",
+          "TechLead": "Aug 2023 - Present",
+          "JuniorSkillLabs": "Jan 2023 - Aug 2023",
+          "JuniorOrganize": "Dec 2022 - Feb 2023"
+        }
       }
     },
     "Skills": {

@@ -1,16 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import {
 	RiBriefcase4Fill,
 	RiGitBranchFill,
-	RiPaletteFill,
 	RiStackFill,
 } from "react-icons/ri";
 
 import DevImg from "../DevImg";
 import Badge from "../DynamicBadge";
-import { content } from "./content";
 
 export default function HeroImage() {
 	const [repos, setRepos] = useState(0);
@@ -26,35 +25,37 @@ export default function HeroImage() {
 			});
 	}, []);
 
+	const t = useTranslations("Hero")
+
 	return (
 		<div className="relative hidden lg:ml-32 lg:flex">
-			<div className="absolute -right-2 -top-1 size-[400px] bg-hero_shape2_light bg-no-repeat dark:bg-hero_shape2_dark" />
+			<div className="absolute -right-2 -top-1 size-100 bg-hero_shape2_light bg-no-repeat dark:bg-hero_shape2_dark" />
 
 			<Badge
 				containerStyles="absolute top-[24%] -left-[7rem] w-48"
 				icon={<RiBriefcase4Fill />}
 				endCountNum={years}
-				badgeText={content.pt.heroBadges.experience}
+				badgeText={t("badgeExperience")}
 			/>
 
 			<Badge
 				containerStyles="absolute top-[18rem] -left-[1rem]"
 				icon={<RiStackFill />}
 				// endCountNum={0}
-				badgeText={content.pt.heroBadges.stack.join(", ")}
+				badgeText={t("badgeStack")}
 			/>
 
 			<Badge
 				containerStyles="absolute top-[9rem] -right-[3rem]"
 				icon={<RiGitBranchFill />}
 				endCountNum={repos}
-				badgeText={content.pt.heroBadges.repos}
+				badgeText={t("badgeRepos")}
 			/>
 
 			<DevImg
 				containerStyles="bg-hero_shape w-[408px] h-[370px] bg-no-repeat relative bg-bottom"
 				imgSrc="/hero/developer.png"
-				alt="Foto de Huann Almeida - Desenvolvedor Fullstack"
+				alt={`${t('fullname')} = ${t("title")}`}
 				priority={true}
 			/>
 		</div>

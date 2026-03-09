@@ -10,14 +10,15 @@ import {
 	DialogTitle,
 	DialogTrigger,
 } from "../../../components/ui/dialog";
-import { content } from "./content";
+import { useTranslations } from "next-intl";
 
 export default function HeroButtons() {
+	const t = useTranslations('Hero')
 	return (
 		<div className="mx-auto mb-12 flex flex-col gap-x-3 gap-y-3 md:flex-row lg:mx-0">
 			<Link href="/contact">
 				<Button className="gap-x-2">
-					{content.pt.heroBtn.contact}
+					{t('btnContact')}
 					<Send size={18} />
 				</Button>
 			</Link>
@@ -31,21 +32,21 @@ export default function HeroButtons() {
 				</DialogTrigger>
 				<DialogContent className="flex w-full flex-col">
 					<DialogHeader>
-						<DialogTitle>{content.pt.heroBtn.dialogTitle}</DialogTitle>
+						<DialogTitle>{t('dialogTitle')}</DialogTitle>
 						<DialogDescription>
-							{content.pt.heroBtn.dialogDescription}
+							{t('dialogDescription')}
 						</DialogDescription>
 					</DialogHeader>
 					<div className="flex flex-col items-center justify-center gap-x-2 md:flex-row">
 						<Link target="_blank" href="/files/CV_HuannAlmeida_EN.pdf">
 							<Button variant="link" className="flex items-center gap-x-2">
-								English Version
+								{t('englishVersion')}
 								<FileDownIcon />
 							</Button>
 						</Link>
 						<Link target="_blank" href="/files/CV_HuannAlmeida_PTBR.pdf">
 							<Button variant="link" className="flex items-center gap-x-2">
-								Versão em Português
+								{t('portugueseVersion')}
 								<FileDownIcon />
 							</Button>
 						</Link>

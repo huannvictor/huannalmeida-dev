@@ -9,7 +9,9 @@ export const MobileNav = () => {
 	return (
 		<Sheet>
 			<SheetTrigger asChild>
-				<AlignJustify className="cursor-pointer" />
+				<button className="cursor-pointer" aria-label="Abrir menu">
+					<AlignJustify />
+				</button>
 			</SheetTrigger>
 
 			<SheetContent>

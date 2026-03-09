@@ -1,5 +1,11 @@
 import "./globals.css";
 
+// INTL
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { Locale, routing } from "../../i18n/routing";
+
 import { Analytics } from '@vercel/analytics/react';
 // VERCEL SPEED INSIGHTS
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -64,19 +70,30 @@ export const metadata: Metadata = {
 	},
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
+	params
 }: Readonly<{
 	children: React.ReactNode;
+	params: Promise<{ locale: string}>;
 }>) {
+	const { locale } = await params
+	if (!routing.locales.includes(locale as Locale)) {
+		notFound()
+	}
+
+	const messages = await getMessages()
+
 	return (
-		<html lang="pt-BR" suppressHydrationWarning>
+		<html lang={locale} suppressHydrationWarning>
 			<body className={outfit.className}>
-				<ThemeProvider attribute="class" defaultTheme="light">
-					<Header />
-					{children}
-					<Footer />
-					<SpeedInsights />
+				<ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+					<NextIntlClientProvider messages={messages}>
+						<Header />
+						{children}
+						<Footer />
+						<SpeedInsights />
+					</NextIntlClientProvider>
 				</ThemeProvider>
 				<Analytics />
 			</body>

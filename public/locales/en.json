@@ -1,0 +1,152 @@
+{
+  "Metadata": {
+    "title": "Huann Almeida | Fullstack Developer",
+    "description": "Fullstack Developer focused on React, Next.js, and intelligent automations. Transforming ideas into robust and scalable digital solutions.",
+    "keywords": "Huann Almeida, Fullstack Developer, React, Next.js, Developer Portfolio, TypeScript, Web Automations"
+  },
+  "Nav": {
+    "home": "home",
+    "projects": "projects",
+    "contact": "hello"
+  },
+  "Footer": {
+    "copyright": "Copyright &copy; Huann Almeida. All rights reserved."
+  },
+  "Hero": {
+    "badgeExperience": "Years of Experience",
+    "badgeRepos": "Repositories",
+    "badgeStack": "Typescript, NodeJS, Figma",
+    "title": "Fullstack Developer",
+    "fullname": "Huann Almeida",
+    "text": "With experience in technical leadership, I design robust architectures for the web and develop intelligent automations that solve complex operational bottlenecks.",
+    "invitation": "Beyond code: technology that drives business",
+    "btnContact": "Contact me",
+    "downloadCV": "Download CV",
+    "dialogTitle": "Download my CV",
+    "dialogDescription": "Choose the language you prefer.",
+    "interactiveDesigns": "Interactive Designs",
+    "englishVersion": "English Version",
+    "portugueseVersion": "Portuguese Version"
+  },
+  "About": {
+    "sectionTitle": "About Me",
+    "tabs": {
+      "personal": "Personal Info",
+      "qualifications": "Qualifications",
+      "skills": "Skills"
+    },
+    "personal": {
+      "title": "Discover how I can add technical and strategic value to your team",
+      "content": [
+        "Full Stack Developer with a strong focus on technical leadership (Tech Lead) and the creation of automation ecosystems.",
+        "I combine years of experience in developing modern Single Page Applications (SPAs) and scalable APIs with the development of RPA routines in Python.",
+        "My focus is on transforming complex business problems into efficient software architectures, delivering applications that ensure performance, stability, and the elimination of manual processes."
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "options": [
+        "Brazilian Portuguese (native)",
+        "Advanced English"
+      ]
+    },
+    "qualifications": {
+      "title": "My Journey",
+      "education": "education",
+      "experience": "experience"
+    },
+    "skills": {
+      "title": "My Skills",
+      "skills": "Skills",
+      "tools": "Tools"
+    }
+  },
+  "Services": {
+    "title": "My Services",
+    "service1": {
+      "title": "Front-end Architecture",
+      "description": "Creation of scalable SPAs with React, Next.js, and Angular, focusing on performance, componentization, and UI/UX."
+    },
+    "service2": {
+      "title": "API Development",
+      "description": "Building robust RESTful APIs in Node.js with secure integrations and database modeling."
+    },
+    "service3": {
+      "title": "Process Automation (RPA)",
+      "description": "Development of bots and scripts in Python to automate workflows, process PDFs, and integrate systems."
+    }
+  },
+  "Work": {
+    "title": "Latest Projects",
+    "description": "From dynamic websites to interactive applications, each project showcases my passion for front-end development and my commitment to excellence in design and functionality.",
+    "btnText": "View All"
+  },
+  "Cta": {
+    "text": "Ready to turn your ideas into reality? I'm here to help",
+    "btnText": "Say hello"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "allAreas": "all areas"
+  },
+  "Contact": {
+    "greeting": "Hello 👋",
+    "headline": "Looking for a developer with solid technical experience and strategic vision?",
+    "desc1": "As a **Tech Lead Front-End** and **Automation Developer**, I bring a complete approach to your team.",
+    "desc2": "Specialist in modern ecosystems with **React, Next.js, and Tailwind CSS**, as well as developing **RPA solutions in Python** that transform manual processes into efficient and scalable workflows.",
+    "desc3": "My focus is to unite high technical performance with the leadership necessary to drive innovation and real growth for your organization.",
+    "invitation": "Let's talk about how I can add value to your team.",
+    "btnText": "send me a message ;)",
+    "location": "João Pessoa - Paraíba/Brazil"
+  },
+  "Form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Your message",
+    "btnText": "Let's Talk"
+  },
+  "Common": {
+    "born": "Born on Sep 22, 1990",
+    "location": "João Pessoa • Paraíba • Brazil"
+  },
+  "Data": {
+    "Qualifications": {
+      "Education": {
+        "ADS": "Analysis and Systems Development",
+        "Complementary": "Complementary Training"
+      },
+      "Experience": {
+        "Automation": "Automation Developer",
+        "Assistant": "Commercial Assistant",
+        "TechLead": "Front-End Tech Lead",
+        "Junior": "Junior Frontend Developer"
+      }
+    },
+    "Skills": {
+      "Languages": "Languages: Typescript, Python, C#",
+      "EcosystemJSWork": "JS Ecosystem, what I work with most: ReactJS, NodeJS",
+      "EcosystemJSKnowledge": "JS Ecosystem, what I have knowledge of: AngularJS",
+      "Styling": "Styling: TailwindCss, Shadcn-ui",
+      "Backend": "Backend: Postgres, Prisma",
+      "Mobile": "Mobile: React Native",
+      "DigitalDesign": "Digital Design"
+    },
+    "Projects": {
+      "AssistantListFlow": "Automation tool for converting PDF documents into images and generating metadata, eliminating operational bottlenecks and optimizing batch integration for legacy management systems.",
+      "EducFormBot": "Intelligent automation focused on the surgical generation and filling of PDF documents. Drastically reduces processing time from dozens of hours to less than a minute, ensuring zero typing errors.",
+      "ContactCollectorScraper": "Automated educational data collection system built with Playwright. Performs automated navigation, extraction, sanitization with Regex, and standardization of information into reports.",
+      "MapaStatus": "High-performance RPA tool with parallel processing for analysis and extraction of unstructured data from hundreds of PDF reports, consolidating everything into spreadsheets for executive analysis.",
+      "CommercialFlowBot": "Automatic document screening and structured data extraction system. Reads PDFs in batches, identifies parameters via Regex, and physically organizes files into categorized directories.",
+      "ScanFlowBot": "Python automation designed to audit the file system, analyze chronological metadata, and generate executive reports on the status of digitized documents.",
+      "FSW70": "This is a project for a dynamic ordering system for a fictional restaurant called FSW Donalds. The system allows customers to place orders online, select products from the menu, and checkout.",
+      "CSVGeneratorFromFiles": "This project consists of a Python script that automates the organization and generation of reports from files stored in a folder.",
+      "CookApp": "I created CookApp using React Native, following the Rocketseat tutorial. It is a recipe app where users select ingredients and get personalized recipe options.",
+      "DiscordClone": "In this 11-hour course, I learned how to create a fullstack end-to-end and a real-time Discord clone, all with servers, channels, video calls, audio calls, editing and deleting messages, as well as member roles.",
+      "CandyCrushReact": "In a quick tutorial, I mastered the creation of a Candy Crush web clone, diving into programming logic and essential React.js concepts along the way.",
+      "ShortLink": "Short Link is a Node.js project that allows users to shorten URLs, redirect to the original URL, and analyze the number of hits.",
+      "ExpertNotes": "Expert Notes is an innovative React web app developed during the NLW online event using Vite. Seamlessly integrating audio recording functionality, the app efficiently transcribes spoken words into text, offering users the flexibility to opt for manual input if they prefer. With a sleek and modern design, Expert Notes is aesthetically enhanced with Tailwind CSS, ensuring a visually appealing and intuitive user experience.",
+      "NerdBoxStore": "Dynamically, we can register the product and view it on the same page. Options to edit and delete are created for each item line. The software uses the machine's local memory to perform operations, preventing data migration to another machine.",
+      "TechLibrary": "TechLibrary is a backend project to manage a library. This project was developed during Rocketseat's Next Level Week (NLW), an online event that offers practical software development experience, focusing on modern technologies and good programming practices."
+    }
+  }
+}

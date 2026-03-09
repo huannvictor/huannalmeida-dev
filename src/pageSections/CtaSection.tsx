@@ -1,16 +1,15 @@
 import Cta from "@/src/components/cta/index";
-
-import { content } from "../components/cta/content";
+import { useTranslations } from "next-intl";
 
 export default function CtaSection() {
-	const { cta, btnTxt } = content.pt;
+	const t = useTranslations('Cta')
 
 	return (
 		<Cta.Root>
 			<Cta.Container>
-				<Cta.Text ctaTxt={cta} />
+				<Cta.Text ctaTxt={t('text')} />
 
-				<Cta.Button btnTxt={btnTxt} />
+				<Cta.Button btnTxt={t('btnText')} />
 			</Cta.Container>
 		</Cta.Root>
 	);

@@ -2,7 +2,9 @@
   "Metadata": {
     "title": "Huann Almeida | Desenvolvedor Fullstack",
     "description": "Desenvolvedor Fullstack focado em React, Next.js e automações inteligentes. Transformo ideias em soluções digitais robustas e escaláveis.",
-    "keywords": "Huann Almeida, Desenvolvedor Fullstack, React, Next.js, Portfólio de Desenvolvedor, TypeScript, Automações Web"
+    "keywords": "Huann Almeida, Desenvolvedor Fullstack, React, Next.js, Portfólio de Desenvolvedor, TypeScript, Automações Web",
+    "projectsTabTitle": "My Projects",
+    "projectsTabDescription": "See my projects here."
   },
   "Nav": {
     "home": "home",
@@ -96,8 +98,8 @@
   "Contact": {
     "greeting": "Olá 👋",
     "headline": "Procurando um desenvolvedor com sólida experiência técnica e visão estratégica?",
-    "desc1": "Como **Tech Lead Front-End** e **Desenvolvedor de Automação**,trago uma abordagem completa para o seu time.",
-    "desc2": "Especialista em ecossistemas modernos com **React, Next.js e Tailwind CSS**, além de desenvolver soluções de **RPA em Python** que transformam processos manuais em fluxos de trabalho eficientes e escaláveis.",
+    "desc1": "Como Tech Lead Front-End e Desenvolvedor de Automação,trago uma abordagem completa para o seu time.",
+    "desc2": "Especialista em ecossistemas modernos com React, Next.js e Tailwind CSS, além de desenvolver soluções de RPA em Python que transformam processos manuais em fluxos de trabalho eficientes e escaláveis.",
     "desc3": "Meu foco é unir alta performance técnica com a liderança necessária para impulsionar a inovação e o crescimento real da sua organização.",
     "invitation": "Vamos conversar sobre como posso agregar valor ao seu time.",
     "btnText": "me manda uma mensagem ;)",

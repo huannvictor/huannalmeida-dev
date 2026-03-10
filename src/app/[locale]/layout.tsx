@@ -2,7 +2,7 @@ import "./globals.css";
 
 // INTL
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Locale, routing } from "../../i18n/routing";
 
@@ -21,54 +21,56 @@ import { ThemeProvider } from "@/src/components/ThemeProvider";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-	metadataBase: new URL("https://huannalmeida.dev.br"),
-	title: {
-		default: "Huann Almeida | Desenvolvedor Fullstack",
-		template: "%s | Huann Almeida",
-	},
-	description:
-		"Desenvolvedor Fullstack focado em React, Next.js e automações inteligentes. Transformo ideias em soluções digitais robustas e escaláveis.",
-	keywords: [
-		"Huann Almeida",
-		"Desenvolvedor Fullstack",
-		"React",
-		"Next.js",
-		"Portfólio de Desenvolvedor",
-		"TypeScript",
-		"Automações Web",
-	],
-	authors: [{ name: "Huann Almeida" }],
-	creator: "Huann Almeida",
-	openGraph: {
-		type: "website",
-		locale: "pt_BR",
-		url: "https://huannalmeida.dev.br",
-		siteName: "Huann Almeida Portfólio",
-		title: "Huann Almeida | Desenvolvedor Fullstack",
-		description:
-			"Explore meu portfólio de desenvolvimento frontend e fullstack, apresentando projetos inovadores e soluções criativas.",
-		images: [
-			{
-				url: "/og-image.png",
-				width: 1200,
-				height: 630,
-				alt: "Huann Almeida Portfólio",
-			},
-		],
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Huann Almeida | Desenvolvedor Fullstack",
-		description:
-			"Explore meu portfólio de desenvolvimento frontend e fullstack.",
-		images: ["/og-image.png"],
-	},
-	robots: {
-		index: true,
-		follow: true,
-	},
-};
+export async function generateMetadata({
+	params,
+}: {
+	params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+	const { locale } = await params;
+	const t = await getTranslations({ locale, namespace: "Metadata" });
+
+	const keywords = t("keywords")
+		.split(",")
+		.map((k) => k.trim());
+
+	return {
+		metadataBase: new URL("https://huannalmeida.dev.br"),
+		title: {
+			default: t("title"),
+			template: "%s | Huann Almeida",
+		},
+		description: t("description"),
+		keywords: keywords,
+		authors: [{ name: "Huann Almeida" }],
+		creator: "Huann Almeida",
+		openGraph: {
+			type: "website",
+			locale: locale === "pt" ? "pt_BR" : "en_US",
+			url: "https://huannalmeida.dev.br",
+			siteName: "Huann Almeida Portfólio",
+			title: t("title"),
+			description: t("description"),
+			images: [
+				{
+					url: "/og-image.png",
+					width: 1200,
+					height: 630,
+					alt: "Huann Almeida Portfólio",
+				},
+			],
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: t("title"),
+			description: t("description"),
+			images: ["/og-image.png"],
+		},
+		robots: {
+			index: true,
+			follow: true,
+		},
+	};
+}
 
 export default async function RootLayout({
 	children,

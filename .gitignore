@@ -39,3 +39,6 @@ biome.json
 
 # temp files
 ~$*
+
+# editable resume files
+./public/files/editableDocs

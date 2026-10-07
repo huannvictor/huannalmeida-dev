@@ -48,7 +48,7 @@ export default function AboutTabs({
 				<div className="mt-12 text-lg lg:mt-8">
 					{/**  PERSONAL */}
 					<TabsContent value="personal">
-						<div className="text-center lg:text-left">
+						<div className="text-center lg:text-left max-w-xl">
 							<h3 className="h3 mb-4">{personal.title}</h3>
 							{personal.content.map((paragraph) => (
 								<p

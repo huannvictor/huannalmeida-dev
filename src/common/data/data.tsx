@@ -12,7 +12,7 @@ import {
 import { getTranslations } from "next-intl/server";
 
 export const getInfoData = async () => {
-	const t = await getTranslations('About.infoData')
+	const t = await getTranslations("About.infoData");
 
 	return [
 		{
@@ -21,7 +21,7 @@ export const getInfoData = async () => {
 		},
 		{
 			icon: <PhoneCall size={20} />,
-			text: "+55 83 99980-2317",
+			text: "+55 83 99126-3772",
 		},
 		{
 			icon: <MailIcon size={20} />,
@@ -29,87 +29,96 @@ export const getInfoData = async () => {
 		},
 		{
 			icon: <Calendar size={20} />,
-			text: t('birthdate'),
+			text: t("birthdate"),
 		},
 		{
 			icon: <Home size={20} />,
-			text: t('location'),
+			text: t("location"),
 		},
-	]
-}	
+	];
+};
 
 export const getQualificationData = async () => {
-	const q = await getTranslations('About.qualifications')
-	const d = await getTranslations('Data.Qualifications')
+	const q = await getTranslations("About.qualifications");
+	const d = await getTranslations("Data.Qualifications");
 
 	return [
 		{
-			title: q('experience'),
+			title: q("experience"),
 			data: [
 				{
 					company: "Editora Construir",
-					role: d('Experience.Automation'),
-					years: d('Experience.Years.Automation'),
+					role: d("Experience.Automation"),
+					years: d("Experience.Years.Automation"),
 				},
 				{
 					company: "Editora Construir",
-					role: d('Experience.Assistant'),
-					years: d('Experience.Years.Assistant'),
+					role: d("Experience.Assistant"),
+					years: d("Experience.Years.Assistant"),
 				},
 				{
 					company: "Skill Labs",
-					role: d('Experience.TechLead'),
-					years: d('Experience.Years.TechLead'),
+					role: d("Experience.TechLead"),
+					years: d("Experience.Years.TechLead"),
 				},
 				{
 					company: "Skill Labs",
-					role: d('Experience.Junior'),
-					years: d('Experience.Years.JuniorSkillLabs'),
+					role: d("Experience.JuniorSkillLabs"),
+					years: d("Experience.Years.JuniorSkillLabs"),
 				},
 				{
 					company: "Organize Soft",
-					role: d('Experience.Junior'),
-					years: d('Experience.Years.JuniorOrganize'),
+					role: d("Experience.JuniorOrganize"),
+					years: d("Experience.Years.JuniorOrganize"),
 				},
 			],
 		},
 		{
-			title: q('education'),
+			title: q("education"),
 			data: [
 				{
-					university: "Wyden",
-					qualification: d('Education.ADS'),
-					years: d('Education.Years.ADS'),
+					university: "FAMEF",
+					qualification: d("Education.MBASoftware"),
+					years: d("Education.Years.MBASoftware"),
 				},
 				{
-					university: d('Education.Complementary'),
-					qualification: `Full Stack Club • Curso.dev • EBAC • OneBitCode • Rocketseat`,
-					years: d('Education.Years.Complementary'),
+					university: "FAMEF",
+					qualification: d("Education.MBACyber"),
+					years: d("Education.Years.MBACyber"),
+				},
+				{
+					university: "Wyden",
+					qualification: d("Education.ADS"),
+					years: d("Education.Years.ADS"),
+				},
+				{
+					university: d("Education.Complementary"),
+					qualification:
+						"Full Stack Club • Curso.dev • EBAC • OneBitCode • Rocketseat",
+					years: d("Education.Years.Complementary"),
 				},
 			],
 		},
-	]
-}
+	];
+};
 
 export const getSkillData = async (): Promise<SkillData[]> => {
-	const s = await getTranslations('About.skills')
-	const d = await getTranslations('Data.Skills')
+	const s = await getTranslations("About.skills");
+	const d = await getTranslations("Data.Skills");
 
 	return [
 		{
-			title: s('skills'),
+			title: s("skills"),
 			data: [
-				{ name: d('Languages') },
-				{ name: d('EcosystemJSWork') },
-				{ name: d('EcosystemJSKnowledge') },
-				{ name: d('Styling') },
-				{ name: d('Backend') },
-				{ name: d('Mobile') },
-				{ name: d('DigitalDesign') },
+				{ name: d("Languages") },
+				{ name: d("Frontend") },
+				{ name: d("Backend") },
+				{ name: d("Automation") },
+				{ name: d("DatabaseDevOps") },
 			],
 		},
 		{
-			title: s('tools'),
+			title: s("tools"),
 			data: [
 				{ imgPath: "/about/vscode.svg", tool: "VS Code" },
 				{ imgPath: "/about/figma.svg", tool: "Figma" },
@@ -118,212 +127,150 @@ export const getSkillData = async (): Promise<SkillData[]> => {
 			],
 		},
 	];
-}
+};
 
 export const getServicesData = async (): Promise<ServicesData[]> => {
-	const s = await getTranslations('Services')
+	const s = await getTranslations("Services");
 	return [
 		{
 			icon: <Layout size={72} strokeWidth={0.8} />,
-			title: s('service1.title'),
-			description: s('service1.description'),
+			title: s("service1.title"),
+			description: s("service1.description"),
 		},
 		{
 			icon: <DatabaseZap size={72} strokeWidth={0.8} />,
-			title: s('service2.title'),
-			description:s('service2.description'),
+			title: s("service2.title"),
+			description: s("service2.description"),
 		},
 		{
 			icon: <Bot size={72} strokeWidth={0.8} />,
-			title: s('service3.title'),
-			description: s('service3.description'),
+			title: s("service3.title"),
+			description: s("service3.description"),
 		},
 	];
-}
+};
 
 export const getProjectData = async (): Promise<ProjectData[]> => {
-	const p = await getTranslations('Data.Projects')
+	const p = await getTranslations("Data.Projects");
 	return [
 		{
+			image: "/work/aparatus.png",
+			category: "Next.js 16",
+			techArea: "fullstack",
+			name: "Aparatus",
+			description: p("Aparatus"),
+			link: null,
+			github: "https://github.com/huannvictor/aparatus",
+		},
+		{
 			image: "/work/fsw-donalds.png",
-			category: "NextJs",
-			techArea: "frontend",
-			name: "FSW 7.0",
-			description: p('FSW70'),
+			category: "Next.js 15",
+			techArea: "fullstack",
+			name: "FSW Donald's",
+			description: p("FSWDonalds"),
 			link: "https://fsw-donalds-tau.vercel.app/",
 			github: "https://github.com/huannvictor/fsw-donalds",
 		},
 		{
-			image: "/work/discordclone.png",
-			category: "next js",
-			techArea: "fullstack",
-			name: "Discord Clone",
-			description: p('DiscordClone'),
+			image: "/work/backend.png",
+			category: "NestJS",
+			techArea: "backend",
+			name: "Gam3rStore API",
+			description: p("Gam3rStoreBackend"),
 			link: null,
-			github: "https://github.com/huannvictor/discord-clone",
+			github: "https://github.com/huannvictor/backend",
 		},
 		{
-			image: "/work/nlwExpertsNotes.png",
-			category: "react js",
-			name: "Expert Notes",
+			image: "/work/PricePulseAI.png",
+			category: "Python / AI",
+			techArea: "automation",
+			name: "PricePulseAI",
+			description: p("PricePulseAI"),
+			link: null,
+			github: "https://github.com/huannvictor/PricePulseAI",
+		},
+		{
+			image: "/work/CommercialFlow-Bot.png",
+			category: "Python / RPA",
+			techArea: "automation",
+			name: "Commercial Flow Bot",
+			description: p("CommercialFlowBot"),
+			link: null,
+			github: "https://github.com/huannvictor/CommercialFlow-Bot",
+		},
+		{
+			image: "/work/nlwExpert-Polls.png",
+			category: "Fastify / Node.js",
+			techArea: "backend",
+			name: "NLW Expert Polls",
+			description: p("NLWExpertPolls"),
+			link: null,
+			github: "https://github.com/huannvictor/nlwExpert-Polls",
+		},
+		{
+			image: "/work/MapaStatus.png",
+			category: "Python / RPA",
+			techArea: "automation",
+			name: "Mapa Status",
+			description: p("MapaStatus"),
+			link: null,
+			github: "https://github.com/huannvictor/MapaStatus",
+		},
+		{
+			image: "/work/ftr-upload-widget-web.png",
+			category: "React 19",
 			techArea: "frontend",
-			description: p('ExpertNotes'),
-			link: "https://nlw-expert-notes-drab.vercel.app/",
-			github: "https://github.com/huannvictor/nlwExpert-Notes",
+			name: "Upload Widget Web",
+			description: p("UploadWidgetWeb"),
+			link: null,
+			github: "https://github.com/huannvictor/ftr-upload-widget-web",
+		},
+		{
+			image: "/work/ContactCollector-Scraper.png",
+			category: "Python / Scraper",
+			techArea: "automation",
+			name: "Contact Collector Scraper",
+			description: p("ContactCollectorScraper"),
+			link: null,
+			github: "https://github.com/huannvictor/ContactCollector-Scraper",
 		},
 		{
 			image: "/work/AssistantListFlow.png",
-			category: "Python",
+			category: "Python / RPA",
 			techArea: "automation",
 			name: "AssistantListFlow",
-			description: p('AssistantListFlow'),
-			link: "", 
+			description: p("AssistantListFlow"),
+			link: null,
 			github: "https://github.com/huannvictor/AssistantListFlow",
 		},
 		{
 			image: "/work/EducForm-Bot.png",
-			category: "Python",
+			category: "Python / RPA",
 			techArea: "automation",
 			name: "EducForm Bot",
-			description: p('EducFormBot'),
-			link: "",
+			description: p("EducFormBot"),
+			link: null,
 			github: "https://github.com/huannvictor/EducForm-Bot",
 		},
 		{
-			image: "/work/ContactCollector-Scraper.png",
-			category: "Python",
-			techArea: "automation",
-			name: "Contact Collector Scraper",
-			description: p('ContactCollectorScraper'),
-			link: "",
-			github: "https://github.com/huannvictor/ContactCollector-Scraper",
-		},
-		{
-			image: "/work/MapaStatus.png",
-			category: "Python",
-			techArea: "automation",
-			name: "Mapa Status",
-			description: p('MapaStatus'),
-			link: "",
-			github: "https://github.com/huannvictor/MapaStatus",
-		},
-		{
-			image: "/work/CommercialFlow-Bot.png",
-			category: "Python",
-			techArea: "automation",
-			name: "Commercial Flow Bot",
-			description: p('CommercialFlowBot'),
-			link: "",
-			github: "https://github.com/huannvictor/CommercialFlow-Bot",
-		},
-		{
 			image: "/work/ScanFlow-Bot.png",
-			category: "Python",
+			category: "Python / RPA",
 			techArea: "automation",
 			name: "Scan Flow Bot",
-			description: p('ScanFlowBot'),
-			link: "",
+			description: p("ScanFlowBot"),
+			link: null,
 			github: "https://github.com/huannvictor/ScanFlow-Bot",
 		},
 		{
-			image: "/work/CSVGeneratorFromFiles.png",
-			category: "python",
-			techArea: "automation",
-			name: "CSVGeneratorFromFiles",
-			description: p('CSVGeneratorFromFiles'),
-			link: null,
-			github: "https://github.com/huannvictor/CSVGeneratorFromFiles",
-		},
-		{
-			image: "/work/cookapp.png",
-			category: "react native",
-			techArea: "mobile",
-			name: "Cook App",
-			description: p('CookApp'),
-			link: "https://www.figma.com/file/op20QBiNSq1HaFue5minyl/Cook-App?type=design&node-id=0%3A1&mode=design&t=O1HJRbDhFFX98o8C-1",
-			github: "https://github.com/huannvictor/cook-app",
-		},
-		{
-			image: "/work/candycrush.png",
-			category: "react js",
+			image: "/work/nlwExpertsNotes.png",
+			category: "React / Vite",
 			techArea: "frontend",
-			name: "Candy Crush React",
-			description: p('CandyCrushReact'),
-			link: "https://candy-crush-react-byhuann.vercel.app/",
-			github: "https://github.com/huannvictor/candy-crush-react",
-		},
-		{
-			image: "/work/shortlinks.png",
-			category: "node js",
-			name: "Short Link",
-			techArea: "backend",
-			description: p('ShortLink'),
-			link: "https://www.postman.com/docking-module-participant-28243338/workspace/huannvictor/collection/24904242-b41c2ded-9fd3-4e26-85f3-a23a9e2a8f5d?action=share&creator=24904242",
-			github: "https://github.com/huannvictor/short-links",
-		},
-		{
-			image: "/work/NerdBox-Store.png",
-			category: "Javascript",
-			techArea: "frontend",
-			name: "NerdBox Store",
-			description: p('NerdBoxStore'),
-			link: "https://nerdbox-store.vercel.app/",
-			github: "https://github.com/huannvictor/NerdBox-Store",
-		},
-		{
-			image: "/work/TechLibrary.png",
-			category: "CSharp",
-			techArea: "backend",
-			name: "Tech Library",
-			description: p('TechLibrary'),
-			link: null,
-			github: "https://github.com/huannvictor/TechLibrary",
+			name: "NLW Expert Notes",
+			description: p("NLWExpertNotes"),
+			link: "https://nlw-expert-notes-drab.vercel.app/",
+			github: "https://github.com/huannvictor/nlwExpert-Notes",
 		},
 	];
-} 
+};
 
-
-export const reviewsData: ReviewsData[] = [
-	{
-		avatar: "/reviews/avatar-1.png",
-		name: "Richard Thompson",
-		job: "Chef",
-		review:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!",
-	},
-	{
-		avatar: "/reviews/avatar-2.png",
-		name: "Ellen Bellane",
-		job: "Fashon Design",
-		review:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!",
-	},
-	{
-		avatar: "/reviews/avatar-3.png",
-		name: "José Souza",
-		job: "Game Dev",
-		review:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!",
-	},
-	{
-		avatar: "/reviews/avatar-4.png",
-		name: "Emily Smith",
-		job: "Therapist",
-		review:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!",
-	},
-	{
-		avatar: "/reviews/avatar-5.png",
-		name: "Oliver Taylor",
-		job: "Engineer",
-		review:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!",
-	},
-	{
-		avatar: "/reviews/avatar-6.png",
-		name: "Mason Wilson",
-		job: "Video Editor",
-		review:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iste. Sunt dolores tempore in ipsum libero deleniti accusamus, illum iusto enim quis adipisci explicabo. Dolores rerum quasi possimus tenetur mollitia!",
-	},
-];
+export const reviewsData: ReviewsData[] = [];

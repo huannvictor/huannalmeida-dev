@@ -32,7 +32,7 @@ const Contact = async () => {
 					<div className="mb-12 flex flex-col gap-y-4 text-base xl:mb-24 xl:gap-y-4 xl:text-lg">
 						<Link
 							target="_blank"
-							href="https://wa.me/send/?phone=5583999802317&text=Olá+Huann!"
+							href="https://wa.me/send/?phone=5583991263772&text=Olá+Huann!"
 						>
 							<Button
 								variant="link"
@@ -55,7 +55,7 @@ const Contact = async () => {
 
 						<div className="flex items-center gap-x-8">
 							<PhoneCallIcon size={18} className="text-primary" />
-							<span>+55 83 99980-2317</span>
+							<span>+55 83 99126-3772</span>
 						</div>
 					</div>
 

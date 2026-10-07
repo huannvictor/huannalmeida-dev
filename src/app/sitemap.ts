@@ -1,7 +1,8 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-	const baseUrl = "https://huannalmeida.dev.br";
+	const baseUrl: string = window.location.href;
+
 	return [
 		{
 			url: baseUrl,

@@ -1,31 +1,31 @@
 {
   "Metadata": {
-    "title": "Huann Almeida | Desenvolvedor Fullstack",
-    "description": "Desenvolvedor Fullstack focado em React, Next.js e automações inteligentes. Transformo ideias em soluções digitais robustas e escaláveis.",
-    "keywords": "Huann Almeida, Desenvolvedor Fullstack, React, Next.js, Portfólio de Desenvolvedor, TypeScript, Automações Web",
-    "projectsTabTitle": "My Projects",
-    "projectsTabDescription": "See my projects here."
+    "title": "Huann Almeida | Desenvolvedor Full Stack Júnior",
+    "description": "Desenvolvedor Full Stack Júnior focado em React, Next.js, Node.js e automações inteligentes em Python. Transformo necessidades de negócio em código limpo e eficiente.",
+    "keywords": "Huann Almeida, Desenvolvedor Full Stack, React, Next.js, Node.js, Python, TypeScript, Automações, RPA, Portfólio de Desenvolvedor",
+    "projectsTabTitle": "Meus Projetos",
+    "projectsTabDescription": "Conheça meus projetos de desenvolvimento web e automação."
   },
   "Nav": {
     "home": "home",
     "projects": "projetos",
-    "contact": "olá"
+    "contact": "contato"
   },
   "Footer": {
     "copyright": "Copyright © Huann Almeida. Todos os direitos reservados."
   },
   "Hero": {
-    "badgeExperience": "Anos de Experiência",
+    "badgeEfficiency": "Otimização em Automação",
     "badgeRepos": "Repositórios",
-    "badgeStack": "Typescript, NodeJS, Figma",
-    "title": "Desenvolvedor Fullstack",
+    "badgeStack": "TypeScript, React, Node, Python",
+    "title": "Desenvolvedor Full Stack Júnior",
     "fullname": "Huann Almeida",
-    "text": "Com experiência em liderança técnica, projeto arquiteturas robustas para a web e desenvolvo automações inteligentes que resolvem gargalos operacionais complexos.",
-    "invitation": "Muito além do código: tecnologia que impulsiona negócios",
-    "btnContact": "Meu contato",
+    "text": "Desenvolvedor focado em aplicações web modernas com React, Next.js e Node.js, além de automações inteligentes em Python que eliminam tarefas repetitivas e otimizam processos operacionais.",
+    "invitation": "Engenharia prática gerando eficiência real para o seu negócio.",
+    "btnContact": "Fale Comigo",
     "downloadCV": "Download CV",
-    "dialogTitle": "Download meu CV",
-    "dialogDescription": "Escolha o idioma que preferir.",
+    "dialogTitle": "Download do Currículo",
+    "dialogDescription": "Escolha a versão de idioma desejada.",
     "interactiveDesigns": "Designs Interativos",
     "englishVersion": "Versão em Inglês",
     "portugueseVersion": "Versão em Português"
@@ -38,22 +38,22 @@
       "skills": "Habilidades"
     },
     "personal": {
-      "title": "Descubra como posso agregar valor técnico e estratégico ao seu time",
+      "title": "Transição consistente, maturidade profissional e foco em resultados",
       "content": [
-        "Desenvolvedor Full Stack com forte atuação em liderança técnica (Tech Lead) e criação de ecossistemas de automação.",
-        "Combino anos de experiência no desenvolvimento de Single Page Applications (SPAs) modernas e APIs escaláveis com o desenvolvimento de rotinas RPA em Python.",
-        "O meu foco é transformar problemas de negócio complexos em arquiteturas de software eficientes, entregando aplicações que garantem performance, estabilidade e eliminação de processos manuais."
+        "Com mais de 6 anos de vivência corporativa na Editora Construir, fiz uma transição consistente para a tecnologia, unindo visão prática de processos e negócios à engenharia de software.",
+        "Graduado em Análise e Desenvolvimento de Sistemas (Wyden) e pós-graduando com MBAs em Engenharia de Software e em Cibersegurança (FAMEF). Atuo no desenvolvimento de soluções web modernas (React, Next.js, Node.js, NestJS) e rotinas de automação e RPA com Python.",
+        "Liderei squad voluntário na Skill Labs e desenvolvi automações que reduziram em mais de 80% o tempo gasto em tarefas manuais na Editora Construir, com foco em código limpo, estabilidade e valor direto para a equipe."
       ]
     },
     "infoData": {
-      "birthdate": "Nasci em 22 Set, 1990",
+      "birthdate": "22 de Setembro, 1990",
       "location": "João Pessoa • Paraíba • Brasil"
     },
     "languages": {
       "title": "Idiomas",
       "options": [
-        "Português Brasileiro (nativo)",
-        "Inglês avançado"
+        "Português Brasileiro (Nativo)",
+        "Inglês (Avançado / Comunicação Profissional)"
       ]
     },
     "qualifications": {
@@ -68,28 +68,28 @@
     }
   },
   "Services": {
-    "title": "Meus Serviços",
+    "title": "O Que Posso Agregar",
     "service1": {
-      "title": "Arquitetura Front-end",
-      "description": "Criação de SPAs escaláveis com React, Next.js e Angular, focando em performance, componentização e UI/UX."
+      "title": "Desenvolvimento Web (React & Next.js)",
+      "description": "Construção de aplicações web responsivas, performáticas e acessíveis utilizando React 19, Next.js, TypeScript e Tailwind CSS."
     },
     "service2": {
-      "title": "Desenvolvimento de APIs",
-      "description": "Construção de APIs RESTful robustas em Node.js com integrações seguras e modelagem de banco de dados."
+      "title": "APIs RESTful & Bancos de Dados",
+      "description": "Construção de APIs escaláveis e organizadas em Node.js com Fastify ou NestJS (Clean Architecture), modelagem com Prisma e PostgreSQL em Docker."
     },
     "service3": {
-      "title": "Automação de Processos (RPA)",
-      "description": "Desenvolvimento de bots e scripts em Python para automatizar fluxos de trabalho, processar PDFs e integrar sistemas."
+      "title": "Automação de Processos & RPA em Python",
+      "description": "Desenvolvimento de bots, rotinas de processamento de documentos em lote (PDFs e planilhas) e scrapers para eliminar tarefas manuais repetitivas."
     }
   },
   "Work": {
     "title": "Últimos Projetos",
-    "description": "De websites dinâmicos a aplicações interativas, cada projeto mostra minha paixão pelo desenvolvimento front-end e meu compromisso com excelência em design e funcionalidade.",
+    "description": "De aplicações web completas a rotinas avançadas de automação, cada projeto reflete compromisso com código limpo, boas práticas e solução prática de problemas.",
     "btnText": "Ver Todos"
   },
   "Cta": {
-    "text": "Preparado para transformar suas ideias em realidade? Estou aqui para ajudar",
-    "btnText": "Manda um oi"
+    "text": "Buscando um desenvolvedor com maturidade e energia para somar ao seu time?",
+    "btnText": "Vamos Conversar"
   },
   "Projects": {
     "title": "Meus Projetos",
@@ -97,73 +97,74 @@
   },
   "Contact": {
     "greeting": "Olá 👋",
-    "headline": "Procurando um desenvolvedor com sólida experiência técnica e visão estratégica?",
-    "desc1": "Como Tech Lead Front-End e Desenvolvedor de Automação,trago uma abordagem completa para o seu time.",
-    "desc2": "Especialista em ecossistemas modernos com React, Next.js e Tailwind CSS, além de desenvolver soluções de RPA em Python que transformam processos manuais em fluxos de trabalho eficientes e escaláveis.",
-    "desc3": "Meu foco é unir alta performance técnica com a liderança necessária para impulsionar a inovação e o crescimento real da sua organização.",
-    "invitation": "Vamos conversar sobre como posso agregar valor ao seu time.",
-    "btnText": "me manda uma mensagem ;)",
-    "location": "João Pessoa - Paraíba/Brasil"
+    "headline": "Buscando um Desenvolvedor Júnior maduro, proativo e com entrega consistente?",
+    "desc1": "Estou aberto a oportunidades como Desenvolvedor Full Stack Júnior, Front-end ou Back-end, tanto em formato remoto quanto presencial/híbrido em João Pessoa (PB).",
+    "desc2": "Trago maturidade corporativa consolidada, graduação concluída, pós-graduações em andamento e foco constante em aprender e aplicar tecnologias modernas.",
+    "desc3": "Se a sua equipe precisa de alguém confiável, focado em resolver problemas reais e pronto para gerar valor desde o primeiro sprint, será um prazer conversar!",
+    "invitation": "Fique à vontade para me enviar uma mensagem por e-mail ou WhatsApp:",
+    "btnText": "Enviar Mensagem",
+    "location": "João Pessoa - Paraíba / Brasil"
   },
   "Form": {
     "name": "Nome",
     "email": "Email",
     "message": "Sua mensagem",
-    "btnText": "Vamos Conversar"
+    "btnText": "Enviar Mensagem"
   },
   "Common": {
-    "born": "Nasci em 22 Set, 1990",
+    "born": "22 de Setembro, 1990",
     "location": "João Pessoa • Paraíba • Brasil"
   },
   "Data": {
     "Qualifications": {
       "Education": {
-        "ADS": "Análise e Desenvolvimento de Sistemas",
+        "ADS": "Análise e Desenvolvimento de Sistemas (Graduação Concluída)",
+        "MBASoftware": "MBA em Engenharia de Software (Em andamento)",
+        "MBACyber": "MBA em Cibersegurança (Em andamento)",
         "Complementary": "Formações Complementares",
         "Years": {
-          "ADS": "2024 - 2026",
+          "ADS": "2024 - 2026 • Wyden",
+          "MBASoftware": "2026 - 2027 • FAMEF",
+          "MBACyber": "2026 - 2027 • FAMEF",
           "Complementary": "2022 - 2026"
         }
       },
       "Experience": {
-        "Automation": "Desenvolvedor de Automação",
-        "Assistant": "Assistente Commercial",
-        "TechLead": "Tech Lead Front-End",
-        "Junior": "Desenvolvedor Frontend Junior",
+        "Automation": "Desenvolvedor de Automação & Assistente Comercial",
+        "Assistant": "Assistente Comercial & Operações",
+        "TechLead": "Tech Lead Front-End (Squad de Voluntários)",
+        "JuniorSkillLabs": "Desenvolvedor Front-End Voluntário",
+        "JuniorOrganize": "Desenvolvedor Front-End (Angular)",
         "Years": {
-          "Automation": "Nov 2024 - Atual",
-          "Assistant": "Mai 2018 - Atual",
-          "TechLead": "Ago 2023 - Atual",
-          "JuniorSkillLabs": "Jan 2023 - Ago 2023",
+          "Automation": "Nov 2024 - Jun 2026",
+          "Assistant": "Mai 2018 - Jun 2026",
+          "TechLead": "Jan 2024 - Jun 2024",
+          "JuniorSkillLabs": "Ago 2023 - Jan 2024",
           "JuniorOrganize": "Dez 2022 - Fev 2023"
         }
       }
     },
     "Skills": {
-      "Languages": "Linguagens: Typescript, Python, C#",
-      "EcosystemJSWork": "Ecossistema JS, o que mais trabalho: ReactJS, NodeJS",
-      "EcosystemJSKnowledge": "Ecossistema JS, o que tenho conhecimento: AngularJS",
-      "Styling": "Estilização: TailwindCss, Shadcn-ui",
-      "Backend": "Backend: Postgres, Prisma",
-      "Mobile": "Mobile: React Native",
-      "DigitalDesign": "Digital Design"
+      "Languages": "Linguagens: TypeScript, JavaScript, Python, SQL",
+      "Frontend": "Front-end: React 19, Next.js, Tailwind CSS, Radix UI, Zustand",
+      "Backend": "Back-end: Node.js, NestJS, Fastify, APIs RESTful, WebSockets",
+      "Automation": "Automação & RPA: Python, Pandas, Regex, BeautifulSoup, Playwright",
+      "DatabaseDevOps": "Bancos & DevOps: PostgreSQL, Prisma ORM, Docker, Git, CI/CD"
     },
     "Projects": {
-      "AssistantListFlow": "Ferramenta de automação para conversão de documentos PDF em imagens e geração de metadados, eliminando gargalos operacionais e otimizando a integração em lote para sistemas de gestão legados.",
-      "EducFormBot": "Automação inteligente focada na geração e preenchimento cirúrgico de documentos PDF. Reduz drasticamente o tempo de processamento de dezenas de horas para menos de um minuto, garantindo zero erros de digitação.",
-      "ContactCollectorScraper": "Sistema de coleta automatizada de dados educacionais construído com Playwright. Realiza navegação automatizada, extração, higienização com Regex e padronização das informações em relatórios.",
-      "MapaStatus": "Ferramenta RPA de alta performance com processamento paralelo para análise e extração de dados não-estruturados em centenas de relatórios PDF, consolidando tudo em planilhas para análise executiva.",
-      "CommercialFlowBot": "Sistema de triagem automática de documentos e extração estruturada de dados. Lê PDFs em lote, identifica parâmetros via Regex e organiza fisicamente os arquivos em diretórios categorizados.",
-      "ScanFlowBot": "Automação em Python projetada para auditar o sistema de arquivos, analisar metadados cronológicos e gerar relatórios executivos do status de documentos digitalizados.",
-      "FSW70": "Este é um projeto de um sistema de pedidos para um restaurante fictício chamado FSW Donalds. O sistema permite que os clientes façam pedidos online, selecionem produtos do menu e finalizem seus pedidos.",
-      "CSVGeneratorFromFiles": "Este projeto consiste em um script Python que automatiza a organização e geração de relatórios a partir de arquivos armazenados em uma pasta.",
-      "CookApp": "Criei o CookApp usando React Native, seguindo o tutorial do Rocketseat. É um aplicativo de receitas onde os usuários selecionam ingredientes e obtêm opções de receitas personalizadas",
-      "DiscordClone": "Neste curso de 11 horas aprendi como criar um fullstack ponta a ponta e um clone do Discord em tempo real, tudo com servidores, canais, chamadas de vídeo, chamadas de áudio, edição e exclusão de mensagens, bem como funções de membros.",
-      "CandyCrushReact": "Em um tutorial rápido, dominei a criação de um clone da web do Candy Crush, me aprofundando na lógica de programação e nos conceitos essenciais do React.js ao longo do caminho.",
-      "ShortLink": "Short Link é um projeto Node.js que permite aos usuários encurtar URLs, redirecionar para a URL original e analisar o número de acessos.",
-      "ExpertNotes": "Expert Notes é um aplicativo web React inovador desenvolvido durante o evento online NLW utilizando Vite. Integrando perfeitamente a funcionalidade de gravação de áudio, o aplicativo transcreve com eficiência palavras faladas em texto, oferecendo aos usuários a flexibilidade de optar pela entrada manual, se preferirem. Com um design elegante e moderno, Expert Notes é esteticamente aprimorado com Tailwind CSS, garantindo uma experiência de usuário visualmente atraente e intuitiva.",
-      "NerdBoxStore": "De maneira dinâmica conseguimos cadastrar o produto e já visualizá-lo na mesma página. Opções de editar e excluir são criados a cada linha do item. O software utiliza da memória local da máquina para realizar as operações, impedindo de migrar seus dados para outra máquina.",
-      "TechLibrary": "TechLibrary é um projeto backend para gerenciar uma biblioteca. Este projeto foi desenvolvido durante a Next Level Week (NLW) da Rocketseat, um evento online que oferece uma experiência prática de desenvolvimento de software, com foco em tecnologias modernas e boas práticas de programação."
+      "Aparatus": "Plataforma web full stack desenvolvida com Next.js 16, React 19, TypeScript, Tailwind v4 e Prisma 7 com PostgreSQL. Conta com autenticação moderna (better-auth), dashboard analítico responsivo e arquitetura modular.",
+      "FSWDonalds": "Aplicação full stack de autoatendimento para pedidos em restaurantes, desenvolvida com Next.js 15, React 19, Server Actions, PostgreSQL, Prisma e Radix UI. Interface mobile-first fluida e interativa.",
+      "Gam3rStoreBackend": "API RESTful corporativa para e-commerce desenvolvida em NestJS e TypeScript, aplicando Clean Architecture e princípios SOLID. Inclui autenticação, PostgreSQL via Prisma, containerização Docker e testes automatizados (Jest e Supertest E2E).",
+      "NLWExpertPolls": "Sistema de votação em tempo real desenvolvido em Node.js com Fastify e WebSockets. Utiliza Redis Pub/Sub para publicação de resultados instantâneos, PostgreSQL para persistência e validação estrita com Zod.",
+      "PricePulseAI": "Orquestrador multiagente inteligente em Python com protocolo MCP (Model Context Protocol), interface desktop CustomTkinter e banco PostgreSQL. Monitora variações de preços e dispara análises automatizadas.",
+      "CommercialFlowBot": "RPA em Python para triagem automatizada e extração estruturada de dados de centenas de documentos PDF via Regex. Reduziu em mais de 80% o retrabalho operacional na Editora Construir.",
+      "MapaStatus": "Automação RPA de alta performance em Python com processamento paralelo (concurrent.futures) e Pandas para extração de dados não-estruturados de lotes de PDFs, consolidando relatórios gerenciais.",
+      "UploadWidgetWeb": "Widget moderno de upload assíncrono de arquivos construído com React 19, Vite, Tailwind v4, Zustand 5 e Radix UI. Gerenciamento de estado reativo, fila de uploads e total acessibilidade.",
+      "ContactCollectorScraper": "Sistema automatizado de web scraping e prospecção com Python (BeautifulSoup e Requests). Extrai contatos educacionais em lote e higieniza informações com expressões regulares.",
+      "AssistantListFlow": "Ferramenta de automação em Python para conversão de documentos PDF em imagens e geração de metadados, acelerando a integração em lote para sistemas de gestão legados.",
+      "EducFormBot": "Automação inteligente em Python focada na geração e preenchimento preciso de documentos PDF em lote. Reduziu de horas para segundos a emissão de documentos com índice zero de erros.",
+      "ScanFlowBot": "Script de automação em Python projetado para auditar sistemas de arquivos, analisar metadados cronológicos e emitir relatórios de status sobre documentos digitalizados.",
+      "NLWExpertNotes": "Aplicação web de anotações em React com transcrição de voz para texto via Web Speech API, busca em tempo real e interface moderna estilizada com Tailwind CSS."
     }
   }
 }

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/src/i18n/navigation";
 
 import { Button } from "@/components/ui/button";
 
@@ -18,9 +18,12 @@ export default function WorkTextContent({
 			<h2 className="section-title mb-4">{title}</h2>
 			<p className="subtitle mb-8">{description}</p>
 
-			<Link href="/projects">
+			<Link
+				href={'/projects'}
+			>
 				<Button>{btnText}</Button>
 			</Link>
+
 		</div>
 	);
 }

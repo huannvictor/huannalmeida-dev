@@ -1,0 +1,52 @@
+[
+  {
+    "title": "API Backend com NestJS, Prisma e Jest",
+    "description": "Desenvolvi uma API backend escalável com NestJS e TypeScript, aplicando arquitetura modular, integração com Prisma ORM e persistência de dados. Implementei testes unitários e testes end-to-end com Jest, ts-jest e Supertest, incluindo cobertura automatizada e validação de endpoints.",
+    "repo": "huannvictor/backend"
+  },
+  {
+    "title": "Plataforma de Streaming com RabbitMQ e Docker",
+    "description": "Desenvolvi uma plataforma distribuída de streaming de vídeos com serviços em Go, Django e Next.js. Implementei processamento assíncrono e comunicação entre serviços utilizando RabbitMQ, além de conteinerização com Docker, PostgreSQL e integração entre produtores e consumidores de mensagens.",
+    "repo": "huannvictor/imersaoFullCycle"
+  },
+  {
+    "title": "Infraestrutura DevOps com Kubernetes e AWS EKS",
+    "description": "Implementei um ambiente de infraestrutura e observabilidade utilizando Docker, Kubernetes e AWS EKS. Trabalhei com provisionamento de recursos via CloudFormation, configuração de aplicações conteinerizadas e monitoramento com Prometheus e Grafana, aplicando conceitos de DevOps, escalabilidade e disponibilidade.",
+    "repo": "huannvictor/desafio-devops-cloud"
+  },
+  {
+    "title": "Upload Widget com React, Vite e Hooks",
+    "description": "Desenvolvi uma aplicação frontend em React e TypeScript utilizando Vite, React Hooks e Zustand para gerenciamento de estado. Implementei fluxos de upload, seleção e validação de arquivos, integração com API REST, componentes reutilizáveis e interface responsiva com foco em usabilidade e manutenção.",
+    "repo": "huannvictor/ftr-upload-widget-web"
+  },
+  {
+    "title": "Aplicação de Estoque com React, Vite e TypeScript",
+    "description": "Desenvolvi uma aplicação frontend de estoque com React, TypeScript e Vite, utilizando React Hooks, React Hook Form, componentes acessíveis do Radix UI e estilização moderna. Estruturei formulários, fluxos de interação, componentes reutilizáveis e gerenciamento de estados para suportar operações complexas na interface.",
+    "repo": "huannvictor/iStock"
+  },
+  {
+    "title": "Design System com React, Vite e Storybook",
+    "description": "Criei um design system em React e TypeScript com componentes reutilizáveis, padronização visual e documentação interativa no Storybook. Utilizei Vite, Storybook Testing Library, acessibilidade, composição de componentes e boas práticas de UI para acelerar o desenvolvimento e garantir consistência entre interfaces.",
+    "repo": "huannvictor/igniteLab-design-system"
+  },
+  {
+    "title": "Aplicação de Perguntas e Respostas com Jest e RTL",
+    "description": "Desenvolvi uma aplicação web em React integrada ao Firebase para criação, consulta e interação com perguntas em tempo real. Implementei componentes reutilizáveis, React Hooks e testes automatizados com Jest, RTL (React Testing Library), jest-dom e user-event, validando renderização, eventos e fluxos de usuário.",
+    "repo": "huannvictor/letmeask"
+  },
+  {
+    "title": "Plataforma de Feedback com React, Vite e Jest",
+    "description": "Desenvolvi uma plataforma full stack de feedback com frontend em React, TypeScript e Vite, além de backend em Express, Prisma e PostgreSQL. Implementei formulários, React Hooks, integração com API REST e testes automatizados com Jest, estruturando a aplicação para garantir confiabilidade e facilidade de evolução.",
+    "repo": "huannvictor/nlwReturnImpulse"
+  },
+  {
+    "title": "Aplicação de Eventos com React, Vite e React Query",
+    "description": "Desenvolvi uma aplicação web para gerenciamento e participação em eventos utilizando React, TypeScript e Vite. Implementei React Hooks, React Hook Form, TanStack React Query, validação de dados com Zod e componentes acessíveis, estruturando fluxos de cadastro, consulta e interação com dados assíncronos.",
+    "repo": "huannvictor/nlw-web"
+  },
+  {
+    "title": "Discord Clone com Next.js, React Hooks e Comunicação em Tempo Real",
+    "description": "Desenvolvi uma aplicação full stack inspirada em plataformas de comunicação, utilizando React, Next.js, TypeScript, React Hooks, Zustand, Socket.IO e LiveKit. Implementei autenticação, canais, mensagens em tempo real, chamadas de áudio e vídeo, upload de arquivos, gerenciamento de estado global e integração com Prisma.",
+    "repo": "huannvictor/discord-clone"
+  }
+]

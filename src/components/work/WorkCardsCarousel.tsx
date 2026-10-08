@@ -1,8 +1,6 @@
 "use client";
 
-// @ts-expect-error Swiper CSS imports do not provide TypeScript declarations.
 import "swiper/css";
-// @ts-expect-error Swiper CSS imports do not provide TypeScript declarations.
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";

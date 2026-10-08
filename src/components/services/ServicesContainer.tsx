@@ -8,7 +8,7 @@ export default function ServicesContainer({
 	children,
 }: ServicesContainerProps) {
 	return (
-		<div className="container mx-auto">
+		<div className="container mx-auto px-8">
 			<h2 className="section-title mx-auto mb-12 text-center lg:mb-24">
 				{title}
 			</h2>

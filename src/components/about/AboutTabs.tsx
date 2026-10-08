@@ -33,10 +33,10 @@ export default function AboutTabs({
 	return (
 		<div className="flex-1">
 			<Tabs defaultValue="personal">
-				<TabsList className="grid w-full lg:max-w-[520px] lg:grid-cols-3">
+				<TabsList className="w-full lg:max-w-130 lg:grid lg:grid-cols-3">
 					{triggers.map((trigger) => (
 						<TabsTrigger
-							className="w-[162px] lg:w-auto"
+							className="w-40.5 lg:w-auto"
 							value={trigger.value}
 							key={uuidv4()}
 						>
@@ -62,7 +62,7 @@ export default function AboutTabs({
 							<div className="mb-12 grid gap-4 lg:grid-cols-2">
 								{infoData.map((item) => (
 									<div
-										className="mx-auto flex items-center justify-start gap-x-4 md:mx-24 lg:mx-0"
+										className="mx-auto flex items-center justify-start gap-x-4 md:mx-24 lg:mx-0 bg-shape-color/20 p-2 rounded-2xl min-w-60 border-b-2 dark:bg-shape-color/20"
 										key={uuidv4()}
 									>
 										<div className="text-primary">{item.icon}</div>
@@ -111,8 +111,8 @@ export default function AboutTabs({
 
 												return (
 													<div className="group flex gap-x-8" key={uuidv4()}>
-														<div className="relative ml-2 h-[84px] w-[1px] bg-border">
-															<div className="absolute -left-[5px] size-[11px] rounded-full bg-primary transition-all duration-500 group-hover:translate-y-[84px]" />
+														<div className="relative ml-2 h-21 w-px bg-border">
+															<div className="absolute -left-1.25 size-2.75 rounded-full bg-primary transition-all duration-500 group-hover:translate-y-21" />
 														</div>
 														<div>
 															<div className="mb-1 text-lg font-semibold leading-none md:text-xl">

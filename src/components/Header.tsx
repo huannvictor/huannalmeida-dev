@@ -10,7 +10,7 @@ import { MobileNav } from "./MobileNav";
 import { Nav } from "./Nav";
 import ThemeToggler from "./ThemeToggler";
 
-export default function Header() {	
+export default function Header() {
 	const [header, setHeader] = useState<boolean>(false);
 	const pathname: string = usePathname();
 	const isHome = pathname === "/" || pathname === "/pt" || pathname === "/en";
@@ -26,14 +26,13 @@ export default function Header() {
 
 	return (
 		<header
-			className={`${
-				header
-					? "bg-white py-4 shadow-lg dark:bg-accent"
-					: "py-6 dark:bg-transparent"
-			} sticky top-0 z-30 transition-all ${isHome && !header && "bg-tertiary"}`}
+			className={`${header
+				? "bg-white py-4 shadow-lg dark:bg-accent"
+				: "py-6 dark:bg-transparent"
+				} sticky top-0 z-30 transition-all ${isHome && !header && "bg-tertiary"}`}
 		>
 			<div className="container mx-auto">
-				<div className="flex items-center justify-between">
+				<div className="flex items-center justify-between mx-8 lg:mx-0">
 					<Logo />
 
 					<div className="flex items-center gap-x-6">

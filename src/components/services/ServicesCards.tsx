@@ -27,10 +27,10 @@ export default function ServicesCards({ servicesData }: ServicesCardsProps) {
 							</div>
 						</CardHeader>
 						<CardContent className="text-center mt-12">
-							<CardTitle className="mb-4 text-xl md:text-2xl">
+							<CardTitle className="mb-4 text-lg md:text-xl">
 								{item.title}
 							</CardTitle>
-							<CardDescription className="m-2 text-base md:text-lg">
+							<CardDescription className="m-2 text-base xl:text-lg">
 								{item.description}
 							</CardDescription>
 						</CardContent>

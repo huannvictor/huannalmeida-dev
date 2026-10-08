@@ -22,15 +22,15 @@ export default function ServicesCards({ servicesData }: ServicesCardsProps) {
 						key={uuidv4()}
 					>
 						<CardHeader className="absolute -top-15 text-primary">
-							<div className="flex h-20 w-35 items-center justify-center bg-white dark:bg-background">
+							<div className="flex h-full w-35 items-center justify-center bg-background">
 								{item.icon}
 							</div>
 						</CardHeader>
-						<CardContent className="text-center">
+						<CardContent className="text-center mt-12">
 							<CardTitle className="mb-4 text-xl md:text-2xl">
 								{item.title}
 							</CardTitle>
-							<CardDescription className="text-base md:text-lg">
+							<CardDescription className="m-2 text-base md:text-lg">
 								{item.description}
 							</CardDescription>
 						</CardContent>

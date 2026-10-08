@@ -1,6 +1,8 @@
 "use client";
 
+// @ts-expect-error Swiper CSS imports do not provide TypeScript declarations.
 import "swiper/css";
+// @ts-expect-error Swiper CSS imports do not provide TypeScript declarations.
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
@@ -17,9 +19,9 @@ export default function WorkCadsCarousel({
 	projectData,
 }: WorkCadsCarouselProps) {
 	return (
-		<div className="max-w-[600px] lg:col-span-2">
+		<div className="max-w-full lg:col-span-2">
 			<Swiper
-				className="h-[480px]"
+				className="h-120"
 				slidesPerView={1}
 				breakpoints={{
 					640: { slidesPerView: 2 },

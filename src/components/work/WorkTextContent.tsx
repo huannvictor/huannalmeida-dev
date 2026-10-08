@@ -14,7 +14,7 @@ export default function WorkTextContent({
 	btnText,
 }: WorkTextContentProps) {
 	return (
-		<div className="mx-auto mb-12 flex max-w-[400px] flex-col items-center justify-center text-center lg:mx-0 lg:h-[400px] lg:items-start lg:text-left">
+		<div className="mx-auto mb-12 flex max-w-100 flex-col items-center justify-center text-center lg:mx-0 lg:h-100 lg:items-start lg:text-left">
 			<h2 className="section-title mb-4">{title}</h2>
 			<p className="subtitle mb-8">{description}</p>
 
@@ -23,7 +23,6 @@ export default function WorkTextContent({
 			>
 				<Button>{btnText}</Button>
 			</Link>
-
 		</div>
 	);
 }

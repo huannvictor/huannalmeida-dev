@@ -1,7 +1,9 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
 
-@theme {
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   --color-card: hsl(var(--card));
@@ -26,6 +28,9 @@
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
+}
+
+@theme {
 
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;

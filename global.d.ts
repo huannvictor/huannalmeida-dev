@@ -126,6 +126,19 @@ declare global {
 			tools: string;
 		};
 	}
+
+	interface ProficiencyItem {
+		icon: ReactNode;
+		name: string;
+		score: number;
+		maxScore?: number;
+	}
+
+	interface ProficiencyCategory {
+		id: "languages" | "frontend" | "backend" | "devops";
+		title: string;
+		items: ProficiencyItem[];
+	}
 }
 
 export {};

@@ -38,18 +38,27 @@ export default function HeroButtons() {
 						</DialogDescription>
 					</DialogHeader>
 					<div className="flex flex-col items-center justify-center gap-x-2 md:flex-row">
-						<Link target="_blank" href="/files/CV_HuannAlmeida_EN.pdf">
-							<Button variant="link" className="flex items-center gap-x-2">
+						<Button variant="link" asChild className="flex items-center gap-x-2">
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="/files/CV_HuannAlmeida_EN.pdf"
+							>
 								{t('englishVersion')}
 								<FileDownIcon />
-							</Button>
-						</Link>
-						<Link target="_blank" href="/files/CV_HuannAlmeida_PTBR.pdf">
-							<Button variant="link" className="flex items-center gap-x-2">
+							</a>
+						</Button>
+						<Button variant="link" asChild className="flex items-center gap-x-2">
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="/files/CV_HuannAlmeida_PTBR.pdf"
+							>
 								{t('portugueseVersion')}
 								<FileDownIcon />
-							</Button>
-						</Link>
+							</a>
+						</Button>
+
 					</div>
 				</DialogContent>
 			</Dialog>

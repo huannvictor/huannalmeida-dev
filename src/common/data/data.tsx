@@ -1,15 +1,43 @@
 import {
 	Bot,
+	BrainCircuit,
 	Calendar,
+	Database,
 	DatabaseZap,
+	Globe,
 	Home,
 	Layout,
 	MailIcon,
 	PhoneCall,
+	Terminal,
 	User2,
 } from "lucide-react";
-
 import { getTranslations } from "next-intl/server";
+import { FaJava } from "react-icons/fa6";
+import {
+	SiAngular,
+	SiDocker,
+	SiDotnet,
+	SiFastify,
+	SiGit,
+	SiHtml5,
+	SiJavascript,
+	SiJest,
+	SiNestjs,
+	SiNextdotjs,
+	SiNodedotjs,
+	SiPandas,
+	SiPostgresql,
+	SiPrisma,
+	SiPython,
+	SiReact,
+	SiRedis,
+	SiShadcnui,
+	SiSpringboot,
+	SiTailwindcss,
+	SiTypescript,
+	SiZod,
+} from "react-icons/si";
 
 export const getInfoData = async () => {
 	const t = await getTranslations("About.infoData");
@@ -269,6 +297,172 @@ export const getProjectData = async (): Promise<ProjectData[]> => {
 			description: p("NLWExpertNotes"),
 			link: "https://nlw-expert-notes-drab.vercel.app/",
 			github: "https://github.com/huannvictor/nlwExpert-Notes",
+		},
+	];
+};
+
+export const getProficiencyData = async (): Promise<ProficiencyCategory[]> => {
+	const t = await getTranslations("Proficiency");
+
+	return [
+		{
+			id: "languages",
+			title: t("tabs.languages"),
+			items: [
+				{
+					icon: <SiJavascript />,
+					name: "JavaScript",
+					score: 6,
+				},
+				{
+					icon: <SiTypescript />,
+					name: "TypeScript",
+					score: 5,
+				},
+				{
+					icon: <SiHtml5 />,
+					name: "HTML5 & CSS3",
+					score: 5,
+				},
+				{
+					icon: <SiPython />,
+					name: "Python",
+					score: 4,
+				},
+				{
+					icon: <Database size={20} />,
+					name: "SQL",
+					score: 3,
+				},
+				{
+					icon: <Terminal size={20} />,
+					name: "Shell / PowerShell",
+					score: 3,
+				},
+				{
+					icon: <SiDotnet />,
+					name: "C# / .NET",
+					score: 2,
+				},
+				{
+					icon: <FaJava />,
+					name: "Java",
+					score: 2,
+				},
+			],
+		},
+		{
+			id: "frontend",
+			title: t("tabs.frontend"),
+			items: [
+				{
+					icon: <SiNextdotjs />,
+					name: "Next.js",
+					score: 7,
+				},
+				{
+					icon: <SiReact />,
+					name: "React.js",
+					score: 6,
+				},
+				{
+					icon: <SiShadcnui />,
+					name: "Radix UI / Shadcn UI",
+					score: 6,
+				},
+				{
+					icon: <SiTailwindcss />,
+					name: "Tailwind CSS",
+					score: 5,
+				},
+				{
+					icon: <SiZod />,
+					name: "Zustand / Hook Form + Zod",
+					score: 5,
+				},
+				{
+					icon: <SiAngular />,
+					name: "Angular",
+					score: 3,
+				},
+				{
+					icon: <SiSpringboot />,
+					name: "Spring Boot",
+					score: 2,
+				},
+			],
+		},
+		{
+			id: "backend",
+			title: t("tabs.backend"),
+			items: [
+				{
+					icon: <SiPrisma />,
+					name: "Prisma ORM",
+					score: 6,
+				},
+				{
+					icon: <SiNodedotjs />,
+					name: "Node.js",
+					score: 4,
+				},
+				{
+					icon: <SiFastify />,
+					name: "Fastify / Express",
+					score: 4,
+				},
+				{
+					icon: <SiNestjs />,
+					name: "NestJS",
+					score: 3,
+				},
+				{
+					icon: <SiPandas />,
+					name: "Pandas",
+					score: 3,
+				},
+				{
+					icon: <Globe size={20} />,
+					name: t("items.webScraping"),
+					score: 3,
+				},
+			],
+		},
+		{
+			id: "devops",
+			title: t("tabs.devops"),
+			items: [
+				{
+					icon: <BrainCircuit size={20} />,
+					name: t("items.aiContext"),
+					score: 8,
+				},
+				{
+					icon: <SiGit />,
+					name: t("items.gitCicd"),
+					score: 7,
+				},
+				{
+					icon: <SiDocker />,
+					name: "Docker & Docker Compose",
+					score: 5,
+				},
+				{
+					icon: <SiPostgresql />,
+					name: "PostgreSQL",
+					score: 5,
+				},
+				{
+					icon: <SiRedis />,
+					name: "Redis",
+					score: 3,
+				},
+				{
+					icon: <SiJest />,
+					name: t("items.automatedTests"),
+					score: 2,
+				},
+			],
 		},
 	];
 };

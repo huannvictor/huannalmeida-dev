@@ -166,5 +166,21 @@
       "ScanFlowBot": "Script de automação em Python projetado para auditar sistemas de arquivos, analisar metadados cronológicos e emitir relatórios de status sobre documentos digitalizados.",
       "NLWExpertNotes": "Aplicação web de anotações em React com transcrição de voz para texto via Web Speech API, busca em tempo real e interface moderna estilizada com Tailwind CSS."
     }
+  },
+  "Proficiency": {
+    "sectionTitle": "Domínio Técnico",
+    "subtitle": "Mapeamento prático de linguagens, frameworks e ferramentas utilizadas nos meus projetos",
+    "tabs": {
+      "languages": "Linguagens",
+      "frontend": "Front-end & Frameworks",
+      "backend": "Back-end & Automação",
+      "devops": "DevOps, Bancos & IA"
+    },
+    "items": {
+      "webScraping": "Web Scraping (BS4 / Playwright)",
+      "aiContext": "IA & Eng. de Contexto (MCP / Agents)",
+      "gitCicd": "Git & GitHub (Vercel CI/CD)",
+      "automatedTests": "Testes Automatizados (Jest)"
+    }
   }
 }

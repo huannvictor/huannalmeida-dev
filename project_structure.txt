@@ -37,7 +37,7 @@ public
 │   ├── wave.svg
 ├── files
 │   ├── CV_HuannAlmeida_EN.pdf
-│   ├── CV_HuannAlmeida_PTBR.pdf
+│   ├── CV_HuannAlmeida_PT.pdf
 │   ├── Huann Almeida EN - v1.docx
 │   ├── Huann Almeida EN.docx
 │   ├── Huann Almeida PTBR - v1.docx

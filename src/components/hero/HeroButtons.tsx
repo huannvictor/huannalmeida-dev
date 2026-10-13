@@ -52,7 +52,7 @@ export default function HeroButtons() {
 							<a
 								target="_blank"
 								rel="noopener noreferrer"
-								href="/files/CV_HuannAlmeida_PTBR.pdf"
+								href="/files/CV_HuannAlmeida_PT.pdf"
 							>
 								{t('portugueseVersion')}
 								<FileDownIcon />
